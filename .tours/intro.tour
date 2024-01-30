@@ -1,0 +1,41 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "intro",
+  "steps": [
+    {
+      "file": "noncopyable.h",
+      "description": "noncopyable: 只要继承该 noncopyable 的类都不可 copy。因为复制构造函数和复制运算符重载都是 delete 的\nThis is what Scott Meyers recommends (page 39 Effective C++ 3rd ed.)",
+      "line": 4
+    },
+    {
+      "file": "Mutex.h",
+      "description": "0 means no one hold this mutex",
+      "line": 9
+    },
+    {
+      "file": "Mutex.h",
+      "description": "MutexLock不可 copy",
+      "line": 8
+    },
+    {
+      "file": "Mutex.h",
+      "description": "mutex RAII",
+      "line": 54
+    },
+    {
+      "file": "CurrentThread.h",
+      "description": "线程私有变量 __thread\n外部定义的变量 extern",
+      "line": 12
+    },
+    {
+      "file": "CurrentThread.h",
+      "description": "分支预测，__builtin_expect(EXP, N)。\n意思是：EXP==N的概率很大。",
+      "line": 25
+    },
+    {
+      "file": "code/Mutex.h",
+      "description": "mutex is noncopyable",
+      "line": 46
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+#ifndef MINI_WEB_SERVICE_WEBSERVICE_H
+#define MINI_WEB_SERVICE_WEBSERVICE_H
+
+class WebService
+{
+
+public:
+};
+
+#endif // MINI_WEB_SERVICE_WEBSERVICE_H

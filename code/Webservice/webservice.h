@@ -1,5 +1,5 @@
-#ifndef MINIWEBSERVER_CONFIG_H
-#define MINIWEBSERVER_CONFIG_H
+#ifndef MINI_WEB_SERVICE_WEBSERVICE_H
+#define MINI_WEB_SERVICE_WEBSERVICE_H
 
 enum class TriggerMode
 {
@@ -13,10 +13,10 @@ enum class LogWriteMode
     Async
 };
 
-struct Config
+class WebService
 {
 public:
-    Config();
+    WebService(int port, LogWriteMode logWriteMode, TriggerMode triggerMode, int sqlNum, int threadNum);
 
 public:
     int Port;
@@ -27,4 +27,4 @@ public:
     int threadNum; // number of threads
 };
 
-#endif // MINIWEBSERVER_CONFIG_H
+#endif // MINI_WEB_SERVICE_WEBSERVICE_H

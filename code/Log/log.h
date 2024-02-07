@@ -2,7 +2,7 @@
 #define MINI_WEB_SERVICE_LOG_H
 
 #include <sys/time.h>
-
+#include <sys/stat.h>
 #include <cstdarg>
 #include <iostream>
 #include <thread>
@@ -20,6 +20,9 @@ class Log {
             int maxQueueSize, int maxSplitLines, int maxLogBufferSize);
 
   LogLevel getLogLevel() const { return logLevel; }
+
+  void write(LogLevel level, const char* format, ...);
+  void flush();
 
  private:
   std::unique_ptr<std::thread> writeThread;
@@ -41,8 +44,6 @@ class Log {
 
  private:
   void AsyncWriteLog();
-  void write(LogLevel level, const char* format, ...);
-  void flush();
 
  private:
   Log() = default;

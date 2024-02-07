@@ -46,7 +46,7 @@ void Log::write(LogLevel level, const char* format, ...) {
   {
     std::lock_guard<std::mutex> lock(mutex);
 
-    if (fileToday != sysTime.tm_mday ||
+    if (!fp || fileToday != sysTime.tm_mday ||
         (lineCount && (lineCount % MaxSplitLines == 0))) {
       char newFile[255];
       char tail[36] = {0};
@@ -62,9 +62,16 @@ void Log::write(LogLevel level, const char* format, ...) {
                  (lineCount / MaxSplitLines));
       }
 
-      flush();
-      fclose(fp);
+      if (fp != nullptr) {
+        flush();
+        fclose(fp);
+      }
       fp = fopen(newFile, "a");
+      if (fp == nullptr) {
+        mkdir(FilePath.c_str(), 0777);
+        fp = fopen(newFile, "a");
+      }
+
       assert(fp != nullptr);
     }
   }
@@ -102,7 +109,7 @@ void Log::flush() {
   if (logWriteMode == LogWriteMode::Async) {
     // TODO: get all logs from logQueue and write to file
   }
-  std::lock_guard<std::mutex> lock(mutex);
+  // std::lock_guard<std::mutex> lock(mutex);
   fflush(fp);
 }
 

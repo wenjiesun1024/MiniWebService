@@ -1,9 +1,10 @@
 #ifndef MINI_WEB_SERVICE_WEBSERVICE_H
 #define MINI_WEB_SERVICE_WEBSERVICE_H
 
-enum class TriggerMode { LEVEL, EDGE };
+#include "./../Log/log.h"
+#include "./../Pool/sqlConnectionPool.h"
 
-enum class LogWriteMode { Sync, Async };
+enum class TriggerMode { LEVEL, EDGE };
 
 class WebService {
  public:

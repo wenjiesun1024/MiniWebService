@@ -1,8 +1,9 @@
 #ifndef MINI_WEB_SERVICE_LOG_H
 #define MINI_WEB_SERVICE_LOG_H
 
-#include <sys/time.h>
 #include <sys/stat.h>
+#include <sys/time.h>
+
 #include <cstdarg>
 #include <iostream>
 #include <thread>
@@ -14,12 +15,12 @@ enum LogLevel { INFO, WARN, ERROR, FATAL };
 
 class Log {
  public:
-  static Log* getInstance();
+  static Log* GetInstance();
 
   void Init(LogWriteMode logWriteMode, LogLevel logLevel, std::string filePath,
             int maxQueueSize, int maxSplitLines, int maxLogBufferSize);
 
-  LogLevel getLogLevel() const { return logLevel; }
+  LogLevel GetLogLevel() const { return logLevel; }
 
   void write(LogLevel level, const char* format, ...);
   void flush();
@@ -54,11 +55,10 @@ class Log {
 
 #define LOG_BASE(level, format, ...)                           \
   {                                                            \
-    if (level >= Log::getInstance()->getLogLevel()) {          \
-      Log::getInstance()->write(level, format, ##__VA_ARGS__); \
-      Log::getInstance()->flush();                             \
+    if (level >= Log::GetInstance()->GetLogLevel()) {          \
+      Log::GetInstance()->write(level, format, ##__VA_ARGS__); \
       if (level == LogLevel::FATAL) {                          \
-        Log::getInstance()->flush();                           \
+        Log::GetInstance()->flush();                           \
         exit(1);                                               \
       }                                                        \
     }                                                          \

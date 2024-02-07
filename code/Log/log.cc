@@ -14,8 +14,7 @@ const char* GetLevel(LogLevel level) {
       return "UNKNOWN: ";
   }
 }
-
-Log* Log::getInstance() {
+Log* Log::GetInstance() {
   static Log log;
   return &log;
 }

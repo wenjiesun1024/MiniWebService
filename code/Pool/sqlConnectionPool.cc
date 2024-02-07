@@ -3,6 +3,8 @@
 #include <cassert>
 #include <iostream>
 
+#include "./../Log/log.h"
+
 SqlConnectionPool *SqlConnectionPool::GetInstance() {
   static SqlConnectionPool instance;
   return &instance;
@@ -20,15 +22,13 @@ void SqlConnectionPool::InitPool(string host, string user, string password,
     MYSQL *sql = nullptr;
     sql = mysql_init(sql);
     if (!sql) {
-      // TODO:
-      //  LOG_ERROR("MySql init error!");
+      LOG_ERROR("MySql init error!");
       assert(sql);
     }
     sql = mysql_real_connect(sql, host.c_str(), user.c_str(), password.c_str(),
                              dataBaseName.c_str(), port, nullptr, 0);
     if (!sql) {
-      // TODO:
-      // LOG_ERROR("MySql Connect error!");
+      LOG_ERROR("MySql Connect error!");
       assert(sql);
     }
     connectQue.push(sql);
@@ -36,7 +36,7 @@ void SqlConnectionPool::InitPool(string host, string user, string password,
 
   isInit = true;
 
-  std::cout << "Init sql connection pool success!" << std::endl;
+  LOG_INFO("MySql pool init success");
 }
 
 MYSQL *SqlConnectionPool::GetConnection() {

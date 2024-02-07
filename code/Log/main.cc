@@ -1,7 +1,7 @@
 #include "log.h"
 
 int main() {
-  Log::getInstance()->Init(LogWriteMode::Async, LogLevel::ERROR, "./log", 1000,
+  Log::GetInstance()->Init(LogWriteMode::Async, LogLevel::ERROR, "./log", 1000,
                            1000, 1000);
 
   while (1) {

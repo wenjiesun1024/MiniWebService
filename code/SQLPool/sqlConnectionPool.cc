@@ -22,21 +22,19 @@ void SqlConnectionPool::InitPool(string host, string user, string password,
     MYSQL *sql = nullptr;
     sql = mysql_init(sql);
     if (!sql) {
-      LOG_ERROR("MySql init error!");
+      LOG_FATAL("MySql init error!");
       assert(sql);
     }
     sql = mysql_real_connect(sql, host.c_str(), user.c_str(), password.c_str(),
                              dataBaseName.c_str(), port, nullptr, 0);
     if (!sql) {
-      LOG_ERROR("MySql Connect error!");
+      LOG_FATAL("MySql Connect error!");
       assert(sql);
     }
     connectQue.push(sql);
   }
 
   isInit = true;
-
-  LOG_INFO("MySql pool init success");
 }
 
 MYSQL *SqlConnectionPool::GetConnection() {

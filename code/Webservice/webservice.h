@@ -2,7 +2,7 @@
 #define MINI_WEB_SERVICE_WEBSERVICE_H
 
 #include "./../Log/log.h"
-#include "./../Pool/sqlConnectionPool.h"
+#include "./../SQLPool/sqlConnectionPool.h"
 
 enum class TriggerMode { LEVEL, EDGE };
 

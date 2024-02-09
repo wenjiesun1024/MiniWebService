@@ -1,0 +1,10 @@
+#ifndef MINI_WEB_SERVICE_HTTPRESPONSE_H
+#define MINI_WEB_SERVICE_HTTPRESPONSE_H
+
+
+
+
+
+
+
+#endif

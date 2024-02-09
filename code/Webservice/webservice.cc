@@ -9,12 +9,14 @@
 
 WebService::WebService(int port, LogWriteMode logWriteMode,
                        TriggerMode listenTriggerMode,
-                       TriggerMode connTriggerMode, int sqlNum, int threadNum)
+                       TriggerMode connTriggerMode, int sqlNum, int threadNum,
+                       int TimeoutMS)
     : Port(port),
       logWriteMode(logWriteMode),
       sqlNum(sqlNum),
       epoller(new Epoller()),
-      threadNum(threadNum) {
+      threadNum(threadNum),
+      TimeoutMS(TimeoutMS) {
   // Init log
   Log::GetInstance()->Init(logWriteMode, LogLevel::INFO, "./log", 1000, 1000,
                            1000);
@@ -50,7 +52,7 @@ void WebService::InitEventMode(TriggerMode listenTriggerMode,
 
 bool WebService::Listen() {
   // Create socket
-  int listenFd = socket(PF_INET, SOCK_STREAM, 0);
+  listenFd = socket(PF_INET, SOCK_STREAM, 0);
   assert(listenFd >= 0);
 
   // Set socket address
@@ -78,7 +80,7 @@ bool WebService::Listen() {
   }
 
   // Bind socket
-  if (bind(listenFd, (struct sockaddr*)&address, sizeof(address)) < 0) {
+  if (bind(listenFd, (struct sockaddr *)&address, sizeof(address)) < 0) {
     LOG_ERROR("Bind socket failure");
     return false;
   }
@@ -102,7 +104,7 @@ bool WebService::Listen() {
   return true;
 }
 
-void Start() {
+void WebService::Start() {
   bool timeout = false;
   bool stop = false;
   while (!stop) {
@@ -111,12 +113,64 @@ void Start() {
       int fd = epoller->GetEventFd(i);
       uint32_t events = epoller->GetEvents(i);
       if (fd == listenFd) {
-        if (events & EPOLLIN) {
-          if (!Listen()) {
-            LOG_ERROR("Listen failure");
-          }
-        }
+        HandleListenEvent(fd);
+      } else if (events & (EPOLLRDHUP | EPOLLHUP | EPOLLERR)) {  // close
+        HandleCloseEvent(&clientAddrMap[fd]);
+      } else if (events & EPOLLIN) {  // read
+        HandleReadEvent(&clientAddrMap[fd]);
+      } else if (events & EPOLLOUT) {  // write
+        HandleWriteEvent(&clientAddrMap[fd]);
       }
     }
   }
+}
+
+void WebService::HandleListenEvent(int fd) {
+  do {
+    struct sockaddr_in clientAddr;
+    socklen_t clientAddrLen = sizeof(clientAddr);
+    int connFd =
+        accept(listenFd, (struct sockaddr *)&clientAddr, &clientAddrLen);
+    if (connFd < 0) {
+      LOG_ERROR("Accept failure");
+      return;
+    }
+    // if (HttpConn::userCount >= MAX_FD) {
+    //   SendError_(fd, "Server busy!");
+    //   LOG_WARN("Clients is full!");
+    //   return;
+    // }
+    AddClient(fd, clientAddr);
+  } while (listenEvent & EPOLLET);  // ET mode
+}
+
+void WebService::HandleCloseEvent(HttpConn *client) {
+  assert(client);
+  epoller->DelFd(client->GetFd());
+  client->Close();
+  LOG_INFO("Client[%d] quit!", client->GetFd());
+}
+
+void WebService::HandleReadEvent(HttpConn *client) {
+  // TODO:
+}
+
+void WebService::HandleWriteEvent(HttpConn *client) {
+  // TODO:
+}
+
+void WebService::AddClient(int connFd, const sockaddr_in &clientAddr) {
+  clientAddrMap[connFd].Init(connFd, clientAddr);
+  if (TimeoutMS > 0) {
+    timerHeap.addTimer(TimerNode{connFd, TimeoutMS,
+                                 std::bind(&WebService::HandleCloseEvent, this,
+                                           &clientAddrMap[connFd])});
+  }
+  epoller->AddFd(connFd, connEvent);
+  SetNonBlocking(connFd);
+  LOG_INFO("Client[%d] in!", connFd);
+}
+
+WebService::~WebService() {
+  // TODO: Implement this function
 }

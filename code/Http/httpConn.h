@@ -1,6 +1,8 @@
 #ifndef MINI_WEB_SERVICE_HTTPCONN_H
 #define MINI_WEB_SERVICE_HTTPCONN_H
 
+#include <netinet/in.h>
+
 enum class HttpCode {
   NO_REQUEST,
   GET_REQUEST,
@@ -29,19 +31,21 @@ class HttpConn {
   HttpConn();
   ~HttpConn();
 
-  void init(int sockfd, const sockaddr_in& addr);
-  void closeConn(bool realClose = true);
-  void process();
-  bool read();
-  bool write();
+  void Init(int sockfd, const sockaddr_in& addr);
+  // void closeConn(bool realClose = true);
+  // void process();
+  // bool read();
+  // bool write();
+  void Close();
 
-  int getFd() const;
-  int getPort() const;
-  const char* getIP() const;
-  sockaddr_in getAddr() const;
+  int GetFd() const { return epollFd; }
 
-  static int m_userCount;
-  static int m_epollFd;
+  // int getPort() const;
+  // const char* getIP() const;
+  // sockaddr_in getAddr() const;
+  // static int userCount;
+
+  int epollFd;
 };
 
 #endif

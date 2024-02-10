@@ -1,9 +1,30 @@
 #include "httpConn.h"
 
-void HttpConn::Init(int sockfd, const sockaddr_in& addr) {
-  // TODO: Implement this function
+#include "./../Log/log.h"
+
+std::atomic<int> HttpConn::userCount;
+
+void HttpConn::Init(int fd, const sockaddr_in& addr) {
+  sockfd = fd;
+  address = addr;
+
+  userCount++;
+  LOG_INFO("HttpConn %d init success", sockfd);
 }
 
 void HttpConn::Close() {
-  // TODO: Implement this function
+  close(sockfd);
+  userCount--;
+  LOG_INFO("HttpConn %d close success", sockfd);
 }
+
+bool HttpConn::Read() {
+  //TODO: read data from sockfd
+  return true;
+}
+
+bool HttpConn::Write() {
+  // TODO: write data to sockfd
+  return true;
+}
+

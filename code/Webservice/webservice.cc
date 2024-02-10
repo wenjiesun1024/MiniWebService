@@ -27,11 +27,17 @@ WebService::WebService(int port, LogWriteMode logWriteMode,
   //                                            "yourdb", 3306, 8);
   // LOG_INFO("SqlConnectionPool init success");
 
+  // Init event mode
   InitEventMode(listenTriggerMode, connTriggerMode);
+  LOG_INFO("Event mode init success");
+
+  // Init ThreadPool
+  threadPool = new ThreadPool(threadNum);
+  LOG_INFO("ThreadPool init success");
 
   // Init listenFd
-  if (Listen()) {
-    LOG_ERROR("WebService init failure");
+  if (!Listen()) {
+    LOG_ERROR("Listen failure");
   }
 
   LOG_INFO("WebService init success");
@@ -53,7 +59,10 @@ void WebService::InitEventMode(TriggerMode listenTriggerMode,
 bool WebService::Listen() {
   // Create socket
   listenFd = socket(PF_INET, SOCK_STREAM, 0);
-  assert(listenFd >= 0);
+  if (listenFd < 0) {
+    LOG_ERROR("Create socket failure");
+    return false;
+  }
 
   // Set socket address
   struct sockaddr_in address;
@@ -115,11 +124,11 @@ void WebService::Start() {
       if (fd == listenFd) {
         HandleListenEvent(fd);
       } else if (events & (EPOLLRDHUP | EPOLLHUP | EPOLLERR)) {  // close
-        HandleCloseEvent(&clientAddrMap[fd]);
+        HandleCloseEvent(clientAddrMap[fd]);
       } else if (events & EPOLLIN) {  // read
-        HandleReadEvent(&clientAddrMap[fd]);
+        HandleReadEvent(clientAddrMap[fd]);
       } else if (events & EPOLLOUT) {  // write
-        HandleWriteEvent(&clientAddrMap[fd]);
+        HandleWriteEvent(clientAddrMap[fd]);
       }
     }
   }
@@ -152,7 +161,8 @@ void WebService::HandleCloseEvent(HttpConn *client) {
 }
 
 void WebService::HandleReadEvent(HttpConn *client) {
-  // TODO:
+  ExtendTimer(client);
+  threadPool->enqueue(std::bind(&WebService::OnRead, this, client));
 }
 
 void WebService::HandleWriteEvent(HttpConn *client) {
@@ -160,11 +170,12 @@ void WebService::HandleWriteEvent(HttpConn *client) {
 }
 
 void WebService::AddClient(int connFd, const sockaddr_in &clientAddr) {
-  clientAddrMap[connFd].Init(connFd, clientAddr);
+  clientAddrMap[connFd]->Init(connFd, clientAddr);
   if (TimeoutMS > 0) {
-    timerHeap.addTimer(TimerNode{connFd, TimeoutMS,
-                                 std::bind(&WebService::HandleCloseEvent, this,
-                                           &clientAddrMap[connFd])});
+    time_t cur = time(nullptr);
+    timerHeap.addTimer(TimerNode{
+        connFd, cur + TimeoutMS,
+        std::bind(&WebService::HandleCloseEvent, this, clientAddrMap[connFd])});
   }
   epoller->AddFd(connFd, connEvent);
   SetNonBlocking(connFd);
@@ -173,4 +184,24 @@ void WebService::AddClient(int connFd, const sockaddr_in &clientAddr) {
 
 WebService::~WebService() {
   // TODO: Implement this function
+}
+
+void WebService::ExtendTimer(HttpConn *client) {
+  if (TimeoutMS > 0) {
+    time_t cur = time(nullptr);
+
+    timerHeap.adjust(client->GetFd(), cur + TimeoutMS);
+  }
+}
+
+void WebService::OnRead(HttpConn *client) {
+  // TODO: implement this function
+}
+
+void WebService::OnWrite(HttpConn *client) {
+  // TODO: implement this function
+}
+
+void WebService::OnProcess(HttpConn *client) {
+  // TODO: implement this function
 }

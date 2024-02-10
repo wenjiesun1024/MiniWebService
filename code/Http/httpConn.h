@@ -1,7 +1,12 @@
 #ifndef MINI_WEB_SERVICE_HTTPCONN_H
 #define MINI_WEB_SERVICE_HTTPCONN_H
 
+#include <arpa/inet.h>
 #include <netinet/in.h>
+#include <sys/socket.h>
+#include <unistd.h>
+
+#include <atomic>
 
 enum class HttpCode {
   NO_REQUEST,
@@ -34,17 +39,22 @@ class HttpConn {
   void Init(int sockfd, const sockaddr_in& addr);
   // void closeConn(bool realClose = true);
   // void process();
-  // bool read();
-  // bool write();
+  bool Read();
+  bool Write();
+
   void Close();
 
   int GetFd() const { return epollFd; }
 
-  // int getPort() const;
-  // const char* getIP() const;
-  // sockaddr_in getAddr() const;
-  // static int userCount;
+  int getPort() const { return ntohs(address.sin_port); }
+  const char* getIP() const { return inet_ntoa(address.sin_addr); }
+  sockaddr_in getAddr() const { return address; }
 
+ private:
+  struct sockaddr_in address;
+  int sockfd;
+
+  static std::atomic<int> userCount;
   int epollFd;
 };
 

@@ -42,6 +42,7 @@ class TimerHeap {
 
   void tick();
 
+  void adjust(int id, time_t newExpireTime);
   //   int GetNextTick();
 
  private:

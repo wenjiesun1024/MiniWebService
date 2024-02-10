@@ -114,3 +114,15 @@ void TimerHeap::tick() {
     popTimer();
   }
 }
+
+void TimerHeap::adjust(int id, time_t newExpireTime) {
+  auto it = refMap.find(id);
+  if (it == refMap.end()) {
+    return;
+  }
+
+  int index = it->second;
+  heap[index].expireTime = newExpireTime;
+  adjustDown(index);
+  adjustUp(index);
+}

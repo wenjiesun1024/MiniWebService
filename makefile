@@ -1,7 +1,7 @@
 CXX = g++
 CFLAGS = -std=c++17 -O2 -Wall -g
 
-server: ./code/*.cc ./code/Webservice/webservice.cc ./code/SQLPool/sqlConnectionPool.cc ./code/Log/log.cc
+all: ./code/*.cc ./code/Webservice/webservice.cc ./code/SQLPool/sqlConnectionPool.cc ./code/Log/log.cc ./code/Timer/timer.cc ./code/Http/httpConn.cc ./code/Webservice/epoller.cc
 	$(CXX) -o server  $^ $(CXXFLAGS) -lpthread -lmysqlclient
 
 clean:

@@ -101,6 +101,8 @@ void Log::write(LogLevel level, const char* format, ...) {
     }
 
     va_end(valst);
+
+    fflush(fp);
   }
 }
 
@@ -122,8 +124,10 @@ void Log::AsyncWriteLog() {
 }
 
 Log::~Log() {
+  IsStop = true;
   if (logWriteMode == LogWriteMode::Async) {
-    // TODO: stop writeThread
+    writeThread->detach();
+    // TODO:
   }
   if (fp) {
     std::lock_guard<std::mutex> lock(mutex);

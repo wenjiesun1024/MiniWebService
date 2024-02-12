@@ -36,6 +36,7 @@ class Log {
   std::string FilePath;
   int MaxSplitLines;
   int MaxLogBufferSize;
+  bool IsStop = false;
 
   FILE* fp;
   char* Logbuf;

@@ -54,6 +54,8 @@ void WebService::InitEventMode(TriggerMode listenTriggerMode,
   if (connTriggerMode == TriggerMode::LEVEL) {
     connEvent |= EPOLLET;
   }
+
+  HttpConn::setConnectTriggerMode(connTriggerMode);
 }
 
 bool WebService::Listen() {
@@ -117,7 +119,8 @@ void WebService::Start() {
   bool timeout = false;
   bool stop = false;
   while (!stop) {
-    int eventNum = epoller->wait(timeout ? -1 : 0);
+    int eventNum = epoller->wait(-1);  // FIXME: timeout
+    LOG_INFO("eventNum: %d", eventNum);
     for (int i = 0; i < eventNum; ++i) {
       int fd = epoller->GetEventFd(i);
       uint32_t events = epoller->GetEvents(i);
@@ -132,10 +135,12 @@ void WebService::Start() {
       }
     }
   }
+  LOG_INFO("WebService stop");
 }
 
 void WebService::HandleListenEvent(int fd) {
   do {
+    LOG_INFO("HandleListenEvent %d", fd);
     struct sockaddr_in clientAddr;
     socklen_t clientAddrLen = sizeof(clientAddr);
     int connFd =
@@ -149,7 +154,7 @@ void WebService::HandleListenEvent(int fd) {
     //   LOG_WARN("Clients is full!");
     //   return;
     // }
-    AddClient(fd, clientAddr);
+    AddClient(connFd, clientAddr);
   } while (listenEvent & EPOLLET);  // ET mode
 }
 
@@ -170,6 +175,7 @@ void WebService::HandleWriteEvent(HttpConn *client) {
 }
 
 void WebService::AddClient(int connFd, const sockaddr_in &clientAddr) {
+  clientAddrMap[connFd] = new HttpConn();
   clientAddrMap[connFd]->Init(connFd, clientAddr);
   if (TimeoutMS > 0) {
     time_t cur = time(nullptr);
@@ -179,10 +185,12 @@ void WebService::AddClient(int connFd, const sockaddr_in &clientAddr) {
   }
   epoller->AddFd(connFd, connEvent);
   SetNonBlocking(connFd);
+
   LOG_INFO("Client[%d] in!", connFd);
 }
 
 WebService::~WebService() {
+  LOG_INFO("WebService destruct");
   // TODO: Implement this function
 }
 
@@ -195,7 +203,11 @@ void WebService::ExtendTimer(HttpConn *client) {
 }
 
 void WebService::OnRead(HttpConn *client) {
-  // TODO: implement this function
+  LOG_INFO("OnRead");
+  if (client->Read() <= 0) {
+    // TODO: handle read failure
+  }
+  OnProcess(client);
 }
 
 void WebService::OnWrite(HttpConn *client) {
@@ -204,4 +216,9 @@ void WebService::OnWrite(HttpConn *client) {
 
 void WebService::OnProcess(HttpConn *client) {
   // TODO: implement this function
+  if (client->Process()) {
+    epoller->ModFd(client->GetFd(), connEvent | EPOLLOUT);  // TODO: why?
+  } else {
+    epoller->ModFd(client->GetFd(), connEvent | EPOLLIN);
+  }
 }

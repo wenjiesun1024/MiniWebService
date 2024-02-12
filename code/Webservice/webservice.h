@@ -6,12 +6,9 @@
 #include "./../Http/httpConn.h"
 #include "./../Log/log.h"
 #include "./../SQLPool/sqlConnectionPool.h"
-#include "./../Timer/timer.h"
 #include "./../ThreadPool/threadPool.h"
-
+#include "./../Timer/timer.h"
 #include "epoller.h"
-
-enum class TriggerMode { LEVEL, EDGE };
 
 class WebService {
  public:
@@ -21,12 +18,12 @@ class WebService {
 
   ~WebService();
 
+  void Start();
+
  private:
   void InitEventMode(TriggerMode listenTriggerMode,
                      TriggerMode connTriggerMode);
   bool Listen();
-
-  void Start();
 
   void HandleListenEvent(int listenFd);
   void HandleCloseEvent(HttpConn* client);
@@ -40,7 +37,7 @@ class WebService {
   void OnRead(HttpConn* client);
   void OnWrite(HttpConn* client);
   void OnProcess(HttpConn* client);
-  
+
  public:
   int Port;
   int listenFd;

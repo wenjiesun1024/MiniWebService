@@ -2,15 +2,28 @@
 #define MINI_WEB_SERVICE_HTTPCONN_H
 
 #include <arpa/inet.h>
+#include <fcntl.h>
 #include <netinet/in.h>
 #include <strings.h>
+#include <sys/epoll.h>
+#include <sys/mman.h>
 #include <sys/socket.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <sys/uio.h>
 #include <unistd.h>
 
 #include <atomic>
 #include <cstring>
 #include <iomanip>
 #include <iostream>
+#include <map>
+#include <mutex>
+#include <string>
+
+#include "./../SQLPool/sqlConnectionPoolRAII.h"
+
+void InitmysqlResult();
 
 enum class TriggerMode { LEVEL, EDGE };
 
@@ -50,10 +63,12 @@ class HttpConn {
   ~HttpConn() = default;
 
   void Init(int sockfd, const sockaddr_in& addr);
-  // void closeConn(bool realClose = true);
-  // void process();
+  void Reset();
+  // void InitmysqlResult();
+
+  void CloseConn(bool realClose = true);
   bool Read();
-  bool Write();
+  bool Write(int& writeErrno);
   void Close();
   bool Process();
 
@@ -62,6 +77,7 @@ class HttpConn {
   int getPort() const { return ntohs(address.sin_port); }
   const char* getIP() const { return inet_ntoa(address.sin_addr); }
   sockaddr_in getAddr() const { return address; }
+  bool keepAlice() const { return isLinger; }
 
   static void setConnectTriggerMode(TriggerMode mode) {
     connectTriggerMode = mode;
@@ -75,6 +91,17 @@ class HttpConn {
   LineStatus parseLine();
   char* getLine() { return readBuf + startLine; };
   HttpCode doRequest();
+
+  bool ProcessWrite(HttpCode);
+  bool addResponse(const char* format, ...);
+  bool addStatusLine(int status, const char* title);
+  bool addHeaders(int contentLength);
+  bool addContent(const char* content);
+  bool addContentLength(int contentLength);
+  bool addLinger();
+  bool addBlankLine();
+  bool addContentType();
+  void unmap();
 
  private:
   struct sockaddr_in address;
@@ -90,7 +117,7 @@ class HttpConn {
   static const int WRITE_BUFFER_SIZE = 1024;
 
   char readBuf[READ_BUFFER_SIZE];
-  long readIdx;
+  long readIdx;  // the end of readBuf
   char writeBuf[WRITE_BUFFER_SIZE];
   int writeIdx;
 
@@ -107,6 +134,19 @@ class HttpConn {
   int contentLength;
 
   std::string content;
+
+  int bytesHaveSend;
+  int bytesToSend;
+  struct stat fileStat;
+  char* fileAddress;
+  struct iovec iv[2];
+
+  int ivCount;
+  int cgi;  //是否启用的POST
+  char realFile[FILENAME_LEN];
+
+  std::mutex mx;
+  MYSQL* mysql;
 };
 
 #endif

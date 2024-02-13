@@ -23,9 +23,10 @@ WebService::WebService(int port, LogWriteMode logWriteMode,
   LOG_INFO("Log init success");
 
   // Init sql connection pool
-  // SqlConnectionPool::GetInstance()->InitPool("localhost", "root", "root",
-  //                                            "yourdb", 3306, 8);
-  // LOG_INFO("SqlConnectionPool init success");
+  SqlConnectionPool::GetInstance()->InitPool("localhost", "root", "root",
+                                             "yourdb", 3306, 8);
+  // InitmysqlResult();
+  LOG_INFO("SqlConnectionPool init success");
 
   // Init event mode
   InitEventMode(listenTriggerMode, connTriggerMode);
@@ -171,7 +172,8 @@ void WebService::HandleReadEvent(HttpConn *client) {
 }
 
 void WebService::HandleWriteEvent(HttpConn *client) {
-  // TODO:
+  ExtendTimer(client);
+  threadPool->enqueue(std::bind(&WebService::OnWrite, this, client));
 }
 
 void WebService::AddClient(int connFd, const sockaddr_in &clientAddr) {
@@ -211,7 +213,25 @@ void WebService::OnRead(HttpConn *client) {
 }
 
 void WebService::OnWrite(HttpConn *client) {
-  // TODO: implement this function
+  LOG_INFO("OnWrite");
+  int writeErrno = 0;
+  bool ret = client->Write(writeErrno);
+
+  if (ret) {
+    epoller->ModFd(client->GetFd(), connEvent | EPOLLIN);
+    return;
+  }
+
+  if (writeErrno == EAGAIN) {
+    epoller->ModFd(client->GetFd(), connEvent | EPOLLOUT);
+    return;
+  }
+
+  if (client->keepAlice()) {
+    OnProcess(client);
+    return;
+  }
+  HandleCloseEvent(client);
 }
 
 void WebService::OnProcess(HttpConn *client) {

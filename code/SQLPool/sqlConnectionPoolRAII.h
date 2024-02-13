@@ -13,8 +13,8 @@ class SqlConnectionRAII {
   ~SqlConnectionRAII() { sqlConnectionPool->ReleaseConnection(sqlConnection); }
 
  private:
-  MYSQL *sqlConnection;
   SqlConnectionPool *sqlConnectionPool;
+  MYSQL *sqlConnection;
 };
 
 #endif

@@ -1,0 +1,617 @@
+2024-02-13 20:46:13.859754 INFO: Log init success
+2024-02-13 20:46:14.203002 INFO: SqlConnectionPool init success
+2024-02-13 20:46:14.203040 INFO: Event mode init success
+2024-02-13 20:46:14.203273 INFO: ThreadPool init success
+2024-02-13 20:46:14.203301 INFO: Add listenFd to epoll success
+2024-02-13 20:46:14.203307 INFO: WebService init success
+2024-02-13 20:46:35.598136 INFO: eventNum: 1
+2024-02-13 20:46:35.598350 INFO: HandleListenEvent 13
+2024-02-13 20:46:35.598410 INFO: HttpConn 14 init success
+2024-02-13 20:46:35.598435 INFO: Client[14] in!
+2024-02-13 20:46:35.598442 INFO: HandleListenEvent 13
+2024-02-13 20:46:35.598455 ERROR: Accept failure
+2024-02-13 20:46:35.598463 INFO: eventNum: 1
+2024-02-13 20:46:35.598505 INFO: OnRead
+2024-02-13 20:46:35.598517 INFO: HttpConn 14 read success
+2024-02-13 20:46:35.598530 INFO: GET / HTTP/1.1
+2024-02-13 20:46:35.598540 INFO: Host: 127.0.0.1:9006
+2024-02-13 20:46:35.598545 INFO: User-Agent: Wget/1.21.2
+2024-02-13 20:46:35.598549 INFO: oop!unknow header: User-Agent: Wget/1.21.2
+2024-02-13 20:46:35.598554 INFO: Accept: */*
+2024-02-13 20:46:35.598559 INFO: oop!unknow header: Accept: */*
+2024-02-13 20:46:35.598563 INFO: Accept-Encoding: identity
+2024-02-13 20:46:35.598568 INFO: oop!unknow header: Accept-Encoding: identity
+2024-02-13 20:46:35.598572 INFO: Connection: Keep-Alive
+2024-02-13 20:46:35.598577 INFO: 
+2024-02-13 20:46:35.598591 INFO: close fd 14
+2024-02-13 20:46:36.598984 INFO: eventNum: 1
+2024-02-13 20:46:36.599018 INFO: HandleListenEvent 13
+2024-02-13 20:46:36.599052 INFO: HttpConn 14 init success
+2024-02-13 20:46:36.599071 INFO: Client[14] in!
+2024-02-13 20:46:36.599077 INFO: HandleListenEvent 13
+2024-02-13 20:46:36.599087 ERROR: Accept failure
+2024-02-13 20:46:36.599226 INFO: eventNum: 1
+2024-02-13 20:46:36.599269 INFO: OnRead
+2024-02-13 20:46:36.599278 INFO: HttpConn 14 read success
+2024-02-13 20:46:36.599289 INFO: GET / HTTP/1.1
+2024-02-13 20:46:36.599295 INFO: Host: 127.0.0.1:9006
+2024-02-13 20:46:36.599300 INFO: User-Agent: Wget/1.21.2
+2024-02-13 20:46:36.599304 INFO: oop!unknow header: User-Agent: Wget/1.21.2
+2024-02-13 20:46:36.599309 INFO: Accept: */*
+2024-02-13 20:46:36.599313 INFO: oop!unknow header: Accept: */*
+2024-02-13 20:46:36.599317 INFO: Accept-Encoding: identity
+2024-02-13 20:46:36.599321 INFO: oop!unknow header: Accept-Encoding: identity
+2024-02-13 20:46:36.599326 INFO: Connection: Keep-Alive
+2024-02-13 20:46:36.599330 INFO: 
+2024-02-13 20:46:36.599340 INFO: close fd 14
+2024-02-13 20:46:38.599835 INFO: eventNum: 1
+2024-02-13 20:46:38.599882 INFO: HandleListenEvent 13
+2024-02-13 20:46:38.599914 INFO: HttpConn 14 init success
+2024-02-13 20:46:38.599932 INFO: Client[14] in!
+2024-02-13 20:46:38.599938 INFO: HandleListenEvent 13
+2024-02-13 20:46:38.599949 ERROR: Accept failure
+2024-02-13 20:46:38.599955 INFO: eventNum: 1
+2024-02-13 20:46:38.599995 INFO: OnRead
+2024-02-13 20:46:38.600006 INFO: HttpConn 14 read success
+2024-02-13 20:46:38.600017 INFO: GET / HTTP/1.1
+2024-02-13 20:46:38.600023 INFO: Host: 127.0.0.1:9006
+2024-02-13 20:46:38.600028 INFO: User-Agent: Wget/1.21.2
+2024-02-13 20:46:38.600032 INFO: oop!unknow header: User-Agent: Wget/1.21.2
+2024-02-13 20:46:38.600037 INFO: Accept: */*
+2024-02-13 20:46:38.600041 INFO: oop!unknow header: Accept: */*
+2024-02-13 20:46:38.600046 INFO: Accept-Encoding: identity
+2024-02-13 20:46:38.600050 INFO: oop!unknow header: Accept-Encoding: identity
+2024-02-13 20:46:38.600054 INFO: Connection: Keep-Alive
+2024-02-13 20:46:38.600059 INFO: 
+2024-02-13 20:46:38.600069 INFO: close fd 14
+2024-02-13 20:46:39.702522 INFO: eventNum: 1
+2024-02-13 20:46:39.702574 INFO: HandleListenEvent 13
+2024-02-13 20:46:39.702595 INFO: HttpConn 14 init success
+2024-02-13 20:46:39.702630 INFO: Client[14] in!
+2024-02-13 20:46:39.702635 INFO: HandleListenEvent 13
+2024-02-13 20:46:39.702653 INFO: HttpConn 15 init success
+2024-02-13 20:46:39.702663 INFO: Client[15] in!
+2024-02-13 20:46:39.702668 INFO: HandleListenEvent 13
+2024-02-13 20:46:39.702677 ERROR: Accept failure
+2024-02-13 20:46:39.702893 INFO: eventNum: 1
+2024-02-13 20:46:39.702955 INFO: OnRead
+2024-02-13 20:46:39.703001 INFO: HttpConn 14 read success
+2024-02-13 20:46:39.703014 INFO: GET / HTTP/1.1
+2024-02-13 20:46:39.703020 INFO: Host: localhost:9006
+2024-02-13 20:46:39.703025 INFO: Connection: keep-alive
+2024-02-13 20:46:39.703030 INFO: sec-ch-ua: "Not_A Brand";v="8", "Chromium";v="120", "Google Chrome";v="120"
+2024-02-13 20:46:39.703035 INFO: oop!unknow header: sec-ch-ua: "Not_A Brand";v="8", "Chromium";v="120", "Google Chrome";v="120"
+2024-02-13 20:46:39.703039 INFO: sec-ch-ua-mobile: ?0
+2024-02-13 20:46:39.703044 INFO: oop!unknow header: sec-ch-ua-mobile: ?0
+2024-02-13 20:46:39.703048 INFO: sec-ch-ua-platform: "macOS"
+2024-02-13 20:46:39.703052 INFO: oop!unknow header: sec-ch-ua-platform: "macOS"
+2024-02-13 20:46:39.703057 INFO: Upgrade-Insecure-Requests: 1
+2024-02-13 20:46:39.703061 INFO: oop!unknow header: Upgrade-Insecure-Requests: 1
+2024-02-13 20:46:39.703066 INFO: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+2024-02-13 20:46:39.703070 INFO: oop!unknow header: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+2024-02-13 20:46:39.703075 INFO: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2024-02-13 20:46:39.703079 INFO: oop!unknow header: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2024-02-13 20:46:39.703084 INFO: Sec-Fetch-Site: none
+2024-02-13 20:46:39.703088 INFO: oop!unknow header: Sec-Fetch-Site: none
+2024-02-13 20:46:39.703092 INFO: Sec-Fetch-Mode: navigate
+2024-02-13 20:46:39.703097 INFO: oop!unknow header: Sec-Fetch-Mode: navigate
+2024-02-13 20:46:39.703101 INFO: Sec-Fetch-User: ?1
+2024-02-13 20:46:39.703105 INFO: oop!unknow header: Sec-Fetch-User: ?1
+2024-02-13 20:46:39.703110 INFO: Sec-Fetch-Dest: document
+2024-02-13 20:46:39.703114 INFO: oop!unknow header: Sec-Fetch-Dest: document
+2024-02-13 20:46:39.703118 INFO: Accept-Encoding: gzip, deflate, br
+2024-02-13 20:46:39.703122 INFO: oop!unknow header: Accept-Encoding: gzip, deflate, br
+2024-02-13 20:46:39.703127 INFO: Accept-Language: en-US,en;q=0.9
+2024-02-13 20:46:39.703131 INFO: oop!unknow header: Accept-Language: en-US,en;q=0.9
+2024-02-13 20:46:39.703135 INFO: 
+2024-02-13 20:46:39.703145 INFO: close fd 14
+2024-02-13 20:46:39.744984 INFO: eventNum: 1
+2024-02-13 20:46:39.745083 INFO: OnRead
+2024-02-13 20:46:39.745593 INFO: HttpConn 15 read success
+2024-02-13 20:46:39.745616 INFO: GET / HTTP/1.1
+2024-02-13 20:46:39.745623 INFO: Host: localhost:9006
+2024-02-13 20:46:39.745628 INFO: Connection: keep-alive
+2024-02-13 20:46:39.745633 INFO: sec-ch-ua: "Not_A Brand";v="8", "Chromium";v="120", "Google Chrome";v="120"
+2024-02-13 20:46:39.745637 INFO: oop!unknow header: sec-ch-ua: "Not_A Brand";v="8", "Chromium";v="120", "Google Chrome";v="120"
+2024-02-13 20:46:39.745643 INFO: sec-ch-ua-mobile: ?0
+2024-02-13 20:46:39.745647 INFO: oop!unknow header: sec-ch-ua-mobile: ?0
+2024-02-13 20:46:39.745652 INFO: sec-ch-ua-platform: "macOS"
+2024-02-13 20:46:39.745656 INFO: oop!unknow header: sec-ch-ua-platform: "macOS"
+2024-02-13 20:46:39.745660 INFO: Upgrade-Insecure-Requests: 1
+2024-02-13 20:46:39.745664 INFO: oop!unknow header: Upgrade-Insecure-Requests: 1
+2024-02-13 20:46:39.745669 INFO: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+2024-02-13 20:46:39.745674 INFO: oop!unknow header: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+2024-02-13 20:46:39.745679 INFO: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2024-02-13 20:46:39.745683 INFO: oop!unknow header: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2024-02-13 20:46:39.745695 INFO: Sec-Fetch-Site: none
+2024-02-13 20:46:39.745700 INFO: oop!unknow header: Sec-Fetch-Site: none
+2024-02-13 20:46:39.745704 INFO: Sec-Fetch-Mode: navigate
+2024-02-13 20:46:39.745708 INFO: oop!unknow header: Sec-Fetch-Mode: navigate
+2024-02-13 20:46:39.745712 INFO: Sec-Fetch-User: ?1
+2024-02-13 20:46:39.745717 INFO: oop!unknow header: Sec-Fetch-User: ?1
+2024-02-13 20:46:39.745721 INFO: Sec-Fetch-Dest: document
+2024-02-13 20:46:39.745725 INFO: oop!unknow header: Sec-Fetch-Dest: document
+2024-02-13 20:46:39.745729 INFO: Accept-Encoding: gzip, deflate, br
+2024-02-13 20:46:39.745734 INFO: oop!unknow header: Accept-Encoding: gzip, deflate, br
+2024-02-13 20:46:39.745738 INFO: Accept-Language: en-US,en;q=0.9
+2024-02-13 20:46:39.745742 INFO: oop!unknow header: Accept-Language: en-US,en;q=0.9
+2024-02-13 20:46:39.745746 INFO: 
+2024-02-13 20:46:39.745757 INFO: close fd 15
+2024-02-13 20:46:39.968275 INFO: eventNum: 1
+2024-02-13 20:46:39.968316 INFO: HandleListenEvent 13
+2024-02-13 20:46:39.968336 INFO: HttpConn 14 init success
+2024-02-13 20:46:39.968351 INFO: Client[14] in!
+2024-02-13 20:46:39.968356 INFO: HandleListenEvent 13
+2024-02-13 20:46:39.968364 ERROR: Accept failure
+2024-02-13 20:46:39.968467 INFO: eventNum: 1
+2024-02-13 20:46:39.968509 INFO: OnRead
+2024-02-13 20:46:39.968518 INFO: HttpConn 14 read success
+2024-02-13 20:46:39.968528 INFO: GET / HTTP/1.1
+2024-02-13 20:46:39.968535 INFO: Host: localhost:9006
+2024-02-13 20:46:39.968540 INFO: Connection: keep-alive
+2024-02-13 20:46:39.968544 INFO: sec-ch-ua: "Not_A Brand";v="8", "Chromium";v="120", "Google Chrome";v="120"
+2024-02-13 20:46:39.968549 INFO: oop!unknow header: sec-ch-ua: "Not_A Brand";v="8", "Chromium";v="120", "Google Chrome";v="120"
+2024-02-13 20:46:39.968554 INFO: sec-ch-ua-mobile: ?0
+2024-02-13 20:46:39.968558 INFO: oop!unknow header: sec-ch-ua-mobile: ?0
+2024-02-13 20:46:39.968563 INFO: sec-ch-ua-platform: "macOS"
+2024-02-13 20:46:39.968567 INFO: oop!unknow header: sec-ch-ua-platform: "macOS"
+2024-02-13 20:46:39.968571 INFO: Upgrade-Insecure-Requests: 1
+2024-02-13 20:46:39.968575 INFO: oop!unknow header: Upgrade-Insecure-Requests: 1
+2024-02-13 20:46:39.968580 INFO: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+2024-02-13 20:46:39.968584 INFO: oop!unknow header: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+2024-02-13 20:46:39.968589 INFO: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2024-02-13 20:46:39.968593 INFO: oop!unknow header: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2024-02-13 20:46:39.968598 INFO: Sec-Fetch-Site: none
+2024-02-13 20:46:39.968602 INFO: oop!unknow header: Sec-Fetch-Site: none
+2024-02-13 20:46:39.968606 INFO: Sec-Fetch-Mode: navigate
+2024-02-13 20:46:39.968629 INFO: oop!unknow header: Sec-Fetch-Mode: navigate
+2024-02-13 20:46:39.968634 INFO: Sec-Fetch-User: ?1
+2024-02-13 20:46:39.968638 INFO: oop!unknow header: Sec-Fetch-User: ?1
+2024-02-13 20:46:39.968642 INFO: Sec-Fetch-Dest: document
+2024-02-13 20:46:39.968647 INFO: oop!unknow header: Sec-Fetch-Dest: document
+2024-02-13 20:46:39.968651 INFO: Accept-Encoding: gzip, deflate, br
+2024-02-13 20:46:39.968655 INFO: oop!unknow header: Accept-Encoding: gzip, deflate, br
+2024-02-13 20:46:39.968659 INFO: Accept-Language: en-US,en;q=0.9
+2024-02-13 20:46:39.968664 INFO: oop!unknow header: Accept-Language: en-US,en;q=0.9
+2024-02-13 20:46:39.968668 INFO: 
+2024-02-13 20:46:39.968677 INFO: close fd 14
+2024-02-13 20:46:41.161722 INFO: eventNum: 1
+2024-02-13 20:46:41.161777 INFO: HandleListenEvent 13
+2024-02-13 20:46:41.161802 INFO: HttpConn 14 init success
+2024-02-13 20:46:41.161817 INFO: Client[14] in!
+2024-02-13 20:46:41.161822 INFO: HandleListenEvent 13
+2024-02-13 20:46:41.161839 ERROR: Accept failure
+2024-02-13 20:46:41.162286 INFO: eventNum: 1
+2024-02-13 20:46:41.162339 INFO: OnRead
+2024-02-13 20:46:41.162350 INFO: HttpConn 14 read success
+2024-02-13 20:46:41.162359 INFO: GET / HTTP/1.1
+2024-02-13 20:46:41.162365 INFO: Host: localhost:9006
+2024-02-13 20:46:41.162369 INFO: Connection: keep-alive
+2024-02-13 20:46:41.162374 INFO: Cache-Control: max-age=0
+2024-02-13 20:46:41.162378 INFO: oop!unknow header: Cache-Control: max-age=0
+2024-02-13 20:46:41.162383 INFO: sec-ch-ua: "Not_A Brand";v="8", "Chromium";v="120", "Google Chrome";v="120"
+2024-02-13 20:46:41.162387 INFO: oop!unknow header: sec-ch-ua: "Not_A Brand";v="8", "Chromium";v="120", "Google Chrome";v="120"
+2024-02-13 20:46:41.162392 INFO: sec-ch-ua-mobile: ?0
+2024-02-13 20:46:41.162396 INFO: oop!unknow header: sec-ch-ua-mobile: ?0
+2024-02-13 20:46:41.162400 INFO: sec-ch-ua-platform: "macOS"
+2024-02-13 20:46:41.162404 INFO: oop!unknow header: sec-ch-ua-platform: "macOS"
+2024-02-13 20:46:41.162409 INFO: Upgrade-Insecure-Requests: 1
+2024-02-13 20:46:41.162413 INFO: oop!unknow header: Upgrade-Insecure-Requests: 1
+2024-02-13 20:46:41.162417 INFO: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+2024-02-13 20:46:41.162422 INFO: oop!unknow header: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+2024-02-13 20:46:41.162427 INFO: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2024-02-13 20:46:41.162431 INFO: oop!unknow header: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2024-02-13 20:46:41.162435 INFO: Sec-Fetch-Site: none
+2024-02-13 20:46:41.162439 INFO: oop!unknow header: Sec-Fetch-Site: none
+2024-02-13 20:46:41.162444 INFO: Sec-Fetch-Mode: navigate
+2024-02-13 20:46:41.162448 INFO: oop!unknow header: Sec-Fetch-Mode: navigate
+2024-02-13 20:46:41.162452 INFO: Sec-Fetch-User: ?1
+2024-02-13 20:46:41.162456 INFO: oop!unknow header: Sec-Fetch-User: ?1
+2024-02-13 20:46:41.162460 INFO: Sec-Fetch-Dest: document
+2024-02-13 20:46:41.162464 INFO: oop!unknow header: Sec-Fetch-Dest: document
+2024-02-13 20:46:41.162468 INFO: Accept-Encoding: gzip, deflate, br
+2024-02-13 20:46:41.162472 INFO: oop!unknow header: Accept-Encoding: gzip, deflate, br
+2024-02-13 20:46:41.162477 INFO: Accept-Language: en-US,en;q=0.9
+2024-02-13 20:46:41.162481 INFO: oop!unknow header: Accept-Language: en-US,en;q=0.9
+2024-02-13 20:46:41.162485 INFO: 
+2024-02-13 20:46:41.162495 INFO: close fd 14
+2024-02-13 20:46:41.163070 INFO: eventNum: 1
+2024-02-13 20:46:41.163093 INFO: HandleListenEvent 13
+2024-02-13 20:46:41.163111 INFO: HttpConn 14 init success
+2024-02-13 20:46:41.163123 INFO: Client[14] in!
+2024-02-13 20:46:41.163128 INFO: HandleListenEvent 13
+2024-02-13 20:46:41.163136 ERROR: Accept failure
+2024-02-13 20:46:41.175806 INFO: eventNum: 1
+2024-02-13 20:46:41.175905 INFO: OnRead
+2024-02-13 20:46:41.175919 INFO: HttpConn 14 read success
+2024-02-13 20:46:41.175930 INFO: GET / HTTP/1.1
+2024-02-13 20:46:41.175936 INFO: Host: localhost:9006
+2024-02-13 20:46:41.175941 INFO: Connection: keep-alive
+2024-02-13 20:46:41.175945 INFO: Cache-Control: max-age=0
+2024-02-13 20:46:41.175950 INFO: oop!unknow header: Cache-Control: max-age=0
+2024-02-13 20:46:41.175955 INFO: sec-ch-ua: "Not_A Brand";v="8", "Chromium";v="120", "Google Chrome";v="120"
+2024-02-13 20:46:41.175959 INFO: oop!unknow header: sec-ch-ua: "Not_A Brand";v="8", "Chromium";v="120", "Google Chrome";v="120"
+2024-02-13 20:46:41.175964 INFO: sec-ch-ua-mobile: ?0
+2024-02-13 20:46:41.175968 INFO: oop!unknow header: sec-ch-ua-mobile: ?0
+2024-02-13 20:46:41.175972 INFO: sec-ch-ua-platform: "macOS"
+2024-02-13 20:46:41.175977 INFO: oop!unknow header: sec-ch-ua-platform: "macOS"
+2024-02-13 20:46:41.175981 INFO: Upgrade-Insecure-Requests: 1
+2024-02-13 20:46:41.175985 INFO: oop!unknow header: Upgrade-Insecure-Requests: 1
+2024-02-13 20:46:41.175998 INFO: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+2024-02-13 20:46:41.176003 INFO: oop!unknow header: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+2024-02-13 20:46:41.176008 INFO: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2024-02-13 20:46:41.176013 INFO: oop!unknow header: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2024-02-13 20:46:41.176017 INFO: Sec-Fetch-Site: cross-site
+2024-02-13 20:46:41.176021 INFO: oop!unknow header: Sec-Fetch-Site: cross-site
+2024-02-13 20:46:41.176026 INFO: Sec-Fetch-Mode: navigate
+2024-02-13 20:46:41.176030 INFO: oop!unknow header: Sec-Fetch-Mode: navigate
+2024-02-13 20:46:41.176034 INFO: Sec-Fetch-User: ?1
+2024-02-13 20:46:41.176038 INFO: oop!unknow header: Sec-Fetch-User: ?1
+2024-02-13 20:46:41.176042 INFO: Sec-Fetch-Dest: document
+2024-02-13 20:46:41.176047 INFO: oop!unknow header: Sec-Fetch-Dest: document
+2024-02-13 20:46:41.176051 INFO: Accept-Encoding: gzip, deflate, br
+2024-02-13 20:46:41.176055 INFO: oop!unknow header: Accept-Encoding: gzip, deflate, br
+2024-02-13 20:46:41.176059 INFO: Accept-Language: en-US,en;q=0.9
+2024-02-13 20:46:41.176064 INFO: oop!unknow header: Accept-Language: en-US,en;q=0.9
+2024-02-13 20:46:41.176068 INFO: 
+2024-02-13 20:46:41.176077 INFO: close fd 14
+2024-02-13 20:46:41.304827 INFO: eventNum: 1
+2024-02-13 20:46:41.304871 INFO: HandleListenEvent 13
+2024-02-13 20:46:41.304886 INFO: HttpConn 14 init success
+2024-02-13 20:46:41.304901 INFO: Client[14] in!
+2024-02-13 20:46:41.304906 INFO: HandleListenEvent 13
+2024-02-13 20:46:41.304915 ERROR: Accept failure
+2024-02-13 20:46:41.305072 INFO: eventNum: 1
+2024-02-13 20:46:41.305115 INFO: OnRead
+2024-02-13 20:46:41.305124 INFO: HttpConn 14 read success
+2024-02-13 20:46:41.600569 INFO: eventNum: 1
+2024-02-13 20:46:41.600604 INFO: HandleListenEvent 13
+2024-02-13 20:46:41.600655 INFO: HttpConn 15 init success
+2024-02-13 20:46:41.600671 INFO: Client[15] in!
+2024-02-13 20:46:41.600676 INFO: HandleListenEvent 13
+2024-02-13 20:46:41.600687 ERROR: Accept failure
+2024-02-13 20:46:41.600819 INFO: eventNum: 1
+2024-02-13 20:46:41.600854 INFO: OnRead
+2024-02-13 20:46:41.600865 INFO: HttpConn 15 read success
+2024-02-13 20:46:44.305213 INFO: GET / HTTP/1.1
+2024-02-13 20:46:44.305275 INFO: Host: localhost:9006
+2024-02-13 20:46:44.305282 INFO: Connection: keep-alive
+2024-02-13 20:46:44.305287 INFO: Cache-Control: max-age=0
+2024-02-13 20:46:44.305292 INFO: oop!unknow header: Cache-Control: max-age=0
+2024-02-13 20:46:44.305297 INFO: sec-ch-ua: "Not_A Brand";v="8", "Chromium";v="120", "Google Chrome";v="120"
+2024-02-13 20:46:44.305302 INFO: oop!unknow header: sec-ch-ua: "Not_A Brand";v="8", "Chromium";v="120", "Google Chrome";v="120"
+2024-02-13 20:46:44.305307 INFO: sec-ch-ua-mobile: ?0
+2024-02-13 20:46:44.305311 INFO: oop!unknow header: sec-ch-ua-mobile: ?0
+2024-02-13 20:46:44.305316 INFO: sec-ch-ua-platform: "macOS"
+2024-02-13 20:46:44.305320 INFO: oop!unknow header: sec-ch-ua-platform: "macOS"
+2024-02-13 20:46:44.305324 INFO: Upgrade-Insecure-Requests: 1
+2024-02-13 20:46:44.305329 INFO: oop!unknow header: Upgrade-Insecure-Requests: 1
+2024-02-13 20:46:44.305333 INFO: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+2024-02-13 20:46:44.305338 INFO: oop!unknow header: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+2024-02-13 20:46:44.305342 INFO: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2024-02-13 20:46:44.305346 INFO: oop!unknow header: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2024-02-13 20:46:44.305361 INFO: Sec-Fetch-Site: cross-site
+2024-02-13 20:46:44.305366 INFO: oop!unknow header: Sec-Fetch-Site: cross-site
+2024-02-13 20:46:44.305370 INFO: Sec-Fetch-Mode: navigate
+2024-02-13 20:46:44.305374 INFO: oop!unknow header: Sec-Fetch-Mode: navigate
+2024-02-13 20:46:44.305378 INFO: Sec-Fetch-User: ?1
+2024-02-13 20:46:44.305383 INFO: oop!unknow header: Sec-Fetch-User: ?1
+2024-02-13 20:46:44.305387 INFO: Sec-Fetch-Dest: document
+2024-02-13 20:46:44.305391 INFO: oop!unknow header: Sec-Fetch-Dest: document
+2024-02-13 20:46:44.305396 INFO: Accept-Encoding: gzip, deflate, br
+2024-02-13 20:46:44.305400 INFO: oop!unknow header: Accept-Encoding: gzip, deflate, br
+2024-02-13 20:46:44.305404 INFO: Accept-Language: en-US,en;q=0.9
+2024-02-13 20:46:44.305408 INFO: oop!unknow header: Accept-Language: en-US,en;q=0.9
+2024-02-13 20:46:44.305413 INFO: 
+2024-02-13 20:46:44.305423 INFO: close fd 14
+2024-02-13 20:46:44.474551 INFO: eventNum: 1
+2024-02-13 20:46:44.474591 INFO: HandleListenEvent 13
+2024-02-13 20:46:44.474612 INFO: HttpConn 14 init success
+2024-02-13 20:46:44.474638 INFO: Client[14] in!
+2024-02-13 20:46:44.474643 INFO: HandleListenEvent 13
+2024-02-13 20:46:44.474651 ERROR: Accept failure
+2024-02-13 20:46:44.474867 INFO: eventNum: 1
+2024-02-13 20:46:44.474889 INFO: OnRead
+2024-02-13 20:46:44.474896 INFO: HttpConn 14 read success
+2024-02-13 20:46:44.600953 INFO: GET / HTTP/1.1
+2024-02-13 20:46:44.601007 INFO: Host: 127.0.0.1:9006
+2024-02-13 20:46:44.601015 INFO: User-Agent: Wget/1.21.2
+2024-02-13 20:46:44.601020 INFO: oop!unknow header: User-Agent: Wget/1.21.2
+2024-02-13 20:46:44.601026 INFO: Accept: */*
+2024-02-13 20:46:44.601031 INFO: oop!unknow header: Accept: */*
+2024-02-13 20:46:44.601036 INFO: Accept-Encoding: identity
+2024-02-13 20:46:44.601041 INFO: oop!unknow header: Accept-Encoding: identity
+2024-02-13 20:46:44.601046 INFO: Connection: Keep-Alive
+2024-02-13 20:46:44.601051 INFO: 
+2024-02-13 20:46:44.601063 INFO: close fd 15
+2024-02-13 20:46:47.474982 INFO: GET / HTTP/1.1
+2024-02-13 20:46:47.475044 INFO: Host: localhost:9006
+2024-02-13 20:46:47.475052 INFO: Connection: keep-alive
+2024-02-13 20:46:47.475057 INFO: Cache-Control: max-age=0
+2024-02-13 20:46:47.475062 INFO: oop!unknow header: Cache-Control: max-age=0
+2024-02-13 20:46:47.475067 INFO: sec-ch-ua: "Not_A Brand";v="8", "Chromium";v="120", "Google Chrome";v="120"
+2024-02-13 20:46:47.475073 INFO: oop!unknow header: sec-ch-ua: "Not_A Brand";v="8", "Chromium";v="120", "Google Chrome";v="120"
+2024-02-13 20:46:47.475078 INFO: sec-ch-ua-mobile: ?0
+2024-02-13 20:46:47.475082 INFO: oop!unknow header: sec-ch-ua-mobile: ?0
+2024-02-13 20:46:47.475087 INFO: sec-ch-ua-platform: "macOS"
+2024-02-13 20:46:47.475091 INFO: oop!unknow header: sec-ch-ua-platform: "macOS"
+2024-02-13 20:46:47.475095 INFO: Upgrade-Insecure-Requests: 1
+2024-02-13 20:46:47.475100 INFO: oop!unknow header: Upgrade-Insecure-Requests: 1
+2024-02-13 20:46:47.475104 INFO: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+2024-02-13 20:46:47.475109 INFO: oop!unknow header: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+2024-02-13 20:46:47.475114 INFO: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2024-02-13 20:46:47.475119 INFO: oop!unknow header: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2024-02-13 20:46:47.475123 INFO: Sec-Fetch-Site: cross-site
+2024-02-13 20:46:47.475127 INFO: oop!unknow header: Sec-Fetch-Site: cross-site
+2024-02-13 20:46:47.475131 INFO: Sec-Fetch-Mode: navigate
+2024-02-13 20:46:47.475136 INFO: oop!unknow header: Sec-Fetch-Mode: navigate
+2024-02-13 20:46:47.475140 INFO: Sec-Fetch-User: ?1
+2024-02-13 20:46:47.475154 INFO: oop!unknow header: Sec-Fetch-User: ?1
+2024-02-13 20:46:47.475159 INFO: Sec-Fetch-Dest: document
+2024-02-13 20:46:47.475163 INFO: oop!unknow header: Sec-Fetch-Dest: document
+2024-02-13 20:46:47.475168 INFO: Accept-Encoding: gzip, deflate, br
+2024-02-13 20:46:47.475172 INFO: oop!unknow header: Accept-Encoding: gzip, deflate, br
+2024-02-13 20:46:47.475177 INFO: Accept-Language: en-US,en;q=0.9
+2024-02-13 20:46:47.475181 INFO: oop!unknow header: Accept-Language: en-US,en;q=0.9
+2024-02-13 20:46:47.475185 INFO: 
+2024-02-13 20:46:47.475195 INFO: close fd 14
+2024-02-13 20:46:48.601494 INFO: eventNum: 1
+2024-02-13 20:46:48.601549 INFO: HandleListenEvent 13
+2024-02-13 20:46:48.601575 INFO: HttpConn 14 init success
+2024-02-13 20:46:48.601591 INFO: Client[14] in!
+2024-02-13 20:46:48.601603 INFO: HandleListenEvent 13
+2024-02-13 20:46:48.601640 ERROR: Accept failure
+2024-02-13 20:46:48.601649 INFO: eventNum: 1
+2024-02-13 20:46:48.601723 INFO: OnRead
+2024-02-13 20:46:48.601752 INFO: HttpConn 14 read success
+2024-02-13 20:46:51.601846 INFO: GET / HTTP/1.1
+2024-02-13 20:46:51.601917 INFO: Host: 127.0.0.1:9006
+2024-02-13 20:46:51.601931 INFO: User-Agent: Wget/1.21.2
+2024-02-13 20:46:51.601937 INFO: oop!unknow header: User-Agent: Wget/1.21.2
+2024-02-13 20:46:51.601945 INFO: Accept: */*
+2024-02-13 20:46:51.601952 INFO: oop!unknow header: Accept: */*
+2024-02-13 20:46:51.601957 INFO: Accept-Encoding: identity
+2024-02-13 20:46:51.601962 INFO: oop!unknow header: Accept-Encoding: identity
+2024-02-13 20:46:51.601966 INFO: Connection: Keep-Alive
+2024-02-13 20:46:51.601970 INFO: 
+2024-02-13 20:46:51.601981 INFO: close fd 14
+2024-02-13 20:46:52.660958 INFO: eventNum: 1
+2024-02-13 20:46:52.661001 INFO: HandleListenEvent 13
+2024-02-13 20:46:52.661022 INFO: HttpConn 14 init success
+2024-02-13 20:46:52.661038 INFO: Client[14] in!
+2024-02-13 20:46:52.661042 INFO: HandleListenEvent 13
+2024-02-13 20:46:52.661051 ERROR: Accept failure
+2024-02-13 20:46:52.661236 INFO: eventNum: 1
+2024-02-13 20:46:52.661272 INFO: OnRead
+2024-02-13 20:46:52.661313 INFO: HttpConn 14 read success
+2024-02-13 20:46:52.662973 INFO: eventNum: 1
+2024-02-13 20:46:52.663000 INFO: HandleListenEvent 13
+2024-02-13 20:46:52.663017 INFO: HttpConn 15 init success
+2024-02-13 20:46:52.663029 INFO: Client[15] in!
+2024-02-13 20:46:52.663034 INFO: HandleListenEvent 13
+2024-02-13 20:46:52.663042 ERROR: Accept failure
+2024-02-13 20:46:55.661403 INFO: GET / HTTP/1.1
+2024-02-13 20:46:55.661467 INFO: Host: localhost:9006
+2024-02-13 20:46:55.661475 INFO: Connection: keep-alive
+2024-02-13 20:46:55.661479 INFO: Cache-Control: max-age=0
+2024-02-13 20:46:55.661484 INFO: oop!unknow header: Cache-Control: max-age=0
+2024-02-13 20:46:55.661489 INFO: sec-ch-ua: "Not_A Brand";v="8", "Chromium";v="120", "Google Chrome";v="120"
+2024-02-13 20:46:55.661494 INFO: oop!unknow header: sec-ch-ua: "Not_A Brand";v="8", "Chromium";v="120", "Google Chrome";v="120"
+2024-02-13 20:46:55.661499 INFO: sec-ch-ua-mobile: ?0
+2024-02-13 20:46:55.661503 INFO: oop!unknow header: sec-ch-ua-mobile: ?0
+2024-02-13 20:46:55.661507 INFO: sec-ch-ua-platform: "macOS"
+2024-02-13 20:46:55.661512 INFO: oop!unknow header: sec-ch-ua-platform: "macOS"
+2024-02-13 20:46:55.661516 INFO: Upgrade-Insecure-Requests: 1
+2024-02-13 20:46:55.661520 INFO: oop!unknow header: Upgrade-Insecure-Requests: 1
+2024-02-13 20:46:55.661525 INFO: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+2024-02-13 20:46:55.661529 INFO: oop!unknow header: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+2024-02-13 20:46:55.661534 INFO: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2024-02-13 20:46:55.661538 INFO: oop!unknow header: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2024-02-13 20:46:55.661553 INFO: Sec-Fetch-Site: cross-site
+2024-02-13 20:46:55.661558 INFO: oop!unknow header: Sec-Fetch-Site: cross-site
+2024-02-13 20:46:55.661563 INFO: Sec-Fetch-Mode: navigate
+2024-02-13 20:46:55.661567 INFO: oop!unknow header: Sec-Fetch-Mode: navigate
+2024-02-13 20:46:55.661571 INFO: Sec-Fetch-Dest: document
+2024-02-13 20:46:55.661575 INFO: oop!unknow header: Sec-Fetch-Dest: document
+2024-02-13 20:46:55.661579 INFO: Accept-Encoding: gzip, deflate, br
+2024-02-13 20:46:55.661584 INFO: oop!unknow header: Accept-Encoding: gzip, deflate, br
+2024-02-13 20:46:55.661588 INFO: Accept-Language: en-US,en;q=0.9
+2024-02-13 20:46:55.661592 INFO: oop!unknow header: Accept-Language: en-US,en;q=0.9
+2024-02-13 20:46:55.661596 INFO: 
+2024-02-13 20:46:55.661607 INFO: close fd 14
+2024-02-13 20:46:55.703835 INFO: eventNum: 1
+2024-02-13 20:46:55.703905 INFO: OnRead
+2024-02-13 20:46:55.703914 INFO: HttpConn 15 read success
+2024-02-13 20:46:56.602491 INFO: eventNum: 1
+2024-02-13 20:46:56.602530 INFO: HandleListenEvent 13
+2024-02-13 20:46:56.602551 INFO: HttpConn 14 init success
+2024-02-13 20:46:56.602567 INFO: Client[14] in!
+2024-02-13 20:46:56.602571 INFO: HandleListenEvent 13
+2024-02-13 20:46:56.602582 ERROR: Accept failure
+2024-02-13 20:46:56.602796 INFO: eventNum: 1
+2024-02-13 20:46:56.602855 INFO: OnRead
+2024-02-13 20:46:56.602876 INFO: HttpConn 14 read success
+2024-02-13 20:46:58.704004 INFO: GET / HTTP/1.1
+2024-02-13 20:46:58.704061 INFO: Host: localhost:9006
+2024-02-13 20:46:58.704068 INFO: Connection: keep-alive
+2024-02-13 20:46:58.704073 INFO: Cache-Control: max-age=0
+2024-02-13 20:46:58.704077 INFO: oop!unknow header: Cache-Control: max-age=0
+2024-02-13 20:46:58.704082 INFO: sec-ch-ua: "Not_A Brand";v="8", "Chromium";v="120", "Google Chrome";v="120"
+2024-02-13 20:46:58.704087 INFO: oop!unknow header: sec-ch-ua: "Not_A Brand";v="8", "Chromium";v="120", "Google Chrome";v="120"
+2024-02-13 20:46:58.704092 INFO: sec-ch-ua-mobile: ?0
+2024-02-13 20:46:58.704096 INFO: oop!unknow header: sec-ch-ua-mobile: ?0
+2024-02-13 20:46:58.704101 INFO: sec-ch-ua-platform: "macOS"
+2024-02-13 20:46:58.704105 INFO: oop!unknow header: sec-ch-ua-platform: "macOS"
+2024-02-13 20:46:58.704109 INFO: Upgrade-Insecure-Requests: 1
+2024-02-13 20:46:58.704114 INFO: oop!unknow header: Upgrade-Insecure-Requests: 1
+2024-02-13 20:46:58.704118 INFO: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+2024-02-13 20:46:58.704123 INFO: oop!unknow header: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+2024-02-13 20:46:58.704127 INFO: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2024-02-13 20:46:58.704132 INFO: oop!unknow header: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2024-02-13 20:46:58.704136 INFO: Sec-Fetch-Site: cross-site
+2024-02-13 20:46:58.704141 INFO: oop!unknow header: Sec-Fetch-Site: cross-site
+2024-02-13 20:46:58.704145 INFO: Sec-Fetch-Mode: navigate
+2024-02-13 20:46:58.704149 INFO: oop!unknow header: Sec-Fetch-Mode: navigate
+2024-02-13 20:46:58.704154 INFO: Sec-Fetch-Dest: document
+2024-02-13 20:46:58.704158 INFO: oop!unknow header: Sec-Fetch-Dest: document
+2024-02-13 20:46:58.704162 INFO: Accept-Encoding: gzip, deflate, br
+2024-02-13 20:46:58.704167 INFO: oop!unknow header: Accept-Encoding: gzip, deflate, br
+2024-02-13 20:46:58.704171 INFO: Accept-Language: en-US,en;q=0.9
+2024-02-13 20:46:58.704175 INFO: oop!unknow header: Accept-Language: en-US,en;q=0.9
+2024-02-13 20:46:58.704180 INFO: 
+2024-02-13 20:46:58.704190 INFO: close fd 15
+2024-02-13 20:46:58.925847 INFO: eventNum: 1
+2024-02-13 20:46:58.925894 INFO: HandleListenEvent 13
+2024-02-13 20:46:58.925915 INFO: HttpConn 15 init success
+2024-02-13 20:46:58.925930 INFO: Client[15] in!
+2024-02-13 20:46:58.925935 INFO: HandleListenEvent 13
+2024-02-13 20:46:58.925952 ERROR: Accept failure
+2024-02-13 20:46:58.925958 INFO: eventNum: 1
+2024-02-13 20:46:58.925984 INFO: OnRead
+2024-02-13 20:46:58.926018 INFO: HttpConn 15 read success
+2024-02-13 20:46:59.602975 INFO: GET / HTTP/1.1
+2024-02-13 20:46:59.603040 INFO: Host: 127.0.0.1:9006
+2024-02-13 20:46:59.603047 INFO: User-Agent: Wget/1.21.2
+2024-02-13 20:46:59.603052 INFO: oop!unknow header: User-Agent: Wget/1.21.2
+2024-02-13 20:46:59.603057 INFO: Accept: */*
+2024-02-13 20:46:59.603061 INFO: oop!unknow header: Accept: */*
+2024-02-13 20:46:59.603066 INFO: Accept-Encoding: identity
+2024-02-13 20:46:59.603070 INFO: oop!unknow header: Accept-Encoding: identity
+2024-02-13 20:46:59.603075 INFO: Connection: Keep-Alive
+2024-02-13 20:46:59.603079 INFO: 
+2024-02-13 20:46:59.603091 INFO: close fd 14
+2024-02-13 20:47:01.926106 INFO: GET / HTTP/1.1
+2024-02-13 20:47:01.926172 INFO: Host: localhost:9006
+2024-02-13 20:47:01.926183 INFO: Connection: keep-alive
+2024-02-13 20:47:01.926190 INFO: Cache-Control: max-age=0
+2024-02-13 20:47:01.926197 INFO: oop!unknow header: Cache-Control: max-age=0
+2024-02-13 20:47:01.926203 INFO: sec-ch-ua: "Not_A Brand";v="8", "Chromium";v="120", "Google Chrome";v="120"
+2024-02-13 20:47:01.926210 INFO: oop!unknow header: sec-ch-ua: "Not_A Brand";v="8", "Chromium";v="120", "Google Chrome";v="120"
+2024-02-13 20:47:01.926217 INFO: sec-ch-ua-mobile: ?0
+2024-02-13 20:47:01.926223 INFO: oop!unknow header: sec-ch-ua-mobile: ?0
+2024-02-13 20:47:01.926230 INFO: sec-ch-ua-platform: "macOS"
+2024-02-13 20:47:01.926238 INFO: oop!unknow header: sec-ch-ua-platform: "macOS"
+2024-02-13 20:47:01.926244 INFO: Upgrade-Insecure-Requests: 1
+2024-02-13 20:47:01.926250 INFO: oop!unknow header: Upgrade-Insecure-Requests: 1
+2024-02-13 20:47:01.926257 INFO: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+2024-02-13 20:47:01.926265 INFO: oop!unknow header: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+2024-02-13 20:47:01.926272 INFO: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2024-02-13 20:47:01.926279 INFO: oop!unknow header: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2024-02-13 20:47:01.926286 INFO: Sec-Fetch-Site: cross-site
+2024-02-13 20:47:01.926292 INFO: oop!unknow header: Sec-Fetch-Site: cross-site
+2024-02-13 20:47:01.926300 INFO: Sec-Fetch-Mode: navigate
+2024-02-13 20:47:01.926306 INFO: oop!unknow header: Sec-Fetch-Mode: navigate
+2024-02-13 20:47:01.926313 INFO: Sec-Fetch-Dest: document
+2024-02-13 20:47:01.926320 INFO: oop!unknow header: Sec-Fetch-Dest: document
+2024-02-13 20:47:01.926327 INFO: Accept-Encoding: gzip, deflate, br
+2024-02-13 20:47:01.926334 INFO: oop!unknow header: Accept-Encoding: gzip, deflate, br
+2024-02-13 20:47:01.926340 INFO: Accept-Language: en-US,en;q=0.9
+2024-02-13 20:47:01.926347 INFO: oop!unknow header: Accept-Language: en-US,en;q=0.9
+2024-02-13 20:47:01.926354 INFO: 
+2024-02-13 20:47:01.926369 INFO: close fd 15
+2024-02-13 20:47:05.603795 INFO: eventNum: 1
+2024-02-13 20:47:05.603843 INFO: HandleListenEvent 13
+2024-02-13 20:47:05.603870 INFO: HttpConn 14 init success
+2024-02-13 20:47:05.603893 INFO: Client[14] in!
+2024-02-13 20:47:05.603900 INFO: HandleListenEvent 13
+2024-02-13 20:47:05.603916 ERROR: Accept failure
+2024-02-13 20:47:05.604042 INFO: eventNum: 1
+2024-02-13 20:47:05.604139 INFO: OnRead
+2024-02-13 20:47:05.604150 INFO: HttpConn 14 read success
+2024-02-13 20:47:08.604240 INFO: GET / HTTP/1.1
+2024-02-13 20:47:08.604301 INFO: Host: 127.0.0.1:9006
+2024-02-13 20:47:08.604309 INFO: User-Agent: Wget/1.21.2
+2024-02-13 20:47:08.604313 INFO: oop!unknow header: User-Agent: Wget/1.21.2
+2024-02-13 20:47:08.604318 INFO: Accept: */*
+2024-02-13 20:47:08.604323 INFO: oop!unknow header: Accept: */*
+2024-02-13 20:47:08.604327 INFO: Accept-Encoding: identity
+2024-02-13 20:47:08.604342 INFO: oop!unknow header: Accept-Encoding: identity
+2024-02-13 20:47:08.604346 INFO: Connection: Keep-Alive
+2024-02-13 20:47:08.604351 INFO: 
+2024-02-13 20:47:08.604363 INFO: close fd 14
+2024-02-13 20:47:10.468057 INFO: eventNum: 1
+2024-02-13 20:47:10.468112 INFO: HandleListenEvent 13
+2024-02-13 20:47:10.468139 INFO: HttpConn 14 init success
+2024-02-13 20:47:10.468160 INFO: Client[14] in!
+2024-02-13 20:47:10.468167 INFO: HandleListenEvent 13
+2024-02-13 20:47:10.468179 ERROR: Accept failure
+2024-02-13 20:47:10.468642 INFO: eventNum: 1
+2024-02-13 20:47:10.468721 INFO: OnRead
+2024-02-13 20:47:10.468756 INFO: HttpConn 14 read success
+2024-02-13 20:47:10.468916 INFO: eventNum: 1
+2024-02-13 20:47:10.468935 INFO: HandleListenEvent 13
+2024-02-13 20:47:10.468952 INFO: HttpConn 15 init success
+2024-02-13 20:47:10.468968 INFO: Client[15] in!
+2024-02-13 20:47:10.468976 INFO: HandleListenEvent 13
+2024-02-13 20:47:10.468986 ERROR: Accept failure
+2024-02-13 20:47:13.468843 INFO: GET / HTTP/1.1
+2024-02-13 20:47:13.468912 INFO: Host: localhost:9006
+2024-02-13 20:47:13.468922 INFO: Connection: keep-alive
+2024-02-13 20:47:13.468928 INFO: Cache-Control: max-age=0
+2024-02-13 20:47:13.468933 INFO: oop!unknow header: Cache-Control: max-age=0
+2024-02-13 20:47:13.468938 INFO: sec-ch-ua: "Not_A Brand";v="8", "Chromium";v="120", "Google Chrome";v="120"
+2024-02-13 20:47:13.468943 INFO: oop!unknow header: sec-ch-ua: "Not_A Brand";v="8", "Chromium";v="120", "Google Chrome";v="120"
+2024-02-13 20:47:13.468948 INFO: sec-ch-ua-mobile: ?0
+2024-02-13 20:47:13.468952 INFO: oop!unknow header: sec-ch-ua-mobile: ?0
+2024-02-13 20:47:13.468957 INFO: sec-ch-ua-platform: "macOS"
+2024-02-13 20:47:13.468964 INFO: oop!unknow header: sec-ch-ua-platform: "macOS"
+2024-02-13 20:47:13.468970 INFO: Upgrade-Insecure-Requests: 1
+2024-02-13 20:47:13.468976 INFO: oop!unknow header: Upgrade-Insecure-Requests: 1
+2024-02-13 20:47:13.468982 INFO: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+2024-02-13 20:47:13.468989 INFO: oop!unknow header: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+2024-02-13 20:47:13.468996 INFO: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2024-02-13 20:47:13.469001 INFO: oop!unknow header: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2024-02-13 20:47:13.469005 INFO: Sec-Fetch-Site: none
+2024-02-13 20:47:13.469010 INFO: oop!unknow header: Sec-Fetch-Site: none
+2024-02-13 20:47:13.469014 INFO: Sec-Fetch-Mode: navigate
+2024-02-13 20:47:13.469019 INFO: oop!unknow header: Sec-Fetch-Mode: navigate
+2024-02-13 20:47:13.469023 INFO: Sec-Fetch-User: ?1
+2024-02-13 20:47:13.469027 INFO: oop!unknow header: Sec-Fetch-User: ?1
+2024-02-13 20:47:13.469031 INFO: Sec-Fetch-Dest: document
+2024-02-13 20:47:13.469036 INFO: oop!unknow header: Sec-Fetch-Dest: document
+2024-02-13 20:47:13.469040 INFO: Accept-Encoding: gzip, deflate, br
+2024-02-13 20:47:13.469044 INFO: oop!unknow header: Accept-Encoding: gzip, deflate, br
+2024-02-13 20:47:13.469049 INFO: Accept-Language: en-US,en;q=0.9
+2024-02-13 20:47:13.469053 INFO: oop!unknow header: Accept-Language: en-US,en;q=0.9
+2024-02-13 20:47:13.469057 INFO: 
+2024-02-13 20:47:13.469068 INFO: close fd 14
+2024-02-13 20:47:15.604924 INFO: eventNum: 1
+2024-02-13 20:47:15.604964 INFO: HandleListenEvent 13
+2024-02-13 20:47:15.604987 INFO: HttpConn 14 init success
+2024-02-13 20:47:15.605001 INFO: Client[14] in!
+2024-02-13 20:47:15.605006 INFO: HandleListenEvent 13
+2024-02-13 20:47:15.605017 ERROR: Accept failure
+2024-02-13 20:47:15.605023 INFO: eventNum: 1
+2024-02-13 20:47:15.605040 INFO: OnRead
+2024-02-13 20:47:15.605047 INFO: HttpConn 14 read success
+2024-02-13 20:47:18.605150 INFO: GET / HTTP/1.1
+2024-02-13 20:47:18.605220 INFO: Host: 127.0.0.1:9006
+2024-02-13 20:47:18.605247 INFO: User-Agent: Wget/1.21.2
+2024-02-13 20:47:18.605254 INFO: oop!unknow header: User-Agent: Wget/1.21.2
+2024-02-13 20:47:18.605262 INFO: Accept: */*
+2024-02-13 20:47:18.605269 INFO: oop!unknow header: Accept: */*
+2024-02-13 20:47:18.605274 INFO: Accept-Encoding: identity
+2024-02-13 20:47:18.605278 INFO: oop!unknow header: Accept-Encoding: identity
+2024-02-13 20:47:18.605283 INFO: Connection: Keep-Alive
+2024-02-13 20:47:18.605287 INFO: 
+2024-02-13 20:47:18.605297 INFO: close fd 14
+2024-02-13 20:47:26.605811 INFO: eventNum: 1
+2024-02-13 20:47:26.605850 INFO: HandleListenEvent 13
+2024-02-13 20:47:26.605872 INFO: HttpConn 14 init success
+2024-02-13 20:47:26.605892 INFO: Client[14] in!
+2024-02-13 20:47:26.605900 INFO: HandleListenEvent 13
+2024-02-13 20:47:26.605913 ERROR: Accept failure
+2024-02-13 20:47:26.606078 INFO: eventNum: 1
+2024-02-13 20:47:26.606110 INFO: OnRead
+2024-02-13 20:47:26.606119 INFO: HttpConn 14 read success
+2024-02-13 20:47:29.606217 INFO: GET / HTTP/1.1
+2024-02-13 20:47:29.606280 INFO: Host: 127.0.0.1:9006
+2024-02-13 20:47:29.606288 INFO: User-Agent: Wget/1.21.2
+2024-02-13 20:47:29.606293 INFO: oop!unknow header: User-Agent: Wget/1.21.2
+2024-02-13 20:47:29.606297 INFO: Accept: */*
+2024-02-13 20:47:29.606303 INFO: oop!unknow header: Accept: */*
+2024-02-13 20:47:29.606307 INFO: Accept-Encoding: identity
+2024-02-13 20:47:29.606312 INFO: oop!unknow header: Accept-Encoding: identity
+2024-02-13 20:47:29.606316 INFO: Connection: Keep-Alive
+2024-02-13 20:47:29.606322 INFO: 
+2024-02-13 20:47:29.606337 INFO: close fd 14

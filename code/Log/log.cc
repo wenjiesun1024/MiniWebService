@@ -14,6 +14,7 @@ const char* GetLevel(LogLevel level) {
       return "UNKNOWN: ";
   }
 }
+
 Log* Log::GetInstance() {
   static Log log;
   return &log;
@@ -61,12 +62,13 @@ void Log::write(LogLevel level, const char* format, ...) {
                  (lineCount / MaxSplitLines));
       }
 
-      if (fp != nullptr) {
-        flush();
+      if (fp) {
+        flush_with_lock();
         fclose(fp);
       }
+
       fp = fopen(newFile, "a");
-      if (fp == nullptr) {
+      if (!fp) {
         mkdir(FilePath.c_str(), 0777);
         fp = fopen(newFile, "a");
       }
@@ -94,7 +96,7 @@ void Log::write(LogLevel level, const char* format, ...) {
     std::string logStr = Logbuf;
 
     // write to file or logQueue
-    if (logWriteMode == LogWriteMode::Async && logQueue && !logQueue->full()) {
+    if (logWriteMode == LogWriteMode::Async && !logQueue->full()) {
       logQueue->put(logStr);
     } else {
       fputs(logStr.c_str(), fp);
@@ -106,11 +108,14 @@ void Log::write(LogLevel level, const char* format, ...) {
   }
 }
 
-void Log::flush() {
+void Log::flush_with_lock() {
   if (logWriteMode == LogWriteMode::Async) {
-    // TODO: get all logs from logQueue and write to file
+    // get all logs from logQueue and write to file
+    while (!logQueue->empty()) {
+      auto log = logQueue->pop();
+      fputs(log.c_str(), fp);
+    }
   }
-  // std::lock_guard<std::mutex> lock(mutex);
   fflush(fp);
 }
 
@@ -120,18 +125,5 @@ void Log::AsyncWriteLog() {
 
     std::lock_guard<std::mutex> lock(mutex);
     fputs(log.c_str(), fp);
-  }
-}
-
-Log::~Log() {
-  IsStop = true;
-  if (logWriteMode == LogWriteMode::Async) {
-    writeThread->detach();
-    // TODO:
-  }
-  if (fp) {
-    std::lock_guard<std::mutex> lock(mutex);
-    fflush(fp);
-    fclose(fp);
   }
 }

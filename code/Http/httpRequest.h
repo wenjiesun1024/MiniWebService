@@ -1,8 +1,0 @@
-#ifndef MINI_WEB_SERVICE_HTTPCONN_H
-#define MINI_WEB_SERVICE_HTTPCONN_H
-
-
-
-
-
-#endif

@@ -7,6 +7,8 @@
 #include <queue>
 #include <string>
 
+#include "./../Log/log.h"
+
 using std::string;
 
 class SqlConnectionPool {

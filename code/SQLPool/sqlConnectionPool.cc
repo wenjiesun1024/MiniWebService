@@ -3,8 +3,6 @@
 #include <cassert>
 #include <iostream>
 
-#include "./../Log/log.h"
-
 SqlConnectionPool *SqlConnectionPool::GetInstance() {
   static SqlConnectionPool instance;
   return &instance;

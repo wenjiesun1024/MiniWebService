@@ -1,5 +1,6 @@
 #include "log.h"
 
+// g++ *.cc -std=c++17 -O2 -Wall -g -lpthread -lmysqlclient
 int main() {
   Log::GetInstance()->Init(LogWriteMode::Async, LogLevel::ERROR, "./log", 1000,
                            1000, 1000);

@@ -15,7 +15,7 @@ enum LogLevel { INFO, WARN, ERROR, FATAL };
 
 class Log {
  public:
-  static Log* GetInstance();
+  static Log* GetInstance();  // Singleton
 
   void Init(LogWriteMode logWriteMode, LogLevel logLevel, std::string filePath,
             int maxQueueSize, int maxSplitLines, int maxLogBufferSize);
@@ -23,7 +23,9 @@ class Log {
   LogLevel GetLogLevel() const { return logLevel; }
 
   void write(LogLevel level, const char* format, ...);
-  void flush();
+  void flush_with_lock();
+
+  std::mutex& get_mutex() { return mutex; }
 
  private:
   std::unique_ptr<std::thread> writeThread;
@@ -36,7 +38,6 @@ class Log {
   std::string FilePath;
   int MaxSplitLines;
   int MaxLogBufferSize;
-  bool IsStop = false;
 
   FILE* fp;
   char* Logbuf;
@@ -49,20 +50,21 @@ class Log {
 
  private:
   Log() = default;
-  ~Log();
+  ~Log() = default;
   Log(const Log&) = delete;
   Log& operator=(const Log&) = delete;
 };
 
-#define LOG_BASE(level, format, ...)                           \
-  {                                                            \
-    if (level >= Log::GetInstance()->GetLogLevel()) {          \
-      Log::GetInstance()->write(level, format, ##__VA_ARGS__); \
-      if (level == LogLevel::FATAL) {                          \
-        Log::GetInstance()->flush();                           \
-        exit(1);                                               \
-      }                                                        \
-    }                                                          \
+#define LOG_BASE(level, format, ...)                                       \
+  {                                                                        \
+    if (level >= Log::GetInstance()->GetLogLevel()) {                      \
+      Log::GetInstance()->write(level, format, ##__VA_ARGS__);             \
+      if (level == LogLevel::FATAL) {                                      \
+        std::lock_guard<std::mutex> lock(Log::GetInstance()->get_mutex()); \
+        Log::GetInstance()->flush_with_lock();                             \
+        exit(1);                                                           \
+      }                                                                    \
+    }                                                                      \
   }
 
 #define LOG_INFO(format, ...) \

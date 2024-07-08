@@ -11,7 +11,7 @@ int getLeftNode(int i) { return 2 * i + 1; }
 
 int getRightNode(int i) { return 2 * (i + 1); }
 
-void TimerHeap::swapNode(int i, int j) {
+void TimerHeap::swapNode_withMutex(int i, int j) {
   // std::cout << i << " " << j << " " << heap.size() << "\n";
   assert(i >= 0 && j >= 0 && i < heap.size() && j < heap.size());
 
@@ -23,21 +23,26 @@ void TimerHeap::swapNode(int i, int j) {
 }
 
 void TimerHeap::addTimer(TimerNode timerNode) {
+  LOG_INFO("addTimer id:%d expireTime:%ld", timerNode.id, timerNode.expireTime);
+
+  std::unique_lock<std::mutex> lock(mutex);
+
   auto it = refMap.find(timerNode.id);
   if (it == refMap.end()) {
     heap.push_back(timerNode);
     refMap[timerNode.id] = heap.size() - 1;
-    adjustUp(heap.size() - 1);
+    adjustUp_withMutex(heap.size() - 1);
   } else {
     int index = it->second;
     heap[index] = timerNode;
-    adjustDown(index);
-    adjustUp(index);
+    adjustDown_withMutex(index);
+    adjustUp_withMutex(index);
   }
 }
 
-void TimerHeap::delTimer(int id) {
-  std::cout << id << " - delTimer\n";
+void TimerHeap::delTimer_withMutex(int id) {
+  LOG_INFO("delTimer id:%d at %ld", id, time(nullptr));
+
   auto it = refMap.find(id);
   if (it == refMap.end()) {
     return;
@@ -45,25 +50,25 @@ void TimerHeap::delTimer(int id) {
 
   int index = it->second;
 
-  swapNode(index, heap.size() - 1);
+  swapNode_withMutex(index, heap.size() - 1);
 
   auto&& last = heap.back();
   refMap.erase(last.id);
   last.callbackFunc(&last);
   heap.pop_back();
 
-  adjustDown(index);
-  adjustUp(index);
+  adjustDown_withMutex(index);
+  adjustUp_withMutex(index);
 }
 
-void TimerHeap::adjustUp(int i) {
+void TimerHeap::adjustUp_withMutex(int i) {
   while (i > 0 && heap[i] < heap[getFatherNode(i)]) {
-    swapNode(i, getFatherNode(i));
+    swapNode_withMutex(i, getFatherNode(i));
     i = getFatherNode(i);
   }
 }
 
-void TimerHeap::adjustDown(int i) {
+void TimerHeap::adjustDown_withMutex(int i) {
   int n = heap.size();
   while (i < n) {
     int left = getLeftNode(i), right = getRightNode(i);
@@ -79,27 +84,31 @@ void TimerHeap::adjustDown(int i) {
       break;
     }
 
-    swapNode(i, minIndex);
+    swapNode_withMutex(i, minIndex);
 
     i = minIndex;
   }
 }
 
-void TimerHeap::popTimer() {
+void TimerHeap::popTimer_withMutex() {
   if (heap.empty()) {
     return;
   }
 
-  delTimer(heap[0].id);
+  delTimer_withMutex(heap[0].id);
 }
 
 void TimerHeap::clear() {
-  // TODO: clear
+  std::unique_lock<std::mutex> lock(mutex);
+
   refMap.clear();
   heap.clear();
 }
 
 void TimerHeap::tick() {
+  // LOG_INFO("tick %ld", time(nullptr));
+  std::unique_lock<std::mutex> lock(mutex);
+
   if (heap.empty()) {
     return;
   }
@@ -110,12 +119,14 @@ void TimerHeap::tick() {
       break;
     }
 
-    heap[0].callbackFunc(&heap[0]);
-    popTimer();
+    // heap[0].callbackFunc(&heap[0]);
+    popTimer_withMutex();
   }
 }
 
 void TimerHeap::adjust(int id, time_t newExpireTime) {
+  std::unique_lock<std::mutex> lock(mutex);
+
   auto it = refMap.find(id);
   if (it == refMap.end()) {
     return;
@@ -123,6 +134,11 @@ void TimerHeap::adjust(int id, time_t newExpireTime) {
 
   int index = it->second;
   heap[index].expireTime = newExpireTime;
-  adjustDown(index);
-  adjustUp(index);
+  adjustDown_withMutex(index);
+  adjustUp_withMutex(index);
+}
+
+bool TimerHeap::isEmpty() const {
+  std::unique_lock<std::mutex> lock(mutex);
+  return heap.empty();
 }

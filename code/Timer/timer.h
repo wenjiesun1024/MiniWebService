@@ -10,8 +10,11 @@
 #include <algorithm>
 #include <functional>
 #include <iostream>
+#include <mutex>
 #include <unordered_map>
 #include <vector>
+
+#include "./../Log/log.h"
 
 class TimerNode;
 
@@ -36,22 +39,21 @@ class TimerHeap {
   ~TimerHeap() = default;
 
   void addTimer(TimerNode timerNode);
-  void delTimer(int i);
-
   void clear();
-
   void tick();
-
   void adjust(int id, time_t newExpireTime);
-  //   int GetNextTick();
+
+  bool isEmpty() const;
 
  private:
-  void popTimer();
-  void adjustUp(int i);
-  void adjustDown(int i);
-  void swapNode(int i, int j);
+  void popTimer_withMutex();
+  void adjustUp_withMutex(int i);
+  void adjustDown_withMutex(int i);
+  void swapNode_withMutex(int i, int j);
+  void delTimer_withMutex(int i);
 
  private:
+  mutable std::mutex mutex;
   std::vector<TimerNode> heap;
   std::unordered_map<int, int> refMap;
 };

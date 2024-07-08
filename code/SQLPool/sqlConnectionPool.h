@@ -17,7 +17,7 @@ class SqlConnectionPool {
 
   void InitPool(string host, string user, string password, string dataBaseName,
                 int port, int maxConn);
-  // TODO: void DestoryPool();
+  void DestoryPool();
 
  private:
   MYSQL *GetConnection();

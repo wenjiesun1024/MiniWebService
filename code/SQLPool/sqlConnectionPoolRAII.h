@@ -2,6 +2,9 @@
 #define MINI_WEB_SERVICE_SQLCONNECTIONPOOL_RAII_H
 
 #include "./sqlConnectionPool.h"
+
+// TODO: handle SqlConnectionPool has been destroyed
+
 class SqlConnectionRAII {
  public:
   SqlConnectionRAII(MYSQL **sql)

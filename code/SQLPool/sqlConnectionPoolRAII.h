@@ -3,7 +3,7 @@
 
 #include "./sqlConnectionPool.h"
 
-// TODO: handle SqlConnectionPool has been destroyed
+// FIXME: handle: if SqlConnectionPool has been destroyed
 
 class SqlConnectionRAII {
  public:

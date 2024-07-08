@@ -25,6 +25,7 @@ WebService::WebService(int port, LogWriteMode logWriteMode,
   // Init sql connection pool
   SqlConnectionPool::GetInstance()->InitPool("localhost", "root", "root",
                                              "yourdb", 3306, 8);
+
   // InitmysqlResult();
   LOG_INFO("SqlConnectionPool init success");
 
@@ -48,6 +49,8 @@ void WebService::InitEventMode(TriggerMode listenTriggerMode,
                                TriggerMode connTriggerMode) {
   listenEvent = EPOLLRDHUP | EPOLLIN;
   connEvent = EPOLLONESHOT | EPOLLRDHUP | EPOLLIN;
+  // EPOLLONESHOT: will only trigger once
+
   if (listenTriggerMode == TriggerMode::LEVEL) {
     listenEvent |= EPOLLET;
   }
@@ -106,7 +109,6 @@ bool WebService::Listen() {
   // Add listenFd to epoll
   if (!epoller->AddFd(listenFd, listenEvent)) {
     LOG_ERROR("Add listenFd to epoll failure");
-    // close(listenFd);
     return false;
   }
 
@@ -117,11 +119,14 @@ bool WebService::Listen() {
 }
 
 void WebService::Start() {
-  bool timeout = false;
-  bool stop = false;
+  LOG_INFO("WebService start");
+
+  bool timeout = false, stop = false;
+
   while (!stop) {
     int eventNum = epoller->wait(-1);  // FIXME: timeout
     LOG_INFO("eventNum: %d", eventNum);
+
     for (int i = 0; i < eventNum; ++i) {
       int fd = epoller->GetEventFd(i);
       uint32_t events = epoller->GetEvents(i);
@@ -150,11 +155,6 @@ void WebService::HandleListenEvent(int fd) {
       LOG_ERROR("Accept failure");
       return;
     }
-    // if (HttpConn::userCount >= MAX_FD) {
-    //   SendError_(fd, "Server busy!");
-    //   LOG_WARN("Clients is full!");
-    //   return;
-    // }
     AddClient(connFd, clientAddr);
   } while (listenEvent & EPOLLET);  // ET mode
 }

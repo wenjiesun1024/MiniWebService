@@ -7,6 +7,7 @@
 #include <mutex>
 #include <optional>
 #include <queue>
+#include <sstream>
 #include <thread>
 #include <vector>
 
@@ -24,8 +25,11 @@ class ThreadPool {
             return;
           }
           task.value()();
-          // std::cout << std::this_thread::get_id() << " is running" <<
-          // std::endl;
+
+          auto id = std::this_thread::get_id();
+          std::stringstream ss;
+          ss << "Thread " << id << " is running task\n";
+          LOG_INFO(ss.str().c_str());
         }
       });
     }

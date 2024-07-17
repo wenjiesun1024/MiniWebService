@@ -21,9 +21,10 @@ TriggerMode HttpConn::connectTriggerMode;
 std::mutex mx;
 std::map<std::string, std::string> users;
 
-void HttpConn::Init(int fd, const sockaddr_in &addr) {
+void HttpConn::Init(int fd, int epollfd, const sockaddr_in &addr) {
   sockfd = fd;
   address = addr;
+  epollfd = epollfd;
 
   userCount++;
   LOG_INFO("HttpConn %d init success", sockfd);
@@ -225,9 +226,6 @@ LineStatus HttpConn::parseLine() {
 }
 
 HttpCode HttpConn::doRequest() {
-  // std::cout << content << " " << url << " " << host << " "
-  //           << " " << version << std::endl;
-  // TODO: read code below
   char serverPath[200];
   getcwd(serverPath, 200);
   char resource[10] = "/resource";
@@ -237,7 +235,6 @@ HttpCode HttpConn::doRequest() {
 
   strcpy(realFile, docResource);
   int len = strlen(docResource);
-  // printf("m_url:%s\n", m_url);
   const char *p = strrchr(url, '/');
 
   //处理cgi
@@ -326,9 +323,9 @@ HttpCode HttpConn::doRequest() {
     strncpy(realFile + len, m_url_real, strlen(m_url_real));
 
     free(m_url_real);
-  } else
+  } else {
     strncpy(realFile + len, url, FILENAME_LEN - len - 1);
-
+  }
   if (stat(realFile, &fileStat) < 0) return HttpCode::NO_RESOURCE;
 
   if (!(fileStat.st_mode & S_IROTH)) return HttpCode::FORBIDDEN_REQUEST;

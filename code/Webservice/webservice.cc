@@ -152,7 +152,7 @@ void WebService::HandleListenEvent(int fd) {
     int connFd =
         accept(listenFd, (struct sockaddr *)&clientAddr, &clientAddrLen);
     if (connFd < 0) {
-      LOG_ERROR("Accept failure");
+      LOG_ERROR("Accept failure %d", connFd);
       return;
     }
     AddClient(connFd, clientAddr);
@@ -237,6 +237,7 @@ void WebService::OnWrite(HttpConn *client) {
 void WebService::OnProcess(HttpConn *client) {
   // TODO: implement this function
   if (client->Process()) {
+    LOG_INFO("Process success??????\n\n");
     epoller->ModFd(client->GetFd(), connEvent | EPOLLOUT);  // TODO: why?
   } else {
     epoller->ModFd(client->GetFd(), connEvent | EPOLLIN);

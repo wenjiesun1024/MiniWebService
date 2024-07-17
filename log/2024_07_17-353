@@ -1,0 +1,1554 @@
+2024-07-17 23:32:47.825677 INFO: GET / HTTP/1.1
+2024-07-17 23:32:47.825752 INFO: Host: 39.98.202.182:9006
+2024-07-17 23:32:47.825760 INFO: User-Agent: Go-http-client/1.1
+2024-07-17 23:32:47.825766 INFO: oop!unknow header: User-Agent: Go-http-client/1.1
+2024-07-17 23:32:47.825773 INFO: X-Vegeta-Seq: 22
+2024-07-17 23:32:47.825779 INFO: oop!unknow header: X-Vegeta-Seq: 22
+2024-07-17 23:32:47.825786 INFO: Accept-Encoding: gzip
+2024-07-17 23:32:47.825792 INFO: oop!unknow header: Accept-Encoding: gzip
+2024-07-17 23:32:47.825809 INFO: 
+2024-07-17 23:32:47.825826 INFO: request:HTTP/1.1 200 OK
+
+2024-07-17 23:32:47.825833 INFO: request:HTTP/1.1 200 OK
+Content-Length:542
+
+2024-07-17 23:32:47.825840 INFO: request:HTTP/1.1 200 OK
+Content-Length:542
+Connection:close
+
+2024-07-17 23:32:47.825846 INFO: request:HTTP/1.1 200 OK
+Content-Length:542
+Connection:close
+
+
+2024-07-17 23:32:47.825856 INFO: Thread 140246156437056 is running task
+
+2024-07-17 23:32:47.825867 INFO: fd: 13, events: 1
+
+2024-07-17 23:32:47.825875 INFO: HandleListenEvent 13
+2024-07-17 23:32:47.825887 INFO: HttpConn 44 init success
+2024-07-17 23:32:47.825895 INFO: addTimer id:44 expireTime:1721230867
+2024-07-17 23:32:47.825908 INFO: Client[44] in!
+2024-07-17 23:32:47.825915 INFO: HandleListenEvent 13
+2024-07-17 23:32:47.825929 INFO: HttpConn 45 init success
+2024-07-17 23:32:47.825937 INFO: addTimer id:45 expireTime:1721230867
+2024-07-17 23:32:47.825947 INFO: Client[45] in!
+2024-07-17 23:32:47.825962 INFO: HandleListenEvent 13
+2024-07-17 23:32:47.825976 INFO: HttpConn 46 init success
+2024-07-17 23:32:47.825983 INFO: addTimer id:46 expireTime:1721230867
+2024-07-17 23:32:47.825993 INFO: Client[46] in!
+2024-07-17 23:32:47.826000 INFO: HandleListenEvent 13
+2024-07-17 23:32:47.826011 ERROR: Accept failure -1
+2024-07-17 23:32:47.826018 INFO: fd: 40, events: 4
+
+2024-07-17 23:32:47.826054 INFO: Thread 140246148044352 is running task
+
+2024-07-17 23:32:47.826065 INFO: fd: 43, events: 4
+
+2024-07-17 23:32:47.826092 INFO: Thread 140246139651648 is running task
+
+2024-07-17 23:32:47.826103 INFO: fd: 41, events: 4
+
+2024-07-17 23:32:47.826185 INFO: Thread 140246122866240 is running task
+
+2024-07-17 23:32:47.826204 INFO: eventNum: 4
+2024-07-17 23:32:47.826211 INFO: fd: 42, events: 4
+
+2024-07-17 23:32:47.826225 INFO: fd: 44, events: 1
+
+2024-07-17 23:32:47.826237 INFO: fd: 45, events: 1
+
+2024-07-17 23:32:47.826249 INFO: HttpConn 44 read success
+2024-07-17 23:32:47.826262 INFO: GET / HTTP/1.1
+2024-07-17 23:32:47.826271 INFO: HttpConn 45 read success
+2024-07-17 23:32:47.826277 INFO: fd: 46, events: 1
+
+2024-07-17 23:32:47.826305 INFO: GET / HTTP/1.1
+2024-07-17 23:32:47.826319 INFO: HttpConn 46 read success
+2024-07-17 23:32:47.826320 INFO: Host: 39.98.202.182:9006
+2024-07-17 23:32:47.826336 INFO: User-Agent: Go-http-client/1.1
+2024-07-17 23:32:47.826263 INFO: Thread 140246106080832 is running task
+
+2024-07-17 23:32:47.826275 INFO: Host: 39.98.202.182:9006
+2024-07-17 23:32:47.826346 INFO: oop!unknow header: User-Agent: Go-http-client/1.1
+2024-07-17 23:32:47.826336 INFO: GET / HTTP/1.1
+2024-07-17 23:32:47.826379 INFO: X-Vegeta-Seq: 21
+2024-07-17 23:32:47.826371 INFO: User-Agent: Go-http-client/1.1
+2024-07-17 23:32:47.826401 INFO: oop!unknow header: X-Vegeta-Seq: 21
+2024-07-17 23:32:47.826440 INFO: Accept-Encoding: gzip
+2024-07-17 23:32:47.826447 INFO: oop!unknow header: Accept-Encoding: gzip
+2024-07-17 23:32:47.826458 INFO: 
+2024-07-17 23:32:47.826389 INFO: Host: 39.98.202.182:9006
+2024-07-17 23:32:47.826474 INFO: User-Agent: Go-http-client/1.1
+2024-07-17 23:32:47.826487 INFO: oop!unknow header: User-Agent: Go-http-client/1.1
+2024-07-17 23:32:47.826494 INFO: X-Vegeta-Seq: 20
+2024-07-17 23:32:47.826501 INFO: oop!unknow header: X-Vegeta-Seq: 20
+2024-07-17 23:32:47.826414 INFO: oop!unknow header: User-Agent: Go-http-client/1.1
+2024-07-17 23:32:47.826475 INFO: request:HTTP/1.1 200 OK
+
+2024-07-17 23:32:47.826508 INFO: Accept-Encoding: gzip
+2024-07-17 23:32:47.826527 INFO: request:HTTP/1.1 200 OK
+Content-Length:542
+
+2024-07-17 23:32:47.826515 INFO: X-Vegeta-Seq: 19
+2024-07-17 23:32:47.826539 INFO: request:HTTP/1.1 200 OK
+Content-Length:542
+Connection:close
+
+2024-07-17 23:32:47.826558 INFO: request:HTTP/1.1 200 OK
+Content-Length:542
+Connection:close
+
+
+2024-07-17 23:32:47.826542 INFO: oop!unknow header: X-Vegeta-Seq: 19
+2024-07-17 23:32:47.826574 INFO: Accept-Encoding: gzip
+2024-07-17 23:32:47.826529 INFO: oop!unknow header: Accept-Encoding: gzip
+2024-07-17 23:32:47.826599 INFO: 
+2024-07-17 23:32:47.826575 INFO: Thread 140246131258944 is running task
+
+2024-07-17 23:32:47.826638 INFO: request:HTTP/1.1 200 OK
+
+2024-07-17 23:32:47.826648 INFO: request:HTTP/1.1 200 OK
+Content-Length:542
+
+2024-07-17 23:32:47.826655 INFO: request:HTTP/1.1 200 OK
+Content-Length:542
+Connection:close
+
+2024-07-17 23:32:47.826662 INFO: request:HTTP/1.1 200 OK
+Content-Length:542
+Connection:close
+
+
+2024-07-17 23:32:47.826672 INFO: Thread 140246097688128 is running task
+
+2024-07-17 23:32:47.826587 INFO: oop!unknow header: Accept-Encoding: gzip
+2024-07-17 23:32:47.826690 INFO: 
+2024-07-17 23:32:47.826705 INFO: request:HTTP/1.1 200 OK
+
+2024-07-17 23:32:47.826712 INFO: request:HTTP/1.1 200 OK
+Content-Length:542
+
+2024-07-17 23:32:47.826718 INFO: request:HTTP/1.1 200 OK
+Content-Length:542
+Connection:close
+
+2024-07-17 23:32:47.826725 INFO: request:HTTP/1.1 200 OK
+Content-Length:542
+Connection:close
+
+
+2024-07-17 23:32:47.826734 INFO: Thread 140246114473536 is running task
+
+2024-07-17 23:32:47.826746 INFO: eventNum: 4
+2024-07-17 23:32:47.826753 INFO: fd: 45, events: 4
+
+2024-07-17 23:32:47.826787 INFO: Thread 140246156437056 is running task
+
+2024-07-17 23:32:47.826799 INFO: fd: 13, events: 1
+
+2024-07-17 23:32:47.826806 INFO: HandleListenEvent 13
+2024-07-17 23:32:47.826823 INFO: HttpConn 47 init success
+2024-07-17 23:32:47.826831 INFO: addTimer id:47 expireTime:1721230867
+2024-07-17 23:32:47.826843 INFO: Client[47] in!
+2024-07-17 23:32:47.826850 INFO: HandleListenEvent 13
+2024-07-17 23:32:47.826861 ERROR: Accept failure -1
+2024-07-17 23:32:47.826868 INFO: fd: 46, events: 4
+
+2024-07-17 23:32:47.826895 INFO: Thread 140246148044352 is running task
+
+2024-07-17 23:32:47.826906 INFO: fd: 44, events: 4
+
+2024-07-17 23:32:47.826944 INFO: Thread 140246139651648 is running task
+
+2024-07-17 23:32:47.826958 INFO: eventNum: 1
+2024-07-17 23:32:47.826965 INFO: fd: 13, events: 1
+
+2024-07-17 23:32:47.826971 INFO: HandleListenEvent 13
+2024-07-17 23:32:47.826985 INFO: HttpConn 48 init success
+2024-07-17 23:32:47.826992 INFO: addTimer id:48 expireTime:1721230867
+2024-07-17 23:32:47.827003 INFO: Client[48] in!
+2024-07-17 23:32:47.827025 INFO: HandleListenEvent 13
+2024-07-17 23:32:47.827039 INFO: HttpConn 49 init success
+2024-07-17 23:32:47.827047 INFO: addTimer id:49 expireTime:1721230867
+2024-07-17 23:32:47.827057 INFO: Client[49] in!
+2024-07-17 23:32:47.827064 INFO: HandleListenEvent 13
+2024-07-17 23:32:47.827075 ERROR: Accept failure -1
+2024-07-17 23:32:47.827083 INFO: eventNum: 1
+2024-07-17 23:32:47.827089 INFO: fd: 47, events: 1
+
+2024-07-17 23:32:47.827104 INFO: HttpConn 47 read success
+2024-07-17 23:32:47.827114 INFO: GET / HTTP/1.1
+2024-07-17 23:32:47.827122 INFO: Host: 39.98.202.182:9006
+2024-07-17 23:32:47.827129 INFO: User-Agent: Go-http-client/1.1
+2024-07-17 23:32:47.827135 INFO: oop!unknow header: User-Agent: Go-http-client/1.1
+2024-07-17 23:32:47.827142 INFO: X-Vegeta-Seq: 30
+2024-07-17 23:32:47.827148 INFO: oop!unknow header: X-Vegeta-Seq: 30
+2024-07-17 23:32:47.827154 INFO: Accept-Encoding: gzip
+2024-07-17 23:32:47.827161 INFO: oop!unknow header: Accept-Encoding: gzip
+2024-07-17 23:32:47.827167 INFO: 
+2024-07-17 23:32:47.827183 INFO: request:HTTP/1.1 200 OK
+
+2024-07-17 23:32:47.827190 INFO: request:HTTP/1.1 200 OK
+Content-Length:542
+
+2024-07-17 23:32:47.827196 INFO: request:HTTP/1.1 200 OK
+Content-Length:542
+Connection:close
+
+2024-07-17 23:32:47.827202 INFO: request:HTTP/1.1 200 OK
+Content-Length:542
+Connection:close
+
+
+2024-07-17 23:32:47.827212 INFO: Thread 140246122866240 is running task
+
+2024-07-17 23:32:47.827223 INFO: eventNum: 1
+2024-07-17 23:32:47.827230 INFO: fd: 47, events: 4
+
+2024-07-17 23:32:47.827278 INFO: Thread 140246106080832 is running task
+
+2024-07-17 23:32:47.827329 INFO: eventNum: 1
+2024-07-17 23:32:47.827342 INFO: fd: 48, events: 1
+
+2024-07-17 23:32:47.827360 INFO: HttpConn 48 read success
+2024-07-17 23:32:47.827382 INFO: GET / HTTP/1.1
+2024-07-17 23:32:47.827388 INFO: Host: 39.98.202.182:9006
+2024-07-17 23:32:47.827392 INFO: User-Agent: Go-http-client/1.1
+2024-07-17 23:32:47.827394 INFO: eventNum: 1
+2024-07-17 23:32:47.827397 INFO: oop!unknow header: User-Agent: Go-http-client/1.1
+2024-07-17 23:32:47.827426 INFO: X-Vegeta-Seq: 25
+2024-07-17 23:32:47.827434 INFO: oop!unknow header: X-Vegeta-Seq: 25
+2024-07-17 23:32:47.827440 INFO: Accept-Encoding: gzip
+2024-07-17 23:32:47.827412 INFO: fd: 49, events: 1
+
+2024-07-17 23:32:47.827446 INFO: oop!unknow header: Accept-Encoding: gzip
+2024-07-17 23:32:47.827469 INFO: HttpConn 49 read success
+2024-07-17 23:32:47.827470 INFO: 
+2024-07-17 23:32:47.827495 INFO: GET / HTTP/1.1
+2024-07-17 23:32:47.827507 INFO: Host: 39.98.202.182:9006
+2024-07-17 23:32:47.827515 INFO: request:HTTP/1.1 200 OK
+
+2024-07-17 23:32:47.827528 INFO: request:HTTP/1.1 200 OK
+Content-Length:542
+
+2024-07-17 23:32:47.827516 INFO: User-Agent: Go-http-client/1.1
+2024-07-17 23:32:47.827534 INFO: request:HTTP/1.1 200 OK
+Content-Length:542
+Connection:close
+
+2024-07-17 23:32:47.827520 INFO: eventNum: 1
+2024-07-17 23:32:47.827544 INFO: oop!unknow header: User-Agent: Go-http-client/1.1
+2024-07-17 23:32:47.827555 INFO: request:HTTP/1.1 200 OK
+Content-Length:542
+Connection:close
+
+
+2024-07-17 23:32:47.827579 INFO: X-Vegeta-Seq: 24
+2024-07-17 23:32:47.827597 INFO: Thread 140246131258944 is running task
+
+2024-07-17 23:32:47.827603 INFO: oop!unknow header: X-Vegeta-Seq: 24
+2024-07-17 23:32:47.827621 INFO: Accept-Encoding: gzip
+2024-07-17 23:32:47.827628 INFO: oop!unknow header: Accept-Encoding: gzip
+2024-07-17 23:32:47.827635 INFO: 
+2024-07-17 23:32:47.827655 INFO: request:HTTP/1.1 200 OK
+
+2024-07-17 23:32:47.827662 INFO: request:HTTP/1.1 200 OK
+Content-Length:542
+
+2024-07-17 23:32:47.827669 INFO: request:HTTP/1.1 200 OK
+Content-Length:542
+Connection:close
+
+2024-07-17 23:32:47.827675 INFO: request:HTTP/1.1 200 OK
+Content-Length:542
+Connection:close
+
+
+2024-07-17 23:32:47.827686 INFO: Thread 140246097688128 is running task
+
+2024-07-17 23:32:47.827584 INFO: fd: 13, events: 1
+
+2024-07-17 23:32:47.827701 INFO: HandleListenEvent 13
+2024-07-17 23:32:47.827718 INFO: HttpConn 50 init success
+2024-07-17 23:32:47.827726 INFO: addTimer id:50 expireTime:1721230867
+2024-07-17 23:32:47.827738 INFO: Client[50] in!
+2024-07-17 23:32:47.827745 INFO: HandleListenEvent 13
+2024-07-17 23:32:47.827756 ERROR: Accept failure -1
+2024-07-17 23:32:47.827765 INFO: eventNum: 2
+2024-07-17 23:32:47.827771 INFO: fd: 48, events: 4
+
+2024-07-17 23:32:47.827802 INFO: Thread 140246114473536 is running task
+
+2024-07-17 23:32:47.827814 INFO: fd: 49, events: 4
+
+2024-07-17 23:32:47.827850 INFO: Thread 140246156437056 is running task
+
+2024-07-17 23:32:47.827863 INFO: eventNum: 1
+2024-07-17 23:32:47.827870 INFO: fd: 50, events: 1
+
+2024-07-17 23:32:47.827883 INFO: HttpConn 50 read success
+2024-07-17 23:32:47.827894 INFO: GET / HTTP/1.1
+2024-07-17 23:32:47.827901 INFO: Host: 39.98.202.182:9006
+2024-07-17 23:32:47.827908 INFO: User-Agent: Go-http-client/1.1
+2024-07-17 23:32:47.827926 INFO: oop!unknow header: User-Agent: Go-http-client/1.1
+2024-07-17 23:32:47.827934 INFO: X-Vegeta-Seq: 33
+2024-07-17 23:32:47.827940 INFO: oop!unknow header: X-Vegeta-Seq: 33
+2024-07-17 23:32:47.827947 INFO: Accept-Encoding: gzip
+2024-07-17 23:32:47.827953 INFO: oop!unknow header: Accept-Encoding: gzip
+2024-07-17 23:32:47.827959 INFO: 
+2024-07-17 23:32:47.827976 INFO: request:HTTP/1.1 200 OK
+
+2024-07-17 23:32:47.827982 INFO: request:HTTP/1.1 200 OK
+Content-Length:542
+
+2024-07-17 23:32:47.827989 INFO: request:HTTP/1.1 200 OK
+Content-Length:542
+Connection:close
+
+2024-07-17 23:32:47.827995 INFO: request:HTTP/1.1 200 OK
+Content-Length:542
+Connection:close
+
+
+2024-07-17 23:32:47.828004 INFO: Thread 140246148044352 is running task
+
+2024-07-17 23:32:47.828016 INFO: eventNum: 2
+2024-07-17 23:32:47.828029 INFO: fd: 13, events: 1
+
+2024-07-17 23:32:47.828036 INFO: HandleListenEvent 13
+2024-07-17 23:32:47.828047 INFO: HttpConn 51 init success
+2024-07-17 23:32:47.828054 INFO: addTimer id:51 expireTime:1721230867
+2024-07-17 23:32:47.828069 INFO: Client[51] in!
+2024-07-17 23:32:47.828078 INFO: HandleListenEvent 13
+2024-07-17 23:32:47.828088 ERROR: Accept failure -1
+2024-07-17 23:32:47.828095 INFO: fd: 50, events: 4
+
+2024-07-17 23:32:47.828123 INFO: Thread 140246139651648 is running task
+
+2024-07-17 23:32:47.828190 INFO: eventNum: 1
+2024-07-17 23:32:47.828213 INFO: fd: 13, events: 1
+
+2024-07-17 23:32:47.828221 INFO: HandleListenEvent 13
+2024-07-17 23:32:47.828243 INFO: HttpConn 52 init success
+2024-07-17 23:32:47.828253 INFO: addTimer id:52 expireTime:1721230867
+2024-07-17 23:32:47.828267 INFO: Client[52] in!
+2024-07-17 23:32:47.828275 INFO: HandleListenEvent 13
+2024-07-17 23:32:47.828287 ERROR: Accept failure -1
+2024-07-17 23:32:47.828294 INFO: eventNum: 1
+2024-07-17 23:32:47.828298 INFO: fd: 51, events: 1
+
+2024-07-17 23:32:47.828315 INFO: HttpConn 51 read success
+2024-07-17 23:32:47.828331 INFO: GET / HTTP/1.1
+2024-07-17 23:32:47.828338 INFO: Host: 39.98.202.182:9006
+2024-07-17 23:32:47.828345 INFO: User-Agent: Go-http-client/1.1
+2024-07-17 23:32:47.828351 INFO: oop!unknow header: User-Agent: Go-http-client/1.1
+2024-07-17 23:32:47.828357 INFO: X-Vegeta-Seq: 31
+2024-07-17 23:32:47.828388 INFO: oop!unknow header: X-Vegeta-Seq: 31
+2024-07-17 23:32:47.828396 INFO: Accept-Encoding: gzip
+2024-07-17 23:32:47.828402 INFO: oop!unknow header: Accept-Encoding: gzip
+2024-07-17 23:32:47.828409 INFO: 
+2024-07-17 23:32:47.828427 INFO: request:HTTP/1.1 200 OK
+
+2024-07-17 23:32:47.828435 INFO: request:HTTP/1.1 200 OK
+Content-Length:542
+
+2024-07-17 23:32:47.828442 INFO: request:HTTP/1.1 200 OK
+Content-Length:542
+Connection:close
+
+2024-07-17 23:32:47.828448 INFO: request:HTTP/1.1 200 OK
+Content-Length:542
+Connection:close
+
+
+2024-07-17 23:32:47.828465 INFO: Thread 140246122866240 is running task
+
+2024-07-17 23:32:47.828472 INFO: eventNum: 1
+2024-07-17 23:32:47.828485 INFO: fd: 51, events: 4
+
+2024-07-17 23:32:47.828530 INFO: Thread 140246106080832 is running task
+
+2024-07-17 23:32:47.828549 INFO: eventNum: 1
+2024-07-17 23:32:47.828557 INFO: fd: 52, events: 1
+
+2024-07-17 23:32:47.828571 INFO: HttpConn 52 read success
+2024-07-17 23:32:47.828583 INFO: GET / HTTP/1.1
+2024-07-17 23:32:47.828589 INFO: Host: 39.98.202.182:9006
+2024-07-17 23:32:47.828593 INFO: User-Agent: Go-http-client/1.1
+2024-07-17 23:32:47.828598 INFO: oop!unknow header: User-Agent: Go-http-client/1.1
+2024-07-17 23:32:47.828602 INFO: X-Vegeta-Seq: 26
+2024-07-17 23:32:47.828606 INFO: oop!unknow header: X-Vegeta-Seq: 26
+2024-07-17 23:32:47.828611 INFO: Accept-Encoding: gzip
+2024-07-17 23:32:47.828615 INFO: oop!unknow header: Accept-Encoding: gzip
+2024-07-17 23:32:47.828619 INFO: 
+2024-07-17 23:32:47.828634 INFO: request:HTTP/1.1 200 OK
+
+2024-07-17 23:32:47.828639 INFO: request:HTTP/1.1 200 OK
+Content-Length:542
+
+2024-07-17 23:32:47.828644 INFO: request:HTTP/1.1 200 OK
+Content-Length:542
+Connection:close
+
+2024-07-17 23:32:47.828649 INFO: request:HTTP/1.1 200 OK
+Content-Length:542
+Connection:close
+
+
+2024-07-17 23:32:47.828660 INFO: Thread 140246131258944 is running task
+
+2024-07-17 23:32:47.828672 INFO: eventNum: 1
+2024-07-17 23:32:47.828680 INFO: fd: 52, events: 4
+
+2024-07-17 23:32:47.828719 INFO: Thread 140246097688128 is running task
+
+2024-07-17 23:32:47.828774 INFO: eventNum: 1
+2024-07-17 23:32:47.828789 INFO: fd: 13, events: 1
+
+2024-07-17 23:32:47.828796 INFO: HandleListenEvent 13
+2024-07-17 23:32:47.828815 INFO: HttpConn 53 init success
+2024-07-17 23:32:47.828824 INFO: addTimer id:53 expireTime:1721230867
+2024-07-17 23:32:47.828838 INFO: Client[53] in!
+2024-07-17 23:32:47.828845 INFO: HandleListenEvent 13
+2024-07-17 23:32:47.828857 ERROR: Accept failure -1
+2024-07-17 23:32:47.829574 INFO: eventNum: 1
+2024-07-17 23:32:47.829637 INFO: fd: 53, events: 1
+
+2024-07-17 23:32:47.829771 INFO: HttpConn 53 read success
+2024-07-17 23:32:47.829802 INFO: GET / HTTP/1.1
+2024-07-17 23:32:47.829812 INFO: eventNum: 1
+2024-07-17 23:32:47.829844 INFO: fd: 13, events: 1
+
+2024-07-17 23:32:47.829817 INFO: Host: 39.98.202.182:9006
+2024-07-17 23:32:47.829855 INFO: HandleListenEvent 13
+2024-07-17 23:32:47.829866 INFO: User-Agent: Go-http-client/1.1
+2024-07-17 23:32:47.829882 INFO: oop!unknow header: User-Agent: Go-http-client/1.1
+2024-07-17 23:32:47.829887 INFO: X-Vegeta-Seq: 29
+2024-07-17 23:32:47.829891 INFO: oop!unknow header: X-Vegeta-Seq: 29
+2024-07-17 23:32:47.829896 INFO: Accept-Encoding: gzip
+2024-07-17 23:32:47.829897 INFO: HttpConn 54 init success
+2024-07-17 23:32:47.829901 INFO: oop!unknow header: Accept-Encoding: gzip
+2024-07-17 23:32:47.829926 INFO: 
+2024-07-17 23:32:47.829919 INFO: addTimer id:54 expireTime:1721230867
+2024-07-17 23:32:47.829956 INFO: request:HTTP/1.1 200 OK
+
+2024-07-17 23:32:47.829963 INFO: request:HTTP/1.1 200 OK
+Content-Length:542
+
+2024-07-17 23:32:47.829989 INFO: request:HTTP/1.1 200 OK
+Content-Length:542
+Connection:close
+
+2024-07-17 23:32:47.829966 INFO: Client[54] in!
+2024-07-17 23:32:47.829995 INFO: request:HTTP/1.1 200 OK
+Content-Length:542
+Connection:close
+
+
+2024-07-17 23:32:47.830004 INFO: HandleListenEvent 13
+2024-07-17 23:32:47.830034 INFO: HttpConn 55 init success
+2024-07-17 23:32:47.830036 INFO: Thread 140246114473536 is running task
+
+2024-07-17 23:32:47.830050 INFO: addTimer id:55 expireTime:1721230867
+2024-07-17 23:32:47.830077 INFO: Client[55] in!
+2024-07-17 23:32:47.830082 INFO: HandleListenEvent 13
+2024-07-17 23:32:47.830091 ERROR: Accept failure -1
+2024-07-17 23:32:47.830098 INFO: eventNum: 1
+2024-07-17 23:32:47.830102 INFO: fd: 53, events: 4
+
+2024-07-17 23:32:47.830173 INFO: Thread 140246156437056 is running task
+
+2024-07-17 23:32:47.830330 INFO: eventNum: 1
+2024-07-17 23:32:47.830354 INFO: fd: 13, events: 1
+
+2024-07-17 23:32:47.830391 INFO: HandleListenEvent 13
+2024-07-17 23:32:47.830413 INFO: HttpConn 56 init success
+2024-07-17 23:32:47.830422 INFO: addTimer id:56 expireTime:1721230867
+2024-07-17 23:32:47.830434 INFO: Client[56] in!
+2024-07-17 23:32:47.830439 INFO: HandleListenEvent 13
+2024-07-17 23:32:47.830460 ERROR: Accept failure -1
+2024-07-17 23:32:47.830468 INFO: eventNum: 2
+2024-07-17 23:32:47.830475 INFO: fd: 54, events: 1
+
+2024-07-17 23:32:47.830489 INFO: fd: 56, events: 1
+
+2024-07-17 23:32:47.830496 INFO: HttpConn 54 read success
+2024-07-17 23:32:47.830514 INFO: GET / HTTP/1.1
+2024-07-17 23:32:47.830519 INFO: Host: 39.98.202.182:9006
+2024-07-17 23:32:47.830524 INFO: User-Agent: Go-http-client/1.1
+2024-07-17 23:32:47.830528 INFO: oop!unknow header: User-Agent: Go-http-client/1.1
+2024-07-17 23:32:47.830533 INFO: X-Vegeta-Seq: 27
+2024-07-17 23:32:47.830537 INFO: oop!unknow header: X-Vegeta-Seq: 27
+2024-07-17 23:32:47.830541 INFO: Accept-Encoding: gzip
+2024-07-17 23:32:47.830545 INFO: oop!unknow header: Accept-Encoding: gzip
+2024-07-17 23:32:47.830549 INFO: 
+2024-07-17 23:32:47.830566 INFO: request:HTTP/1.1 200 OK
+
+2024-07-17 23:32:47.830570 INFO: request:HTTP/1.1 200 OK
+Content-Length:542
+
+2024-07-17 23:32:47.830575 INFO: request:HTTP/1.1 200 OK
+Content-Length:542
+Connection:close
+
+2024-07-17 23:32:47.830579 INFO: request:HTTP/1.1 200 OK
+Content-Length:542
+Connection:close
+
+
+2024-07-17 23:32:47.830595 INFO: Thread 140246148044352 is running task
+
+2024-07-17 23:32:47.830599 INFO: eventNum: 1
+2024-07-17 23:32:47.830611 INFO: fd: 54, events: 4
+
+2024-07-17 23:32:47.830602 INFO: HttpConn 56 read success
+2024-07-17 23:32:47.830631 INFO: GET / HTTP/1.1
+2024-07-17 23:32:47.830639 INFO: Host: 39.98.202.182:9006
+2024-07-17 23:32:47.830644 INFO: User-Agent: Go-http-client/1.1
+2024-07-17 23:32:47.830650 INFO: oop!unknow header: User-Agent: Go-http-client/1.1
+2024-07-17 23:32:47.830657 INFO: X-Vegeta-Seq: 35
+2024-07-17 23:32:47.830663 INFO: oop!unknow header: X-Vegeta-Seq: 35
+2024-07-17 23:32:47.830669 INFO: Accept-Encoding: gzip
+2024-07-17 23:32:47.830675 INFO: oop!unknow header: Accept-Encoding: gzip
+2024-07-17 23:32:47.830682 INFO: 
+2024-07-17 23:32:47.830696 INFO: request:HTTP/1.1 200 OK
+
+2024-07-17 23:32:47.830701 INFO: request:HTTP/1.1 200 OK
+Content-Length:542
+
+2024-07-17 23:32:47.830714 INFO: request:HTTP/1.1 200 OK
+Content-Length:542
+Connection:close
+
+2024-07-17 23:32:47.830719 INFO: request:HTTP/1.1 200 OK
+Content-Length:542
+Connection:close
+
+
+2024-07-17 23:32:47.830748 INFO: Thread 140246148044352 is running task
+
+2024-07-17 23:32:47.830763 INFO: eventNum: 1
+2024-07-17 23:32:47.830775 INFO: Thread 140246148044352 is running task
+
+2024-07-17 23:32:47.830807 INFO: fd: 56, events: 4
+
+2024-07-17 23:32:47.830871 INFO: Thread 140246106080832 is running task
+
+2024-07-17 23:32:47.831084 INFO: eventNum: 1
+2024-07-17 23:32:47.831113 INFO: fd: 55, events: 1
+
+2024-07-17 23:32:47.831133 INFO: HttpConn 55 read success
+2024-07-17 23:32:47.831148 INFO: GET / HTTP/1.1
+2024-07-17 23:32:47.831155 INFO: Host: 39.98.202.182:9006
+2024-07-17 23:32:47.831162 INFO: User-Agent: Go-http-client/1.1
+2024-07-17 23:32:47.831168 INFO: oop!unknow header: User-Agent: Go-http-client/1.1
+2024-07-17 23:32:47.831175 INFO: X-Vegeta-Seq: 28
+2024-07-17 23:32:47.831181 INFO: oop!unknow header: X-Vegeta-Seq: 28
+2024-07-17 23:32:47.831188 INFO: Accept-Encoding: gzip
+2024-07-17 23:32:47.831194 INFO: oop!unknow header: Accept-Encoding: gzip
+2024-07-17 23:32:47.831201 INFO: 
+2024-07-17 23:32:47.831222 INFO: request:HTTP/1.1 200 OK
+
+2024-07-17 23:32:47.831230 INFO: request:HTTP/1.1 200 OK
+Content-Length:542
+
+2024-07-17 23:32:47.831236 INFO: request:HTTP/1.1 200 OK
+Content-Length:542
+Connection:close
+
+2024-07-17 23:32:47.831243 INFO: request:HTTP/1.1 200 OK
+Content-Length:542
+Connection:close
+
+
+2024-07-17 23:32:47.831257 INFO: Thread 140246131258944 is running task
+
+2024-07-17 23:32:47.831273 INFO: eventNum: 1
+2024-07-17 23:32:47.831283 INFO: fd: 55, events: 4
+
+2024-07-17 23:32:47.831325 INFO: Thread 140246097688128 is running task
+
+2024-07-17 23:32:47.831632 INFO: eventNum: 1
+2024-07-17 23:32:47.831658 INFO: fd: 13, events: 1
+
+2024-07-17 23:32:47.831665 INFO: HandleListenEvent 13
+2024-07-17 23:32:47.831687 INFO: HttpConn 57 init success
+2024-07-17 23:32:47.831694 INFO: addTimer id:57 expireTime:1721230867
+2024-07-17 23:32:47.831705 INFO: Client[57] in!
+2024-07-17 23:32:47.831714 INFO: HandleListenEvent 13
+2024-07-17 23:32:47.831724 ERROR: Accept failure -1
+2024-07-17 23:32:47.832033 INFO: eventNum: 1
+2024-07-17 23:32:47.832053 INFO: fd: 57, events: 1
+
+2024-07-17 23:32:47.832071 INFO: HttpConn 57 read success
+2024-07-17 23:32:47.832090 INFO: GET / HTTP/1.1
+2024-07-17 23:32:47.832096 INFO: Host: 39.98.202.182:9006
+2024-07-17 23:32:47.832100 INFO: User-Agent: Go-http-client/1.1
+2024-07-17 23:32:47.832104 INFO: oop!unknow header: User-Agent: Go-http-client/1.1
+2024-07-17 23:32:47.832109 INFO: X-Vegeta-Seq: 23
+2024-07-17 23:32:47.832113 INFO: oop!unknow header: X-Vegeta-Seq: 23
+2024-07-17 23:32:47.832117 INFO: Accept-Encoding: gzip
+2024-07-17 23:32:47.832121 INFO: oop!unknow header: Accept-Encoding: gzip
+2024-07-17 23:32:47.832125 INFO: 
+2024-07-17 23:32:47.832141 INFO: request:HTTP/1.1 200 OK
+
+2024-07-17 23:32:47.832146 INFO: request:HTTP/1.1 200 OK
+Content-Length:542
+
+2024-07-17 23:32:47.832150 INFO: request:HTTP/1.1 200 OK
+Content-Length:542
+Connection:close
+
+2024-07-17 23:32:47.832154 INFO: request:HTTP/1.1 200 OK
+Content-Length:542
+Connection:close
+
+
+2024-07-17 23:32:47.832169 INFO: Thread 140246114473536 is running task
+
+2024-07-17 23:32:47.832177 INFO: eventNum: 1
+2024-07-17 23:32:47.832192 INFO: fd: 57, events: 4
+
+2024-07-17 23:32:47.832208 INFO: eventNum: 1
+2024-07-17 23:32:47.832215 INFO: fd: 13, events: 1
+
+2024-07-17 23:32:47.832219 INFO: HandleListenEvent 13
+2024-07-17 23:32:47.832230 INFO: Thread 140246156437056 is running task
+
+2024-07-17 23:32:47.832239 INFO: HttpConn 58 init success
+2024-07-17 23:32:47.832246 INFO: addTimer id:58 expireTime:1721230867
+2024-07-17 23:32:47.832257 INFO: Client[58] in!
+2024-07-17 23:32:47.832262 INFO: HandleListenEvent 13
+2024-07-17 23:32:47.832271 ERROR: Accept failure -1
+2024-07-17 23:32:47.832585 INFO: eventNum: 1
+2024-07-17 23:32:47.832601 INFO: fd: 58, events: 1
+
+2024-07-17 23:32:47.832619 INFO: HttpConn 58 read success
+2024-07-17 23:32:47.832641 INFO: GET / HTTP/1.1
+2024-07-17 23:32:47.832648 INFO: Host: 39.98.202.182:9006
+2024-07-17 23:32:47.832652 INFO: User-Agent: Go-http-client/1.1
+2024-07-17 23:32:47.832656 INFO: oop!unknow header: User-Agent: Go-http-client/1.1
+2024-07-17 23:32:47.832661 INFO: X-Vegeta-Seq: 38
+2024-07-17 23:32:47.832665 INFO: oop!unknow header: X-Vegeta-Seq: 38
+2024-07-17 23:32:47.832669 INFO: Accept-Encoding: gzip
+2024-07-17 23:32:47.832673 INFO: oop!unknow header: Accept-Encoding: gzip
+2024-07-17 23:32:47.832677 INFO: 
+2024-07-17 23:32:47.832693 INFO: request:HTTP/1.1 200 OK
+
+2024-07-17 23:32:47.832697 INFO: request:HTTP/1.1 200 OK
+Content-Length:542
+
+2024-07-17 23:32:47.832702 INFO: request:HTTP/1.1 200 OK
+Content-Length:542
+Connection:close
+
+2024-07-17 23:32:47.832706 INFO: request:HTTP/1.1 200 OK
+Content-Length:542
+Connection:close
+
+
+2024-07-17 23:32:47.832720 INFO: Thread 140246139651648 is running task
+
+2024-07-17 23:32:47.832723 INFO: eventNum: 1
+2024-07-17 23:32:47.832731 INFO: fd: 58, events: 4
+
+2024-07-17 23:32:47.832762 INFO: Thread 140246122866240 is running task
+
+2024-07-17 23:32:47.844647 INFO: eventNum: 1
+2024-07-17 23:32:47.844699 INFO: fd: 13, events: 1
+
+2024-07-17 23:32:47.844706 INFO: HandleListenEvent 13
+2024-07-17 23:32:47.844732 INFO: HttpConn 59 init success
+2024-07-17 23:32:47.844739 INFO: addTimer id:59 expireTime:1721230867
+2024-07-17 23:32:47.844753 INFO: Client[59] in!
+2024-07-17 23:32:47.844758 INFO: HandleListenEvent 13
+2024-07-17 23:32:47.844767 ERROR: Accept failure -1
+2024-07-17 23:32:47.845047 INFO: eventNum: 1
+2024-07-17 23:32:47.845069 INFO: fd: 59, events: 1
+
+2024-07-17 23:32:47.845098 INFO: HttpConn 59 read success
+2024-07-17 23:32:47.845130 INFO: GET / HTTP/1.1
+2024-07-17 23:32:47.845137 INFO: Host: 39.98.202.182:9006
+2024-07-17 23:32:47.845142 INFO: User-Agent: Go-http-client/1.1
+2024-07-17 23:32:47.845147 INFO: oop!unknow header: User-Agent: Go-http-client/1.1
+2024-07-17 23:32:47.845152 INFO: X-Vegeta-Seq: 39
+2024-07-17 23:32:47.845156 INFO: oop!unknow header: X-Vegeta-Seq: 39
+2024-07-17 23:32:47.845160 INFO: Accept-Encoding: gzip
+2024-07-17 23:32:47.845165 INFO: oop!unknow header: Accept-Encoding: gzip
+2024-07-17 23:32:47.845170 INFO: 
+2024-07-17 23:32:47.845194 INFO: request:HTTP/1.1 200 OK
+
+2024-07-17 23:32:47.845199 INFO: request:HTTP/1.1 200 OK
+Content-Length:542
+
+2024-07-17 23:32:47.845204 INFO: request:HTTP/1.1 200 OK
+Content-Length:542
+Connection:close
+
+2024-07-17 23:32:47.845208 INFO: request:HTTP/1.1 200 OK
+Content-Length:542
+Connection:close
+
+
+2024-07-17 23:32:47.845228 INFO: Thread 140246148044352 is running task
+
+2024-07-17 23:32:47.845248 INFO: eventNum: 1
+2024-07-17 23:32:47.845255 INFO: fd: 59, events: 4
+
+2024-07-17 23:32:47.845317 INFO: Thread 140246106080832 is running task
+
+2024-07-17 23:32:47.845604 INFO: eventNum: 1
+2024-07-17 23:32:47.845636 INFO: fd: 13, events: 1
+
+2024-07-17 23:32:47.845645 INFO: HandleListenEvent 13
+2024-07-17 23:32:47.845661 INFO: HttpConn 60 init success
+2024-07-17 23:32:47.845670 INFO: addTimer id:60 expireTime:1721230867
+2024-07-17 23:32:47.845686 INFO: Client[60] in!
+2024-07-17 23:32:47.845694 INFO: HandleListenEvent 13
+2024-07-17 23:32:47.845705 ERROR: Accept failure -1
+2024-07-17 23:32:47.846079 INFO: eventNum: 1
+2024-07-17 23:32:47.846097 INFO: fd: 13, events: 1
+
+2024-07-17 23:32:47.846103 INFO: HandleListenEvent 13
+2024-07-17 23:32:47.846146 INFO: HttpConn 61 init success
+2024-07-17 23:32:47.846155 INFO: addTimer id:61 expireTime:1721230867
+2024-07-17 23:32:47.846165 INFO: Client[61] in!
+2024-07-17 23:32:47.846170 INFO: HandleListenEvent 13
+2024-07-17 23:32:47.846178 ERROR: Accept failure -1
+2024-07-17 23:32:47.846330 INFO: eventNum: 1
+2024-07-17 23:32:47.846341 INFO: fd: 60, events: 1
+
+2024-07-17 23:32:47.846361 INFO: HttpConn 60 read success
+2024-07-17 23:32:47.846395 INFO: GET / HTTP/1.1
+2024-07-17 23:32:47.846401 INFO: Host: 39.98.202.182:9006
+2024-07-17 23:32:47.846406 INFO: User-Agent: Go-http-client/1.1
+2024-07-17 23:32:47.846410 INFO: oop!unknow header: User-Agent: Go-http-client/1.1
+2024-07-17 23:32:47.846423 INFO: X-Vegeta-Seq: 37
+2024-07-17 23:32:47.846427 INFO: oop!unknow header: X-Vegeta-Seq: 37
+2024-07-17 23:32:47.846432 INFO: Accept-Encoding: gzip
+2024-07-17 23:32:47.846436 INFO: oop!unknow header: Accept-Encoding: gzip
+2024-07-17 23:32:47.846440 INFO: 
+2024-07-17 23:32:47.846458 INFO: request:HTTP/1.1 200 OK
+
+2024-07-17 23:32:47.846463 INFO: request:HTTP/1.1 200 OK
+Content-Length:542
+
+2024-07-17 23:32:47.846468 INFO: request:HTTP/1.1 200 OK
+Content-Length:542
+Connection:close
+
+2024-07-17 23:32:47.846472 INFO: request:HTTP/1.1 200 OK
+Content-Length:542
+Connection:close
+
+
+2024-07-17 23:32:47.846485 INFO: Thread 140246131258944 is running task
+
+2024-07-17 23:32:47.846493 INFO: eventNum: 1
+2024-07-17 23:32:47.846498 INFO: fd: 60, events: 4
+
+2024-07-17 23:32:47.846530 INFO: Thread 140246097688128 is running task
+
+2024-07-17 23:32:47.846723 INFO: eventNum: 1
+2024-07-17 23:32:47.846737 INFO: fd: 13, events: 1
+
+2024-07-17 23:32:47.846742 INFO: HandleListenEvent 13
+2024-07-17 23:32:47.846755 INFO: HttpConn 62 init success
+2024-07-17 23:32:47.846761 INFO: addTimer id:62 expireTime:1721230867
+2024-07-17 23:32:47.846771 INFO: Client[62] in!
+2024-07-17 23:32:47.846775 INFO: HandleListenEvent 13
+2024-07-17 23:32:47.846783 ERROR: Accept failure -1
+2024-07-17 23:32:47.847100 INFO: eventNum: 1
+2024-07-17 23:32:47.847120 INFO: fd: 62, events: 1
+
+2024-07-17 23:32:47.847135 INFO: HttpConn 62 read success
+2024-07-17 23:32:47.847145 INFO: GET / HTTP/1.1
+2024-07-17 23:32:47.847150 INFO: Host: 39.98.202.182:9006
+2024-07-17 23:32:47.847155 INFO: User-Agent: Go-http-client/1.1
+2024-07-17 23:32:47.847160 INFO: oop!unknow header: User-Agent: Go-http-client/1.1
+2024-07-17 23:32:47.847164 INFO: X-Vegeta-Seq: 36
+2024-07-17 23:32:47.847168 INFO: oop!unknow header: X-Vegeta-Seq: 36
+2024-07-17 23:32:47.847172 INFO: Accept-Encoding: gzip
+2024-07-17 23:32:47.847177 INFO: oop!unknow header: Accept-Encoding: gzip
+2024-07-17 23:32:47.847181 INFO: 
+2024-07-17 23:32:47.847197 INFO: request:HTTP/1.1 200 OK
+
+2024-07-17 23:32:47.847202 INFO: request:HTTP/1.1 200 OK
+Content-Length:542
+
+2024-07-17 23:32:47.847206 INFO: request:HTTP/1.1 200 OK
+Content-Length:542
+Connection:close
+
+2024-07-17 23:32:47.847210 INFO: request:HTTP/1.1 200 OK
+Content-Length:542
+Connection:close
+
+
+2024-07-17 23:32:47.847219 INFO: Thread 140246114473536 is running task
+
+2024-07-17 23:32:47.847238 INFO: eventNum: 1
+2024-07-17 23:32:47.847246 INFO: fd: 62, events: 4
+
+2024-07-17 23:32:47.847283 INFO: Thread 140246156437056 is running task
+
+2024-07-17 23:32:47.847539 INFO: eventNum: 1
+2024-07-17 23:32:47.847552 INFO: fd: 61, events: 1
+
+2024-07-17 23:32:47.847566 INFO: HttpConn 61 read success
+2024-07-17 23:32:47.847576 INFO: GET / HTTP/1.1
+2024-07-17 23:32:47.847581 INFO: Host: 39.98.202.182:9006
+2024-07-17 23:32:47.847586 INFO: User-Agent: Go-http-client/1.1
+2024-07-17 23:32:47.847590 INFO: oop!unknow header: User-Agent: Go-http-client/1.1
+2024-07-17 23:32:47.847595 INFO: X-Vegeta-Seq: 34
+2024-07-17 23:32:47.847599 INFO: oop!unknow header: X-Vegeta-Seq: 34
+2024-07-17 23:32:47.847603 INFO: Accept-Encoding: gzip
+2024-07-17 23:32:47.847608 INFO: oop!unknow header: Accept-Encoding: gzip
+2024-07-17 23:32:47.847612 INFO: 
+2024-07-17 23:32:47.847627 INFO: request:HTTP/1.1 200 OK
+
+2024-07-17 23:32:47.847632 INFO: request:HTTP/1.1 200 OK
+Content-Length:542
+
+2024-07-17 23:32:47.847636 INFO: request:HTTP/1.1 200 OK
+Content-Length:542
+Connection:close
+
+2024-07-17 23:32:47.847640 INFO: request:HTTP/1.1 200 OK
+Content-Length:542
+Connection:close
+
+
+2024-07-17 23:32:47.847649 INFO: Thread 140246139651648 is running task
+
+2024-07-17 23:32:47.847657 INFO: eventNum: 1
+2024-07-17 23:32:47.847662 INFO: fd: 61, events: 4
+
+2024-07-17 23:32:47.847692 INFO: Thread 140246122866240 is running task
+
+2024-07-17 23:32:47.847801 INFO: eventNum: 1
+2024-07-17 23:32:47.847813 INFO: fd: 13, events: 1
+
+2024-07-17 23:32:47.847818 INFO: HandleListenEvent 13
+2024-07-17 23:32:47.847833 INFO: HttpConn 63 init success
+2024-07-17 23:32:47.847838 INFO: addTimer id:63 expireTime:1721230867
+2024-07-17 23:32:47.847854 INFO: Client[63] in!
+2024-07-17 23:32:47.847859 INFO: HandleListenEvent 13
+2024-07-17 23:32:47.847867 ERROR: Accept failure -1
+2024-07-17 23:32:47.847934 INFO: eventNum: 1
+2024-07-17 23:32:47.847957 INFO: fd: 13, events: 1
+
+2024-07-17 23:32:47.847963 INFO: HandleListenEvent 13
+2024-07-17 23:32:47.847980 INFO: HttpConn 64 init success
+2024-07-17 23:32:47.847986 INFO: addTimer id:64 expireTime:1721230867
+2024-07-17 23:32:47.847996 INFO: Client[64] in!
+2024-07-17 23:32:47.848001 INFO: HandleListenEvent 13
+2024-07-17 23:32:47.848009 ERROR: Accept failure -1
+2024-07-17 23:32:47.848074 INFO: eventNum: 1
+2024-07-17 23:32:47.848080 INFO: fd: 13, events: 1
+
+2024-07-17 23:32:47.848085 INFO: HandleListenEvent 13
+2024-07-17 23:32:47.848096 INFO: HttpConn 65 init success
+2024-07-17 23:32:47.848101 INFO: addTimer id:65 expireTime:1721230867
+2024-07-17 23:32:47.848109 INFO: Client[65] in!
+2024-07-17 23:32:47.848113 INFO: HandleListenEvent 13
+2024-07-17 23:32:47.848121 ERROR: Accept failure -1
+2024-07-17 23:32:47.848202 INFO: eventNum: 1
+2024-07-17 23:32:47.848224 INFO: fd: 63, events: 1
+
+2024-07-17 23:32:47.848242 INFO: HttpConn 63 read success
+2024-07-17 23:32:47.848260 INFO: GET / HTTP/1.1
+2024-07-17 23:32:47.848266 INFO: Host: 39.98.202.182:9006
+2024-07-17 23:32:47.848271 INFO: User-Agent: Go-http-client/1.1
+2024-07-17 23:32:47.848275 INFO: oop!unknow header: User-Agent: Go-http-client/1.1
+2024-07-17 23:32:47.848279 INFO: X-Vegeta-Seq: 40
+2024-07-17 23:32:47.848284 INFO: oop!unknow header: X-Vegeta-Seq: 40
+2024-07-17 23:32:47.848288 INFO: Accept-Encoding: gzip
+2024-07-17 23:32:47.848292 INFO: oop!unknow header: Accept-Encoding: gzip
+2024-07-17 23:32:47.848296 INFO: 
+2024-07-17 23:32:47.848317 INFO: eventNum: 1
+2024-07-17 23:32:47.848325 INFO: request:HTTP/1.1 200 OK
+
+2024-07-17 23:32:47.848339 INFO: request:HTTP/1.1 200 OK
+Content-Length:542
+
+2024-07-17 23:32:47.848344 INFO: request:HTTP/1.1 200 OK
+Content-Length:542
+Connection:close
+
+2024-07-17 23:32:47.848353 INFO: request:HTTP/1.1 200 OK
+Content-Length:542
+Connection:close
+
+
+2024-07-17 23:32:47.848327 INFO: fd: 64, events: 1
+
+2024-07-17 23:32:47.848398 INFO: Thread 140246148044352 is running task
+
+2024-07-17 23:32:47.848399 INFO: HttpConn 64 read success
+2024-07-17 23:32:47.848424 INFO: GET / HTTP/1.1
+2024-07-17 23:32:47.848430 INFO: Host: 39.98.202.182:9006
+2024-07-17 23:32:47.848435 INFO: User-Agent: Go-http-client/1.1
+2024-07-17 23:32:47.848440 INFO: oop!unknow header: User-Agent: Go-http-client/1.1
+2024-07-17 23:32:47.848444 INFO: X-Vegeta-Seq: 42
+2024-07-17 23:32:47.848449 INFO: oop!unknow header: X-Vegeta-Seq: 42
+2024-07-17 23:32:47.848456 INFO: Accept-Encoding: gzip
+2024-07-17 23:32:47.848460 INFO: oop!unknow header: Accept-Encoding: gzip
+2024-07-17 23:32:47.848464 INFO: 
+2024-07-17 23:32:47.848483 INFO: request:HTTP/1.1 200 OK
+
+2024-07-17 23:32:47.848489 INFO: request:HTTP/1.1 200 OK
+Content-Length:542
+
+2024-07-17 23:32:47.848493 INFO: request:HTTP/1.1 200 OK
+Content-Length:542
+Connection:close
+
+2024-07-17 23:32:47.848498 INFO: request:HTTP/1.1 200 OK
+Content-Length:542
+Connection:close
+
+
+2024-07-17 23:32:47.848509 INFO: Thread 140246106080832 is running task
+
+2024-07-17 23:32:47.848403 INFO: eventNum: 2
+2024-07-17 23:32:47.848520 INFO: fd: 63, events: 4
+
+2024-07-17 23:32:47.848529 INFO: fd: 13, events: 1
+
+2024-07-17 23:32:47.848534 INFO: HandleListenEvent 13
+2024-07-17 23:32:47.848547 INFO: HttpConn 66 init success
+2024-07-17 23:32:47.848556 INFO: addTimer id:66 expireTime:1721230867
+2024-07-17 23:32:47.848557 INFO: Thread 140246131258944 is running task
+
+2024-07-17 23:32:47.848570 INFO: Client[66] in!
+2024-07-17 23:32:47.848584 INFO: HandleListenEvent 13
+2024-07-17 23:32:47.848594 ERROR: Accept failure -1
+2024-07-17 23:32:47.848600 INFO: eventNum: 2
+2024-07-17 23:32:47.848604 INFO: fd: 65, events: 1
+
+2024-07-17 23:32:47.848613 INFO: fd: 64, events: 4
+
+2024-07-17 23:32:47.848618 INFO: HttpConn 65 read success
+2024-07-17 23:32:47.848629 INFO: GET / HTTP/1.1
+2024-07-17 23:32:47.848635 INFO: Host: 39.98.202.182:9006
+2024-07-17 23:32:47.848644 INFO: User-Agent: Go-http-client/1.1
+2024-07-17 23:32:47.848649 INFO: oop!unknow header: User-Agent: Go-http-client/1.1
+2024-07-17 23:32:47.848653 INFO: X-Vegeta-Seq: 43
+2024-07-17 23:32:47.848672 INFO: oop!unknow header: X-Vegeta-Seq: 43
+2024-07-17 23:32:47.848677 INFO: eventNum: 1
+2024-07-17 23:32:47.848688 INFO: fd: 13, events: 1
+
+2024-07-17 23:32:47.848693 INFO: HandleListenEvent 13
+2024-07-17 23:32:47.848702 INFO: Thread 140246114473536 is running task
+
+2024-07-17 23:32:47.848709 INFO: HttpConn 67 init success
+2024-07-17 23:32:47.848678 INFO: Accept-Encoding: gzip
+2024-07-17 23:32:47.848727 INFO: oop!unknow header: Accept-Encoding: gzip
+2024-07-17 23:32:47.848731 INFO: 
+2024-07-17 23:32:47.848715 INFO: addTimer id:67 expireTime:1721230867
+2024-07-17 23:32:47.848766 INFO: Client[67] in!
+2024-07-17 23:32:47.848767 INFO: request:HTTP/1.1 200 OK
+
+2024-07-17 23:32:47.848793 INFO: request:HTTP/1.1 200 OK
+Content-Length:542
+
+2024-07-17 23:32:47.848805 INFO: request:HTTP/1.1 200 OK
+Content-Length:542
+Connection:close
+
+2024-07-17 23:32:47.848785 INFO: HandleListenEvent 13
+2024-07-17 23:32:47.848810 INFO: request:HTTP/1.1 200 OK
+Content-Length:542
+Connection:close
+
+
+2024-07-17 23:32:47.848828 INFO: HttpConn 68 init success
+2024-07-17 23:32:47.848843 INFO: Thread 140246097688128 is running task
+
+2024-07-17 23:32:47.848853 INFO: addTimer id:68 expireTime:1721230867
+2024-07-17 23:32:47.848879 INFO: Client[68] in!
+2024-07-17 23:32:47.848885 INFO: HandleListenEvent 13
+2024-07-17 23:32:47.848896 INFO: HttpConn 69 init success
+2024-07-17 23:32:47.848901 INFO: addTimer id:69 expireTime:1721230867
+2024-07-17 23:32:47.848909 INFO: Client[69] in!
+2024-07-17 23:32:47.848913 INFO: HandleListenEvent 13
+2024-07-17 23:32:47.848921 ERROR: Accept failure -1
+2024-07-17 23:32:47.848927 INFO: eventNum: 2
+2024-07-17 23:32:47.848932 INFO: fd: 66, events: 1
+
+2024-07-17 23:32:47.848941 INFO: fd: 65, events: 4
+
+2024-07-17 23:32:47.848946 INFO: HttpConn 66 read success
+2024-07-17 23:32:47.848957 INFO: GET / HTTP/1.1
+2024-07-17 23:32:47.848962 INFO: Host: 39.98.202.182:9006
+2024-07-17 23:32:47.848966 INFO: User-Agent: Go-http-client/1.1
+2024-07-17 23:32:47.848971 INFO: oop!unknow header: User-Agent: Go-http-client/1.1
+2024-07-17 23:32:47.848975 INFO: X-Vegeta-Seq: 32
+2024-07-17 23:32:47.848980 INFO: oop!unknow header: X-Vegeta-Seq: 32
+2024-07-17 23:32:47.848984 INFO: Accept-Encoding: gzip
+2024-07-17 23:32:47.848988 INFO: oop!unknow header: Accept-Encoding: gzip
+2024-07-17 23:32:47.848992 INFO: 
+2024-07-17 23:32:47.849005 INFO: request:HTTP/1.1 200 OK
+
+2024-07-17 23:32:47.849010 INFO: request:HTTP/1.1 200 OK
+Content-Length:542
+
+2024-07-17 23:32:47.849015 INFO: request:HTTP/1.1 200 OK
+Content-Length:542
+Connection:close
+
+2024-07-17 23:32:47.849019 INFO: request:HTTP/1.1 200 OK
+Content-Length:542
+Connection:close
+
+
+2024-07-17 23:32:47.849036 INFO: eventNum: 2
+2024-07-17 23:32:47.849051 INFO: fd: 66, events: 4
+
+2024-07-17 23:32:47.849059 INFO: Thread 140246139651648 is running task
+
+2024-07-17 23:32:47.849062 INFO: fd: 67, events: 1
+
+2024-07-17 23:32:47.849088 INFO: Thread 140246139651648 is running task
+
+2024-07-17 23:32:47.849099 INFO: HttpConn 67 read success
+2024-07-17 23:32:47.849109 INFO: GET / HTTP/1.1
+2024-07-17 23:32:47.849117 INFO: Host: 39.98.202.182:9006
+2024-07-17 23:32:47.849137 INFO: User-Agent: Go-http-client/1.1
+2024-07-17 23:32:47.849139 INFO: eventNum: 1
+2024-07-17 23:32:47.849155 INFO: fd: 68, events: 1
+
+2024-07-17 23:32:47.849038 INFO: Thread 140246156437056 is running task
+
+2024-07-17 23:32:47.849175 INFO: HttpConn 68 read success
+2024-07-17 23:32:47.849188 INFO: GET / HTTP/1.1
+2024-07-17 23:32:47.849194 INFO: Host: 39.98.202.182:9006
+2024-07-17 23:32:47.849198 INFO: User-Agent: Go-http-client/1.1
+2024-07-17 23:32:47.849203 INFO: oop!unknow header: User-Agent: Go-http-client/1.1
+2024-07-17 23:32:47.849207 INFO: X-Vegeta-Seq: 44
+2024-07-17 23:32:47.849211 INFO: oop!unknow header: X-Vegeta-Seq: 44
+2024-07-17 23:32:47.849216 INFO: Accept-Encoding: gzip
+2024-07-17 23:32:47.849223 INFO: oop!unknow header: Accept-Encoding: gzip
+2024-07-17 23:32:47.849234 INFO: 
+2024-07-17 23:32:47.849249 INFO: request:HTTP/1.1 200 OK
+
+2024-07-17 23:32:47.849254 INFO: request:HTTP/1.1 200 OK
+Content-Length:542
+
+2024-07-17 23:32:47.849258 INFO: request:HTTP/1.1 200 OK
+Content-Length:542
+Connection:close
+
+2024-07-17 23:32:47.849262 INFO: request:HTTP/1.1 200 OK
+Content-Length:542
+Connection:close
+
+
+2024-07-17 23:32:47.849271 INFO: Thread 140246106080832 is running task
+
+2024-07-17 23:32:47.849143 INFO: oop!unknow header: User-Agent: Go-http-client/1.1
+2024-07-17 23:32:47.849287 INFO: X-Vegeta-Seq: 49
+2024-07-17 23:32:47.849292 INFO: oop!unknow header: X-Vegeta-Seq: 49
+2024-07-17 23:32:47.849296 INFO: Accept-Encoding: gzip
+2024-07-17 23:32:47.849301 INFO: oop!unknow header: Accept-Encoding: gzip
+2024-07-17 23:32:47.849305 INFO: 
+2024-07-17 23:32:47.849316 INFO: request:HTTP/1.1 200 OK
+
+2024-07-17 23:32:47.849321 INFO: request:HTTP/1.1 200 OK
+Content-Length:542
+
+2024-07-17 23:32:47.849325 INFO: request:HTTP/1.1 200 OK
+Content-Length:542
+Connection:close
+
+2024-07-17 23:32:47.849329 INFO: request:HTTP/1.1 200 OK
+Content-Length:542
+Connection:close
+
+
+2024-07-17 23:32:47.849337 INFO: Thread 140246139651648 is running task
+
+2024-07-17 23:32:47.849346 INFO: eventNum: 2
+2024-07-17 23:32:47.849350 INFO: fd: 68, events: 4
+
+2024-07-17 23:32:47.849360 INFO: fd: 67, events: 4
+
+2024-07-17 23:32:47.849390 INFO: Thread 140246131258944 is running task
+
+2024-07-17 23:32:47.849411 INFO: Thread 140246131258944 is running task
+
+2024-07-17 23:32:47.849479 INFO: eventNum: 1
+2024-07-17 23:32:47.849497 INFO: fd: 13, events: 1
+
+2024-07-17 23:32:47.849502 INFO: HandleListenEvent 13
+2024-07-17 23:32:47.849516 INFO: HttpConn 70 init success
+2024-07-17 23:32:47.849522 INFO: addTimer id:70 expireTime:1721230867
+2024-07-17 23:32:47.849532 INFO: Client[70] in!
+2024-07-17 23:32:47.849536 INFO: HandleListenEvent 13
+2024-07-17 23:32:47.849545 ERROR: Accept failure -1
+2024-07-17 23:32:47.849848 INFO: eventNum: 1
+2024-07-17 23:32:47.849872 INFO: fd: 70, events: 1
+
+2024-07-17 23:32:47.849890 INFO: HttpConn 70 read success
+2024-07-17 23:32:47.849909 INFO: GET / HTTP/1.1
+2024-07-17 23:32:47.849914 INFO: Host: 39.98.202.182:9006
+2024-07-17 23:32:47.849932 INFO: User-Agent: Go-http-client/1.1
+2024-07-17 23:32:47.849934 INFO: eventNum: 1
+2024-07-17 23:32:47.849937 INFO: oop!unknow header: User-Agent: Go-http-client/1.1
+2024-07-17 23:32:47.849961 INFO: X-Vegeta-Seq: 41
+2024-07-17 23:32:47.849950 INFO: fd: 69, events: 1
+
+2024-07-17 23:32:47.849966 INFO: oop!unknow header: X-Vegeta-Seq: 41
+2024-07-17 23:32:47.849981 INFO: Accept-Encoding: gzip
+2024-07-17 23:32:47.849986 INFO: oop!unknow header: Accept-Encoding: gzip
+2024-07-17 23:32:47.849990 INFO: 
+2024-07-17 23:32:47.850006 INFO: request:HTTP/1.1 200 OK
+
+2024-07-17 23:32:47.850010 INFO: request:HTTP/1.1 200 OK
+Content-Length:542
+
+2024-07-17 23:32:47.850015 INFO: request:HTTP/1.1 200 OK
+Content-Length:542
+Connection:close
+
+2024-07-17 23:32:47.850019 INFO: request:HTTP/1.1 200 OK
+Content-Length:542
+Connection:close
+
+
+2024-07-17 23:32:47.850033 INFO: Thread 140246097688128 is running task
+
+2024-07-17 23:32:47.850038 INFO: eventNum: 1
+2024-07-17 23:32:47.850040 INFO: HttpConn 69 read success
+2024-07-17 23:32:47.850072 INFO: GET / HTTP/1.1
+2024-07-17 23:32:47.850083 INFO: Host: 39.98.202.182:9006
+2024-07-17 23:32:47.850057 INFO: fd: 70, events: 4
+
+2024-07-17 23:32:47.850088 INFO: User-Agent: Go-http-client/1.1
+2024-07-17 23:32:47.850103 INFO: oop!unknow header: User-Agent: Go-http-client/1.1
+2024-07-17 23:32:47.850108 INFO: X-Vegeta-Seq: 46
+2024-07-17 23:32:47.850127 INFO: oop!unknow header: X-Vegeta-Seq: 46
+2024-07-17 23:32:47.850133 INFO: Accept-Encoding: gzip
+2024-07-17 23:32:47.850138 INFO: oop!unknow header: Accept-Encoding: gzip
+2024-07-17 23:32:47.850142 INFO: 
+2024-07-17 23:32:47.850154 INFO: request:HTTP/1.1 200 OK
+
+2024-07-17 23:32:47.850159 INFO: request:HTTP/1.1 200 OK
+Content-Length:542
+
+2024-07-17 23:32:47.850166 INFO: request:HTTP/1.1 200 OK
+Content-Length:542
+Connection:close
+
+2024-07-17 23:32:47.850178 INFO: request:HTTP/1.1 200 OK
+Content-Length:542
+Connection:close
+
+
+2024-07-17 23:32:47.850210 INFO: Thread 140246097688128 is running task
+
+2024-07-17 23:32:47.850233 INFO: Thread 140246097688128 is running task
+
+2024-07-17 23:32:47.850282 INFO: eventNum: 2
+2024-07-17 23:32:47.850297 INFO: fd: 13, events: 1
+
+2024-07-17 23:32:47.850302 INFO: HandleListenEvent 13
+2024-07-17 23:32:47.850312 INFO: HttpConn 71 init success
+2024-07-17 23:32:47.850318 INFO: addTimer id:71 expireTime:1721230867
+2024-07-17 23:32:47.850332 INFO: Client[71] in!
+2024-07-17 23:32:47.850340 INFO: HandleListenEvent 13
+2024-07-17 23:32:47.850357 INFO: HttpConn 72 init success
+2024-07-17 23:32:47.850386 INFO: addTimer id:72 expireTime:1721230867
+2024-07-17 23:32:47.850398 INFO: Client[72] in!
+2024-07-17 23:32:47.850405 INFO: HandleListenEvent 13
+2024-07-17 23:32:47.850415 ERROR: Accept failure -1
+2024-07-17 23:32:47.850420 INFO: fd: 69, events: 4
+
+2024-07-17 23:32:47.850433 INFO: eventNum: 1
+2024-07-17 23:32:47.850438 INFO: fd: 72, events: 1
+
+2024-07-17 23:32:47.850451 INFO: HttpConn 72 read success
+2024-07-17 23:32:47.850456 INFO: Thread 140246156437056 is running task
+
+2024-07-17 23:32:47.850464 INFO: GET / HTTP/1.1
+2024-07-17 23:32:47.850482 INFO: Host: 39.98.202.182:9006
+2024-07-17 23:32:47.850487 INFO: User-Agent: Go-http-client/1.1
+2024-07-17 23:32:47.850491 INFO: oop!unknow header: User-Agent: Go-http-client/1.1
+2024-07-17 23:32:47.850496 INFO: X-Vegeta-Seq: 45
+2024-07-17 23:32:47.850500 INFO: oop!unknow header: X-Vegeta-Seq: 45
+2024-07-17 23:32:47.850504 INFO: Accept-Encoding: gzip
+2024-07-17 23:32:47.850509 INFO: oop!unknow header: Accept-Encoding: gzip
+2024-07-17 23:32:47.850513 INFO: 
+2024-07-17 23:32:47.850528 INFO: request:HTTP/1.1 200 OK
+
+2024-07-17 23:32:47.850533 INFO: request:HTTP/1.1 200 OK
+Content-Length:542
+
+2024-07-17 23:32:47.850544 INFO: request:HTTP/1.1 200 OK
+Content-Length:542
+Connection:close
+
+2024-07-17 23:32:47.850553 INFO: request:HTTP/1.1 200 OK
+Content-Length:542
+Connection:close
+
+
+2024-07-17 23:32:47.850568 INFO: Thread 140246106080832 is running task
+
+2024-07-17 23:32:47.850579 INFO: eventNum: 1
+2024-07-17 23:32:47.850591 INFO: fd: 72, events: 4
+
+2024-07-17 23:32:47.850631 INFO: Thread 140246139651648 is running task
+
+2024-07-17 23:32:47.850642 INFO: eventNum: 1
+2024-07-17 23:32:47.850647 INFO: fd: 71, events: 1
+
+2024-07-17 23:32:47.850665 INFO: HttpConn 71 read success
+2024-07-17 23:32:47.850681 INFO: GET / HTTP/1.1
+2024-07-17 23:32:47.850687 INFO: Host: 39.98.202.182:9006
+2024-07-17 23:32:47.850691 INFO: User-Agent: Go-http-client/1.1
+2024-07-17 23:32:47.850695 INFO: oop!unknow header: User-Agent: Go-http-client/1.1
+2024-07-17 23:32:47.850699 INFO: X-Vegeta-Seq: 50
+2024-07-17 23:32:47.850704 INFO: oop!unknow header: X-Vegeta-Seq: 50
+2024-07-17 23:32:47.850708 INFO: Accept-Encoding: gzip
+2024-07-17 23:32:47.850712 INFO: oop!unknow header: Accept-Encoding: gzip
+2024-07-17 23:32:47.850717 INFO: 
+2024-07-17 23:32:47.850732 INFO: request:HTTP/1.1 200 OK
+
+2024-07-17 23:32:47.850736 INFO: request:HTTP/1.1 200 OK
+Content-Length:542
+
+2024-07-17 23:32:47.850741 INFO: request:HTTP/1.1 200 OK
+Content-Length:542
+Connection:close
+
+2024-07-17 23:32:47.850745 INFO: request:HTTP/1.1 200 OK
+Content-Length:542
+Connection:close
+
+
+2024-07-17 23:32:47.850759 INFO: Thread 140246131258944 is running task
+
+2024-07-17 23:32:47.850765 INFO: eventNum: 1
+2024-07-17 23:32:47.850775 INFO: fd: 71, events: 4
+
+2024-07-17 23:32:47.850804 INFO: Thread 140246114473536 is running task
+
+2024-07-17 23:32:47.850861 INFO: eventNum: 1
+2024-07-17 23:32:47.850872 INFO: fd: 13, events: 1
+
+2024-07-17 23:32:47.850876 INFO: HandleListenEvent 13
+2024-07-17 23:32:47.850894 INFO: HttpConn 73 init success
+2024-07-17 23:32:47.850903 INFO: addTimer id:73 expireTime:1721230867
+2024-07-17 23:32:47.850916 INFO: Client[73] in!
+2024-07-17 23:32:47.850924 INFO: HandleListenEvent 13
+2024-07-17 23:32:47.850938 INFO: HttpConn 74 init success
+2024-07-17 23:32:47.850946 INFO: addTimer id:74 expireTime:1721230867
+2024-07-17 23:32:47.850965 INFO: Client[74] in!
+2024-07-17 23:32:47.850972 INFO: HandleListenEvent 13
+2024-07-17 23:32:47.850981 ERROR: Accept failure -1
+2024-07-17 23:32:47.851215 INFO: eventNum: 1
+2024-07-17 23:32:47.851231 INFO: fd: 73, events: 1
+
+2024-07-17 23:32:47.851244 INFO: eventNum: 1
+2024-07-17 23:32:47.851248 INFO: fd: 13, events: 1
+
+2024-07-17 23:32:47.851253 INFO: HandleListenEvent 13
+2024-07-17 23:32:47.851259 INFO: HttpConn 73 read success
+2024-07-17 23:32:47.851266 INFO: HttpConn 75 init success
+2024-07-17 23:32:47.851295 INFO: GET / HTTP/1.1
+2024-07-17 23:32:47.851296 INFO: addTimer id:75 expireTime:1721230867
+2024-07-17 23:32:47.851307 INFO: Host: 39.98.202.182:9006
+2024-07-17 23:32:47.851326 INFO: User-Agent: Go-http-client/1.1
+2024-07-17 23:32:47.851336 INFO: oop!unknow header: User-Agent: Go-http-client/1.1
+2024-07-17 23:32:47.851320 INFO: Client[75] in!
+2024-07-17 23:32:47.851341 INFO: X-Vegeta-Seq: 53
+2024-07-17 23:32:47.851351 INFO: HandleListenEvent 13
+2024-07-17 23:32:47.851361 INFO: oop!unknow header: X-Vegeta-Seq: 53
+2024-07-17 23:32:47.851395 ERROR: Accept failure -1
+2024-07-17 23:32:47.851397 INFO: Accept-Encoding: gzip
+2024-07-17 23:32:47.851413 INFO: oop!unknow header: Accept-Encoding: gzip
+2024-07-17 23:32:47.851423 INFO: 
+2024-07-17 23:32:47.851407 INFO: eventNum: 1
+2024-07-17 23:32:47.851448 INFO: request:HTTP/1.1 200 OK
+
+2024-07-17 23:32:47.851472 INFO: request:HTTP/1.1 200 OK
+Content-Length:542
+
+2024-07-17 23:32:47.851456 INFO: fd: 74, events: 1
+
+2024-07-17 23:32:47.851480 INFO: request:HTTP/1.1 200 OK
+Content-Length:542
+Connection:close
+
+2024-07-17 23:32:47.851495 INFO: request:HTTP/1.1 200 OK
+Content-Length:542
+Connection:close
+
+
+2024-07-17 23:32:47.851511 INFO: Thread 140246122866240 is running task
+
+2024-07-17 23:32:47.851513 INFO: eventNum: 1
+2024-07-17 23:32:47.851538 INFO: fd: 73, events: 4
+
+2024-07-17 23:32:47.851528 INFO: HttpConn 74 read success
+2024-07-17 23:32:47.851566 INFO: eventNum: 1
+2024-07-17 23:32:47.851571 INFO: GET / HTTP/1.1
+2024-07-17 23:32:47.851587 INFO: Host: 39.98.202.182:9006
+2024-07-17 23:32:47.851600 INFO: User-Agent: Go-http-client/1.1
+2024-07-17 23:32:47.851608 INFO: oop!unknow header: User-Agent: Go-http-client/1.1
+2024-07-17 23:32:47.851617 INFO: X-Vegeta-Seq: 47
+2024-07-17 23:32:47.851574 INFO: fd: 13, events: 1
+
+2024-07-17 23:32:47.851631 INFO: HandleListenEvent 13
+2024-07-17 23:32:47.851651 INFO: Thread 140246148044352 is running task
+
+2024-07-17 23:32:47.851653 INFO: HttpConn 76 init success
+2024-07-17 23:32:47.851622 INFO: oop!unknow header: X-Vegeta-Seq: 47
+2024-07-17 23:32:47.851683 INFO: Accept-Encoding: gzip
+2024-07-17 23:32:47.851672 INFO: addTimer id:76 expireTime:1721230867
+2024-07-17 23:32:47.851688 INFO: oop!unknow header: Accept-Encoding: gzip
+2024-07-17 23:32:47.851705 INFO: Client[76] in!
+2024-07-17 23:32:47.851724 INFO: HandleListenEvent 13
+2024-07-17 23:32:47.851706 INFO: 
+2024-07-17 23:32:47.851736 ERROR: Accept failure -1
+2024-07-17 23:32:47.851748 INFO: request:HTTP/1.1 200 OK
+
+2024-07-17 23:32:47.851754 INFO: request:HTTP/1.1 200 OK
+Content-Length:542
+
+2024-07-17 23:32:47.851758 INFO: request:HTTP/1.1 200 OK
+Content-Length:542
+Connection:close
+
+2024-07-17 23:32:47.851762 INFO: request:HTTP/1.1 200 OK
+Content-Length:542
+Connection:close
+
+
+2024-07-17 23:32:47.851774 INFO: Thread 140246122866240 is running task
+
+2024-07-17 23:32:47.851780 INFO: eventNum: 1
+2024-07-17 23:32:47.851789 INFO: fd: 74, events: 4
+
+2024-07-17 23:32:47.851816 INFO: eventNum: 1
+2024-07-17 23:32:47.851823 INFO: fd: 13, events: 1
+
+2024-07-17 23:32:47.851827 INFO: HandleListenEvent 13
+2024-07-17 23:32:47.851842 INFO: Thread 140246156437056 is running task
+
+2024-07-17 23:32:47.851862 INFO: HttpConn 77 init success
+2024-07-17 23:32:47.851871 INFO: addTimer id:77 expireTime:1721230867
+2024-07-17 23:32:47.851883 INFO: Client[77] in!
+2024-07-17 23:32:47.851888 INFO: HandleListenEvent 13
+2024-07-17 23:32:47.851896 ERROR: Accept failure -1
+2024-07-17 23:32:47.851918 INFO: eventNum: 1
+2024-07-17 23:32:47.851927 INFO: fd: 75, events: 1
+
+2024-07-17 23:32:47.851939 INFO: HttpConn 75 read success
+2024-07-17 23:32:47.851957 INFO: GET / HTTP/1.1
+2024-07-17 23:32:47.851963 INFO: Host: 39.98.202.182:9006
+2024-07-17 23:32:47.851968 INFO: User-Agent: Go-http-client/1.1
+2024-07-17 23:32:47.851972 INFO: oop!unknow header: User-Agent: Go-http-client/1.1
+2024-07-17 23:32:47.851976 INFO: X-Vegeta-Seq: 52
+2024-07-17 23:32:47.851981 INFO: oop!unknow header: X-Vegeta-Seq: 52
+2024-07-17 23:32:47.851985 INFO: Accept-Encoding: gzip
+2024-07-17 23:32:47.851990 INFO: oop!unknow header: Accept-Encoding: gzip
+2024-07-17 23:32:47.851994 INFO: 
+2024-07-17 23:32:47.852009 INFO: request:HTTP/1.1 200 OK
+
+2024-07-17 23:32:47.852014 INFO: request:HTTP/1.1 200 OK
+Content-Length:542
+
+2024-07-17 23:32:47.852019 INFO: request:HTTP/1.1 200 OK
+Content-Length:542
+Connection:close
+
+2024-07-17 23:32:47.852023 INFO: request:HTTP/1.1 200 OK
+Content-Length:542
+Connection:close
+
+
+2024-07-17 23:32:47.852033 INFO: Thread 140246106080832 is running task
+
+2024-07-17 23:32:47.852042 INFO: eventNum: 1
+2024-07-17 23:32:47.852047 INFO: fd: 75, events: 4
+
+2024-07-17 23:32:47.852082 INFO: Thread 140246139651648 is running task
+
+2024-07-17 23:32:47.852253 INFO: eventNum: 1
+2024-07-17 23:32:47.852293 INFO: fd: 13, events: 1
+
+2024-07-17 23:32:47.852302 INFO: HandleListenEvent 13
+2024-07-17 23:32:47.852319 INFO: HttpConn 78 init success
+2024-07-17 23:32:47.852326 INFO: addTimer id:78 expireTime:1721230867
+2024-07-17 23:32:47.852340 INFO: Client[78] in!
+2024-07-17 23:32:47.852353 INFO: HandleListenEvent 13
+2024-07-17 23:32:47.852372 ERROR: Accept failure -1
+2024-07-17 23:32:47.852381 INFO: eventNum: 1
+2024-07-17 23:32:47.852387 INFO: fd: 76, events: 1
+
+2024-07-17 23:32:47.852416 INFO: HttpConn 76 read success
+2024-07-17 23:32:47.852435 INFO: GET / HTTP/1.1
+2024-07-17 23:32:47.852442 INFO: Host: 39.98.202.182:9006
+2024-07-17 23:32:47.852446 INFO: User-Agent: Go-http-client/1.1
+2024-07-17 23:32:47.852451 INFO: oop!unknow header: User-Agent: Go-http-client/1.1
+2024-07-17 23:32:47.852455 INFO: X-Vegeta-Seq: 51
+2024-07-17 23:32:47.852459 INFO: oop!unknow header: X-Vegeta-Seq: 51
+2024-07-17 23:32:47.852463 INFO: Accept-Encoding: gzip
+2024-07-17 23:32:47.852467 INFO: oop!unknow header: Accept-Encoding: gzip
+2024-07-17 23:32:47.852472 INFO: 
+2024-07-17 23:32:47.852488 INFO: request:HTTP/1.1 200 OK
+
+2024-07-17 23:32:47.852492 INFO: request:HTTP/1.1 200 OK
+Content-Length:542
+
+2024-07-17 23:32:47.852496 INFO: request:HTTP/1.1 200 OK
+Content-Length:542
+Connection:close
+
+2024-07-17 23:32:47.852501 INFO: request:HTTP/1.1 200 OK
+Content-Length:542
+Connection:close
+
+
+2024-07-17 23:32:47.852535 INFO: Thread 140246131258944 is running task
+
+2024-07-17 23:32:47.852542 INFO: eventNum: 2
+2024-07-17 23:32:47.852555 INFO: fd: 76, events: 4
+
+2024-07-17 23:32:47.852568 INFO: fd: 77, events: 1
+
+2024-07-17 23:32:47.852590 INFO: Thread 140246114473536 is running task
+
+2024-07-17 23:32:47.852600 INFO: HttpConn 77 read success
+2024-07-17 23:32:47.852608 INFO: GET / HTTP/1.1
+2024-07-17 23:32:47.852613 INFO: Host: 39.98.202.182:9006
+2024-07-17 23:32:47.852617 INFO: User-Agent: Go-http-client/1.1
+2024-07-17 23:32:47.852622 INFO: oop!unknow header: User-Agent: Go-http-client/1.1
+2024-07-17 23:32:47.852626 INFO: X-Vegeta-Seq: 55
+2024-07-17 23:32:47.852630 INFO: oop!unknow header: X-Vegeta-Seq: 55
+2024-07-17 23:32:47.852634 INFO: Accept-Encoding: gzip
+2024-07-17 23:32:47.852638 INFO: oop!unknow header: Accept-Encoding: gzip
+2024-07-17 23:32:47.852642 INFO: 
+2024-07-17 23:32:47.852656 INFO: request:HTTP/1.1 200 OK
+
+2024-07-17 23:32:47.852660 INFO: request:HTTP/1.1 200 OK
+Content-Length:542
+
+2024-07-17 23:32:47.852665 INFO: request:HTTP/1.1 200 OK
+Content-Length:542
+Connection:close
+
+2024-07-17 23:32:47.852669 INFO: request:HTTP/1.1 200 OK
+Content-Length:542
+Connection:close
+
+
+2024-07-17 23:32:47.852680 INFO: Thread 140246114473536 is running task
+
+2024-07-17 23:32:47.852689 INFO: eventNum: 1
+2024-07-17 23:32:47.852702 INFO: fd: 77, events: 4
+
+2024-07-17 23:32:47.852733 INFO: Thread 140246148044352 is running task
+
+2024-07-17 23:32:47.853012 INFO: eventNum: 1
+2024-07-17 23:32:47.853038 INFO: fd: 78, events: 1
+
+2024-07-17 23:32:47.853067 INFO: HttpConn 78 read success
+2024-07-17 23:32:47.853067 INFO: eventNum: 1
+2024-07-17 23:32:47.853087 INFO: GET / HTTP/1.1
+2024-07-17 23:32:47.853107 INFO: Host: 39.98.202.182:9006
+2024-07-17 23:32:47.853095 INFO: fd: 13, events: 1
+
+2024-07-17 23:32:47.853113 INFO: User-Agent: Go-http-client/1.1
+2024-07-17 23:32:47.853138 INFO: oop!unknow header: User-Agent: Go-http-client/1.1
+2024-07-17 23:32:47.853144 INFO: X-Vegeta-Seq: 57
+2024-07-17 23:32:47.853154 INFO: oop!unknow header: X-Vegeta-Seq: 57
+2024-07-17 23:32:47.853159 INFO: Accept-Encoding: gzip
+2024-07-17 23:32:47.853125 INFO: HandleListenEvent 13
+2024-07-17 23:32:47.853166 INFO: oop!unknow header: Accept-Encoding: gzip
+2024-07-17 23:32:47.853187 INFO: 
+2024-07-17 23:32:47.853192 INFO: HttpConn 79 init success
+2024-07-17 23:32:47.853203 INFO: addTimer id:79 expireTime:1721230867
+2024-07-17 23:32:47.853207 INFO: request:HTTP/1.1 200 OK
+
+2024-07-17 23:32:47.853223 INFO: request:HTTP/1.1 200 OK
+Content-Length:542
+
+2024-07-17 23:32:47.853225 INFO: Client[79] in!
+2024-07-17 23:32:47.853229 INFO: request:HTTP/1.1 200 OK
+Content-Length:542
+Connection:close
+
+2024-07-17 23:32:47.853253 INFO: request:HTTP/1.1 200 OK
+Content-Length:542
+Connection:close
+
+
+2024-07-17 23:32:47.853240 INFO: HandleListenEvent 13
+2024-07-17 23:32:47.853264 INFO: Thread 140246122866240 is running task
+
+2024-07-17 23:32:47.853279 ERROR: Accept failure -1
+2024-07-17 23:32:47.853289 INFO: eventNum: 1
+2024-07-17 23:32:47.853295 INFO: fd: 78, events: 4
+
+2024-07-17 23:32:47.853330 INFO: Thread 140246156437056 is running task
+
+2024-07-17 23:32:47.853459 INFO: eventNum: 1
+2024-07-17 23:32:47.853498 INFO: fd: 79, events: 1
+
+2024-07-17 23:32:47.853521 INFO: HttpConn 79 read success
+2024-07-17 23:32:47.853535 INFO: GET / HTTP/1.1
+2024-07-17 23:32:47.853547 INFO: Host: 39.98.202.182:9006
+2024-07-17 23:32:47.853554 INFO: User-Agent: Go-http-client/1.1
+2024-07-17 23:32:47.853564 INFO: oop!unknow header: User-Agent: Go-http-client/1.1
+2024-07-17 23:32:47.853570 INFO: X-Vegeta-Seq: 48
+2024-07-17 23:32:47.853576 INFO: oop!unknow header: X-Vegeta-Seq: 48
+2024-07-17 23:32:47.853582 INFO: Accept-Encoding: gzip
+2024-07-17 23:32:47.853589 INFO: oop!unknow header: Accept-Encoding: gzip
+2024-07-17 23:32:47.853595 INFO: 
+2024-07-17 23:32:47.853617 INFO: request:HTTP/1.1 200 OK
+
+2024-07-17 23:32:47.853624 INFO: request:HTTP/1.1 200 OK
+Content-Length:542
+
+2024-07-17 23:32:47.853631 INFO: request:HTTP/1.1 200 OK
+Content-Length:542
+Connection:close
+
+2024-07-17 23:32:47.853638 INFO: request:HTTP/1.1 200 OK
+Content-Length:542
+Connection:close
+
+
+2024-07-17 23:32:47.853652 INFO: Thread 140246106080832 is running task
+
+2024-07-17 23:32:47.853676 INFO: eventNum: 2
+2024-07-17 23:32:47.853684 INFO: fd: 13, events: 1
+
+2024-07-17 23:32:47.853691 INFO: HandleListenEvent 13
+2024-07-17 23:32:47.853719 INFO: HttpConn 80 init success
+2024-07-17 23:32:47.853728 INFO: addTimer id:80 expireTime:1721230867
+2024-07-17 23:32:47.853743 INFO: Client[80] in!
+2024-07-17 23:32:47.853750 INFO: HandleListenEvent 13
+2024-07-17 23:32:47.853762 INFO: HttpConn 81 init success
+2024-07-17 23:32:47.853769 INFO: addTimer id:81 expireTime:1721230867
+2024-07-17 23:32:47.853781 INFO: Client[81] in!
+2024-07-17 23:32:47.853788 INFO: HandleListenEvent 13
+2024-07-17 23:32:47.853800 ERROR: Accept failure -1
+2024-07-17 23:32:47.853807 INFO: fd: 79, events: 4
+
+2024-07-17 23:32:47.853855 INFO: Thread 140246139651648 is running task
+
+2024-07-17 23:32:47.853934 INFO: eventNum: 1
+2024-07-17 23:32:47.853954 INFO: fd: 80, events: 1
+
+2024-07-17 23:32:47.853973 INFO: eventNum: 1
+2024-07-17 23:32:47.853977 INFO: HttpConn 80 read success
+2024-07-17 23:32:47.853981 INFO: fd: 81, events: 1
+
+2024-07-17 23:32:47.853999 INFO: GET / HTTP/1.1
+2024-07-17 23:32:47.854008 INFO: Host: 39.98.202.182:9006

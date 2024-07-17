@@ -21,9 +21,10 @@ TriggerMode HttpConn::connectTriggerMode;
 std::mutex mx;
 std::map<std::string, std::string> users;
 
-void HttpConn::Init(int fd, const sockaddr_in &addr) {
+void HttpConn::Init(int fd, int epollfd, const sockaddr_in &addr) {
   sockfd = fd;
   address = addr;
+  epollfd = epollfd;
 
   userCount++;
   LOG_INFO("HttpConn %d init success", sockfd);
@@ -60,13 +61,11 @@ bool HttpConn::Process() {
   SqlConnectionRAII mysqlcon(&mysql);
 
   HttpCode readRet = ProcessRead();
-  LOG_INFO("HttpConn %d readRet %d\n\n\n\n", sockfd, readRet);
   if (readRet == HttpCode::NO_REQUEST) {
     // modfd(m_epollfd, m_sockfd, EPOLLIN, m_TRIGMode);
     return false;
   }
   bool writeRet = ProcessWrite(readRet);
-  LOG_INFO("HttpConn %d writeRet %d????\n\n\n\n", sockfd, writeRet);
   if (!writeRet) {
     CloseConn();
   }
@@ -227,9 +226,6 @@ LineStatus HttpConn::parseLine() {
 }
 
 HttpCode HttpConn::doRequest() {
-  // std::cout << content << " " << url << " " << host << " "
-  //           << " " << version << std::endl;
-  // TODO: read code below
   char serverPath[200];
   getcwd(serverPath, 200);
   char resource[10] = "/resource";
@@ -240,9 +236,6 @@ HttpCode HttpConn::doRequest() {
   strcpy(realFile, docResource);
   int len = strlen(docResource);
   const char *p = strrchr(url, '/');
-
-  LOG_INFO("m_url:%s %s\n", url, p);
-  LOG_INFO("i am here ---------\n\n\n")
 
   //处理cgi
   if (cgi == 1 && (*(p + 1) == '2' || *(p + 1) == '3')) {
@@ -301,14 +294,12 @@ HttpCode HttpConn::doRequest() {
   }
 
   if (*(p + 1) == '0') {
-    LOG_INFO("i am here 00000000\n\n\n")
     char *m_url_real = (char *)malloc(sizeof(char) * 200);
     strcpy(m_url_real, "/register.html");
     strncpy(realFile + len, m_url_real, strlen(m_url_real));
 
     free(m_url_real);
   } else if (*(p + 1) == '1') {
-    LOG_INFO("i am here 1111111\n\n\n")
     char *m_url_real = (char *)malloc(sizeof(char) * 200);
     strcpy(m_url_real, "/log.html");
     strncpy(realFile + len, m_url_real, strlen(m_url_real));
@@ -333,7 +324,6 @@ HttpCode HttpConn::doRequest() {
 
     free(m_url_real);
   } else {
-    LOG_INFO("i am here 88888888\n\n\n")
     strncpy(realFile + len, url, FILENAME_LEN - len - 1);
   }
   if (stat(realFile, &fileStat) < 0) return HttpCode::NO_RESOURCE;

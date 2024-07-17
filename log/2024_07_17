@@ -1,0 +1,1612 @@
+2024-07-17 22:36:00.012515 INFO: Log init success
+2024-07-17 22:36:00.556645 INFO: SqlConnectionPool init success
+2024-07-17 22:36:00.556684 INFO: Event mode init success
+2024-07-17 22:36:00.556918 INFO: ThreadPool init success
+2024-07-17 22:36:00.556957 INFO: Add listenFd to epoll success
+2024-07-17 22:36:00.556964 INFO: WebService init success
+2024-07-17 22:36:00.556969 INFO: WebService start
+2024-07-17 22:36:04.904874 INFO: eventNum: 1
+2024-07-17 22:36:04.904928 INFO: fd: 13, events: 1
+
+2024-07-17 22:36:04.904935 INFO: HandleListenEvent 13
+2024-07-17 22:36:04.904965 INFO: HttpConn 14 init success
+2024-07-17 22:36:04.904972 INFO: addTimer id:14 expireTime:1721227464
+2024-07-17 22:36:04.904986 INFO: Client[14] in!
+2024-07-17 22:36:04.904991 INFO: HandleListenEvent 13
+2024-07-17 22:36:04.905002 ERROR: Accept failure -1
+2024-07-17 22:36:04.905008 INFO: eventNum: 1
+2024-07-17 22:36:04.905013 INFO: fd: 14, events: 1
+
+2024-07-17 22:36:04.905018 INFO: READ event????????? 14
+
+
+
+2024-07-17 22:36:04.905070 INFO: OnRead
+2024-07-17 22:36:04.905082 INFO: HttpConn 14 read success
+2024-07-17 22:36:04.905095 INFO: GET / HTTP/1.1
+2024-07-17 22:36:04.905103 INFO: Host: localhost:9006
+2024-07-17 22:36:04.905108 INFO: User-Agent: curl/7.81.0
+2024-07-17 22:36:04.905112 INFO: oop!unknow header: User-Agent: curl/7.81.0
+2024-07-17 22:36:04.905117 INFO: Accept: */*
+2024-07-17 22:36:04.905121 INFO: oop!unknow header: Accept: */*
+2024-07-17 22:36:04.905126 INFO: 
+2024-07-17 22:36:04.905133 INFO: m_url:/judge.html /judge.html
+
+2024-07-17 22:36:04.905138 INFO: i am here ---------
+
+
+
+2024-07-17 22:36:04.905143 INFO: i am here 88888888
+
+
+
+2024-07-17 22:36:04.905158 INFO: HttpConn 14 readRet 5
+
+
+
+
+2024-07-17 22:36:04.905163 INFO: fAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+
+2024-07-17 22:36:04.905168 INFO: fAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA111
+
+2024-07-17 22:36:04.905172 INFO: fAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA2222
+
+2024-07-17 22:36:04.905177 INFO: request:HTTP/1.1 200 OK
+
+2024-07-17 22:36:04.905182 INFO: fAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA111
+
+2024-07-17 22:36:04.905186 INFO: fAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA2222
+
+2024-07-17 22:36:04.905190 INFO: request:HTTP/1.1 200 OK
+Content-Length:586
+
+2024-07-17 22:36:04.905195 INFO: fAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA111
+
+2024-07-17 22:36:04.905199 INFO: fAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA2222
+
+2024-07-17 22:36:04.905203 INFO: request:HTTP/1.1 200 OK
+Content-Length:586
+Connection:close
+
+2024-07-17 22:36:04.905208 INFO: fAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA111
+
+2024-07-17 22:36:04.905212 INFO: fAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA2222
+
+2024-07-17 22:36:04.905216 INFO: request:HTTP/1.1 200 OK
+Content-Length:586
+Connection:close
+
+
+2024-07-17 22:36:04.905220 INFO: fAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABBBBBBBBBBBBB
+
+2024-07-17 22:36:04.905225 INFO: HttpConn 14 writeRet 1????
+
+
+
+
+2024-07-17 22:36:04.905230 INFO: Process success 14??????
+
+
+2024-07-17 22:36:04.905272 INFO: eventNum: 1
+2024-07-17 22:36:04.905305 INFO: fd: 14, events: 4
+
+2024-07-17 22:36:04.905311 INFO: Write event?????????
+
+
+
+2024-07-17 22:36:04.905348 INFO: OnWriteXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+2024-07-17 22:36:04.905292 INFO: Thread 140483802846784 is running task
+
+2024-07-17 22:36:04.905766 INFO: Thread 140483811239488 is running task
+
+2024-07-17 22:36:04.905996 INFO: eventNum: 1
+2024-07-17 22:36:04.906012 INFO: fd: 14, events: 8193
+
+2024-07-17 22:36:04.906044 INFO: HttpConn 14 close success
+2024-07-17 22:36:04.906050 INFO: Client[14] quit!
+2024-07-17 22:36:06.984944 INFO: eventNum: 1
+2024-07-17 22:36:06.984993 INFO: fd: 13, events: 1
+
+2024-07-17 22:36:06.985000 INFO: HandleListenEvent 13
+2024-07-17 22:36:06.985021 INFO: HttpConn 14 init success
+2024-07-17 22:36:06.985029 INFO: addTimer id:14 expireTime:1721227466
+2024-07-17 22:36:06.985042 INFO: Client[14] in!
+2024-07-17 22:36:06.985047 INFO: HandleListenEvent 13
+2024-07-17 22:36:06.985057 ERROR: Accept failure -1
+2024-07-17 22:36:06.994701 INFO: eventNum: 1
+2024-07-17 22:36:06.994755 INFO: fd: 13, events: 1
+
+2024-07-17 22:36:06.994761 INFO: HandleListenEvent 13
+2024-07-17 22:36:06.994782 INFO: HttpConn 15 init success
+2024-07-17 22:36:06.994789 INFO: addTimer id:15 expireTime:1721227466
+2024-07-17 22:36:06.994804 INFO: Client[15] in!
+2024-07-17 22:36:06.994809 INFO: HandleListenEvent 13
+2024-07-17 22:36:06.994817 ERROR: Accept failure -1
+2024-07-17 22:36:06.994823 INFO: eventNum: 1
+2024-07-17 22:36:06.994828 INFO: fd: 15, events: 1
+
+2024-07-17 22:36:06.994832 INFO: READ event????????? 15
+
+
+
+2024-07-17 22:36:06.994878 INFO: OnRead
+2024-07-17 22:36:06.994919 INFO: HttpConn 15 read success
+2024-07-17 22:36:06.994932 INFO: GET / HTTP/1.1
+2024-07-17 22:36:06.994939 INFO: Host: localhost:9006
+2024-07-17 22:36:06.994944 INFO: Connection: keep-alive
+2024-07-17 22:36:06.994949 INFO: sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126"
+2024-07-17 22:36:06.994954 INFO: oop!unknow header: sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126"
+2024-07-17 22:36:06.994959 INFO: sec-ch-ua-mobile: ?0
+2024-07-17 22:36:06.994964 INFO: oop!unknow header: sec-ch-ua-mobile: ?0
+2024-07-17 22:36:06.994969 INFO: sec-ch-ua-platform: "macOS"
+2024-07-17 22:36:06.994973 INFO: oop!unknow header: sec-ch-ua-platform: "macOS"
+2024-07-17 22:36:06.994978 INFO: Upgrade-Insecure-Requests: 1
+2024-07-17 22:36:06.994982 INFO: oop!unknow header: Upgrade-Insecure-Requests: 1
+2024-07-17 22:36:06.994987 INFO: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36
+2024-07-17 22:36:06.994992 INFO: oop!unknow header: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36
+2024-07-17 22:36:06.994996 INFO: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2024-07-17 22:36:06.995001 INFO: oop!unknow header: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2024-07-17 22:36:06.995006 INFO: Sec-Fetch-Site: none
+2024-07-17 22:36:06.995010 INFO: oop!unknow header: Sec-Fetch-Site: none
+2024-07-17 22:36:06.995015 INFO: Sec-Fetch-Mode: navigate
+2024-07-17 22:36:06.995019 INFO: oop!unknow header: Sec-Fetch-Mode: navigate
+2024-07-17 22:36:06.995024 INFO: Sec-Fetch-User: ?1
+2024-07-17 22:36:06.995028 INFO: oop!unknow header: Sec-Fetch-User: ?1
+2024-07-17 22:36:06.995032 INFO: Sec-Fetch-Dest: document
+2024-07-17 22:36:06.995037 INFO: oop!unknow header: Sec-Fetch-Dest: document
+2024-07-17 22:36:06.995041 INFO: Accept-Encoding: gzip, deflate, br, zstd
+2024-07-17 22:36:06.995046 INFO: oop!unknow header: Accept-Encoding: gzip, deflate, br, zstd
+2024-07-17 22:36:06.995104 INFO: Accept-Language: en-US,en;q=0.9,zh-CN;q=0.8,zh;q=0.7
+2024-07-17 22:36:06.995110 INFO: oop!unknow header: Accept-Language: en-US,en;q=0.9,zh-CN;q=0.8,zh;q=0.7
+2024-07-17 22:36:06.995115 INFO: 
+2024-07-17 22:36:06.995123 INFO: m_url:/judge.html /judge.html
+
+2024-07-17 22:36:06.995128 INFO: i am here ---------
+
+
+
+2024-07-17 22:36:06.995133 INFO: i am here 88888888
+
+
+
+2024-07-17 22:36:06.995150 INFO: HttpConn 15 readRet 5
+
+
+
+
+2024-07-17 22:36:06.995155 INFO: fAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+
+2024-07-17 22:36:06.995160 INFO: fAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA111
+
+2024-07-17 22:36:06.995164 INFO: fAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA2222
+
+2024-07-17 22:36:06.995169 INFO: request:HTTP/1.1 200 OK
+
+2024-07-17 22:36:06.995174 INFO: fAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA111
+
+2024-07-17 22:36:06.995178 INFO: fAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA2222
+
+2024-07-17 22:36:06.995182 INFO: request:HTTP/1.1 200 OK
+Content-Length:586
+
+2024-07-17 22:36:06.995187 INFO: fAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA111
+
+2024-07-17 22:36:06.995191 INFO: fAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA2222
+
+2024-07-17 22:36:06.995196 INFO: request:HTTP/1.1 200 OK
+Content-Length:586
+Connection:keep-alive
+
+2024-07-17 22:36:06.995208 INFO: fAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA111
+
+2024-07-17 22:36:06.995213 INFO: fAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA2222
+
+2024-07-17 22:36:06.995217 INFO: request:HTTP/1.1 200 OK
+Content-Length:586
+Connection:keep-alive
+
+
+2024-07-17 22:36:06.995221 INFO: fAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABBBBBBBBBBBBB
+
+2024-07-17 22:36:06.995226 INFO: HttpConn 15 writeRet 1????
+
+
+
+
+2024-07-17 22:36:06.995231 INFO: Process success 15??????
+
+
+2024-07-17 22:36:06.995270 INFO: Thread 140483819632192 is running task
+
+2024-07-17 22:36:06.995283 INFO: eventNum: 1
+2024-07-17 22:36:06.995290 INFO: fd: 15, events: 4
+
+2024-07-17 22:36:06.995295 INFO: Write event?????????
+
+
+
+2024-07-17 22:36:06.995326 INFO: OnWriteXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+2024-07-17 22:36:06.995382 INFO: Thread 140483786061376 is running task
+
+2024-07-17 22:36:07.227308 INFO: eventNum: 1
+2024-07-17 22:36:07.227362 INFO: fd: 15, events: 1
+
+2024-07-17 22:36:07.227371 INFO: READ event????????? 15
+
+
+
+2024-07-17 22:36:07.227420 INFO: OnRead
+2024-07-17 22:36:07.227431 INFO: HttpConn 15 read success
+2024-07-17 22:36:07.227441 INFO: GET /favicon.ico HTTP/1.1
+2024-07-17 22:36:07.227448 INFO: Host: localhost:9006
+2024-07-17 22:36:07.227453 INFO: Connection: keep-alive
+2024-07-17 22:36:07.227458 INFO: sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126"
+2024-07-17 22:36:07.227463 INFO: oop!unknow header: sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126"
+2024-07-17 22:36:07.227468 INFO: sec-ch-ua-mobile: ?0
+2024-07-17 22:36:07.227473 INFO: oop!unknow header: sec-ch-ua-mobile: ?0
+2024-07-17 22:36:07.227478 INFO: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36
+2024-07-17 22:36:07.227482 INFO: oop!unknow header: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36
+2024-07-17 22:36:07.227487 INFO: sec-ch-ua-platform: "macOS"
+2024-07-17 22:36:07.227492 INFO: oop!unknow header: sec-ch-ua-platform: "macOS"
+2024-07-17 22:36:07.227496 INFO: Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+2024-07-17 22:36:07.227501 INFO: oop!unknow header: Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+2024-07-17 22:36:07.227505 INFO: Sec-Fetch-Site: same-origin
+2024-07-17 22:36:07.227510 INFO: oop!unknow header: Sec-Fetch-Site: same-origin
+2024-07-17 22:36:07.227514 INFO: Sec-Fetch-Mode: no-cors
+2024-07-17 22:36:07.227518 INFO: oop!unknow header: Sec-Fetch-Mode: no-cors
+2024-07-17 22:36:07.227523 INFO: Sec-Fetch-Dest: image
+2024-07-17 22:36:07.227527 INFO: oop!unknow header: Sec-Fetch-Dest: image
+2024-07-17 22:36:07.227532 INFO: Referer: http://localhost:9006/
+2024-07-17 22:36:07.227536 INFO: oop!unknow header: Referer: http://localhost:9006/
+2024-07-17 22:36:07.227541 INFO: Accept-Encoding: gzip, deflate, br, zstd
+2024-07-17 22:36:07.227545 INFO: oop!unknow header: Accept-Encoding: gzip, deflate, br, zstd
+2024-07-17 22:36:07.227550 INFO: Accept-Language: en-US,en;q=0.9,zh-CN;q=0.8,zh;q=0.7
+2024-07-17 22:36:07.227554 INFO: oop!unknow header: Accept-Language: en-US,en;q=0.9,zh-CN;q=0.8,zh;q=0.7
+2024-07-17 22:36:07.227559 INFO: 
+2024-07-17 22:36:07.227566 INFO: m_url:/favicon.ico /favicon.ico
+
+2024-07-17 22:36:07.227571 INFO: i am here ---------
+
+
+
+2024-07-17 22:36:07.227576 INFO: i am here 88888888
+
+
+
+2024-07-17 22:36:07.227598 INFO: HttpConn 15 readRet 5
+
+
+
+
+2024-07-17 22:36:07.227603 INFO: fAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+
+2024-07-17 22:36:07.227607 INFO: fAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA111
+
+2024-07-17 22:36:07.227612 INFO: fAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA2222
+
+2024-07-17 22:36:07.227617 INFO: request:HTTP/1.1 200 OK
+
+2024-07-17 22:36:07.227621 INFO: fAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA111
+
+2024-07-17 22:36:07.227625 INFO: fAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA2222
+
+2024-07-17 22:36:07.227638 INFO: request:HTTP/1.1 200 OK
+Content-Length:4286
+
+2024-07-17 22:36:07.227642 INFO: fAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA111
+
+2024-07-17 22:36:07.227647 INFO: fAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA2222
+
+2024-07-17 22:36:07.227651 INFO: request:HTTP/1.1 200 OK
+Content-Length:4286
+Connection:keep-alive
+
+2024-07-17 22:36:07.227656 INFO: fAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA111
+
+2024-07-17 22:36:07.227660 INFO: fAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA2222
+
+2024-07-17 22:36:07.227664 INFO: request:HTTP/1.1 200 OK
+Content-Length:4286
+Connection:keep-alive
+
+
+2024-07-17 22:36:07.227669 INFO: fAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABBBBBBBBBBBBB
+
+2024-07-17 22:36:07.227673 INFO: HttpConn 15 writeRet 1????
+
+
+
+
+2024-07-17 22:36:07.227678 INFO: Process success 15??????
+
+
+2024-07-17 22:36:07.227707 INFO: Thread 140483794454080 is running task
+
+2024-07-17 22:36:07.227726 INFO: eventNum: 1
+2024-07-17 22:36:07.227733 INFO: fd: 15, events: 4
+
+2024-07-17 22:36:07.227740 INFO: Write event?????????
+
+
+
+2024-07-17 22:36:07.227801 INFO: OnWriteXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+2024-07-17 22:36:07.228340 INFO: Thread 140483777668672 is running task
+
+2024-07-17 22:36:08.294874 INFO: eventNum: 1
+2024-07-17 22:36:08.294936 INFO: fd: 15, events: 1
+
+2024-07-17 22:36:08.294949 INFO: READ event????????? 15
+
+
+
+2024-07-17 22:36:08.295012 INFO: OnRead
+2024-07-17 22:36:08.295025 INFO: HttpConn 15 read success
+2024-07-17 22:36:08.295039 INFO: POST /0 HTTP/1.1
+2024-07-17 22:36:08.295049 INFO: Host: localhost:9006
+2024-07-17 22:36:08.295059 INFO: Connection: keep-alive
+2024-07-17 22:36:08.295066 INFO: Content-Length: 0
+2024-07-17 22:36:08.295075 INFO: Cache-Control: max-age=0
+2024-07-17 22:36:08.295081 INFO: oop!unknow header: Cache-Control: max-age=0
+2024-07-17 22:36:08.295089 INFO: sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126"
+2024-07-17 22:36:08.295096 INFO: oop!unknow header: sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126"
+2024-07-17 22:36:08.295104 INFO: sec-ch-ua-mobile: ?0
+2024-07-17 22:36:08.295111 INFO: oop!unknow header: sec-ch-ua-mobile: ?0
+2024-07-17 22:36:08.295118 INFO: sec-ch-ua-platform: "macOS"
+2024-07-17 22:36:08.295127 INFO: oop!unknow header: sec-ch-ua-platform: "macOS"
+2024-07-17 22:36:08.295135 INFO: Upgrade-Insecure-Requests: 1
+2024-07-17 22:36:08.295141 INFO: oop!unknow header: Upgrade-Insecure-Requests: 1
+2024-07-17 22:36:08.295148 INFO: Origin: http://localhost:9006
+2024-07-17 22:36:08.295155 INFO: oop!unknow header: Origin: http://localhost:9006
+2024-07-17 22:36:08.295162 INFO: Content-Type: application/x-www-form-urlencoded
+2024-07-17 22:36:08.295169 INFO: oop!unknow header: Content-Type: application/x-www-form-urlencoded
+2024-07-17 22:36:08.295176 INFO: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36
+2024-07-17 22:36:08.295183 INFO: oop!unknow header: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36
+2024-07-17 22:36:08.295191 INFO: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2024-07-17 22:36:08.295198 INFO: oop!unknow header: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2024-07-17 22:36:08.295208 INFO: Sec-Fetch-Site: same-origin
+2024-07-17 22:36:08.295215 INFO: oop!unknow header: Sec-Fetch-Site: same-origin
+2024-07-17 22:36:08.295222 INFO: Sec-Fetch-Mode: navigate
+2024-07-17 22:36:08.295229 INFO: oop!unknow header: Sec-Fetch-Mode: navigate
+2024-07-17 22:36:08.295236 INFO: Sec-Fetch-User: ?1
+2024-07-17 22:36:08.295248 INFO: oop!unknow header: Sec-Fetch-User: ?1
+2024-07-17 22:36:08.295255 INFO: Sec-Fetch-Dest: document
+2024-07-17 22:36:08.295262 INFO: oop!unknow header: Sec-Fetch-Dest: document
+2024-07-17 22:36:08.295278 INFO: Referer: http://localhost:9006/
+2024-07-17 22:36:08.295285 INFO: oop!unknow header: Referer: http://localhost:9006/
+2024-07-17 22:36:08.295292 INFO: Accept-Encoding: gzip, deflate, br, zstd
+2024-07-17 22:36:08.295298 INFO: oop!unknow header: Accept-Encoding: gzip, deflate, br, zstd
+2024-07-17 22:36:08.295306 INFO: Accept-Language: en-US,en;q=0.9,zh-CN;q=0.8,zh;q=0.7
+2024-07-17 22:36:08.295312 INFO: oop!unknow header: Accept-Language: en-US,en;q=0.9,zh-CN;q=0.8,zh;q=0.7
+2024-07-17 22:36:08.295319 INFO: 
+2024-07-17 22:36:08.295329 INFO: m_url:/0 /0
+
+2024-07-17 22:36:08.295337 INFO: i am here ---------
+
+
+
+2024-07-17 22:36:08.295344 INFO: i am here 00000000
+
+
+
+2024-07-17 22:36:08.295371 INFO: HttpConn 15 readRet 5
+
+
+
+
+2024-07-17 22:36:08.295378 INFO: fAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+
+2024-07-17 22:36:08.295385 INFO: fAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA111
+
+2024-07-17 22:36:08.295392 INFO: fAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA2222
+
+2024-07-17 22:36:08.295399 INFO: request:HTTP/1.1 200 OK
+
+2024-07-17 22:36:08.295407 INFO: fAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA111
+
+2024-07-17 22:36:08.295413 INFO: fAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA2222
+
+2024-07-17 22:36:08.295420 INFO: request:HTTP/1.1 200 OK
+Content-Length:724
+
+2024-07-17 22:36:08.295427 INFO: fAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA111
+
+2024-07-17 22:36:08.295433 INFO: fAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA2222
+
+2024-07-17 22:36:08.295441 INFO: request:HTTP/1.1 200 OK
+Content-Length:724
+Connection:keep-alive
+
+2024-07-17 22:36:08.295447 INFO: fAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA111
+
+2024-07-17 22:36:08.295454 INFO: fAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA2222
+
+2024-07-17 22:36:08.295460 INFO: request:HTTP/1.1 200 OK
+Content-Length:724
+Connection:keep-alive
+
+
+2024-07-17 22:36:08.295467 INFO: fAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABBBBBBBBBBBBB
+
+2024-07-17 22:36:08.295474 INFO: HttpConn 15 writeRet 1????
+
+
+
+
+2024-07-17 22:36:08.295482 INFO: Process success 15??????
+
+
+2024-07-17 22:36:08.295506 INFO: Thread 140483769275968 is running task
+
+2024-07-17 22:36:08.295521 INFO: eventNum: 1
+2024-07-17 22:36:08.295528 INFO: fd: 15, events: 4
+
+2024-07-17 22:36:08.295536 INFO: Write event?????????
+
+
+
+2024-07-17 22:36:08.295582 INFO: OnWriteXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+2024-07-17 22:36:08.296130 INFO: Thread 140483760883264 is running task
+
+2024-07-17 22:36:15.114387 INFO: eventNum: 1
+2024-07-17 22:36:15.114455 INFO: fd: 13, events: 1
+
+2024-07-17 22:36:15.114465 INFO: HandleListenEvent 13
+2024-07-17 22:36:15.114488 INFO: HttpConn 16 init success
+2024-07-17 22:36:15.114504 INFO: addTimer id:16 expireTime:1721227475
+2024-07-17 22:36:15.114526 INFO: Client[16] in!
+2024-07-17 22:36:15.114533 INFO: HandleListenEvent 13
+2024-07-17 22:36:15.114546 ERROR: Accept failure -1
+2024-07-17 22:36:15.114553 INFO: eventNum: 1
+2024-07-17 22:36:15.114562 INFO: fd: 16, events: 1
+
+2024-07-17 22:36:15.114572 INFO: READ event????????? 16
+
+
+
+2024-07-17 22:36:15.114612 INFO: OnRead
+2024-07-17 22:36:15.114625 INFO: HttpConn 16 read success
+2024-07-17 22:36:15.114640 INFO: POST /3CGISQL.cgi HTTP/1.1
+2024-07-17 22:36:15.114648 INFO: Host: localhost:9006
+2024-07-17 22:36:15.114653 INFO: Connection: keep-alive
+2024-07-17 22:36:15.114658 INFO: Content-Length: 22
+2024-07-17 22:36:15.114663 INFO: Cache-Control: max-age=0
+2024-07-17 22:36:15.114667 INFO: oop!unknow header: Cache-Control: max-age=0
+2024-07-17 22:36:15.114674 INFO: sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126"
+2024-07-17 22:36:15.114680 INFO: oop!unknow header: sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126"
+2024-07-17 22:36:15.114694 INFO: sec-ch-ua-mobile: ?0
+2024-07-17 22:36:15.114700 INFO: oop!unknow header: sec-ch-ua-mobile: ?0
+2024-07-17 22:36:15.114707 INFO: sec-ch-ua-platform: "macOS"
+2024-07-17 22:36:15.114713 INFO: oop!unknow header: sec-ch-ua-platform: "macOS"
+2024-07-17 22:36:15.114728 INFO: Upgrade-Insecure-Requests: 1
+2024-07-17 22:36:15.114733 INFO: oop!unknow header: Upgrade-Insecure-Requests: 1
+2024-07-17 22:36:15.114737 INFO: Origin: http://localhost:9006
+2024-07-17 22:36:15.114742 INFO: oop!unknow header: Origin: http://localhost:9006
+2024-07-17 22:36:15.114746 INFO: Content-Type: application/x-www-form-urlencoded
+2024-07-17 22:36:15.114751 INFO: oop!unknow header: Content-Type: application/x-www-form-urlencoded
+2024-07-17 22:36:15.114756 INFO: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36
+2024-07-17 22:36:15.114763 INFO: oop!unknow header: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36
+2024-07-17 22:36:15.114770 INFO: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2024-07-17 22:36:15.114776 INFO: oop!unknow header: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2024-07-17 22:36:15.114783 INFO: Sec-Fetch-Site: same-origin
+2024-07-17 22:36:15.114790 INFO: oop!unknow header: Sec-Fetch-Site: same-origin
+2024-07-17 22:36:15.114796 INFO: Sec-Fetch-Mode: navigate
+2024-07-17 22:36:15.114802 INFO: oop!unknow header: Sec-Fetch-Mode: navigate
+2024-07-17 22:36:15.114809 INFO: Sec-Fetch-User: ?1
+2024-07-17 22:36:15.114815 INFO: oop!unknow header: Sec-Fetch-User: ?1
+2024-07-17 22:36:15.114819 INFO: Sec-Fetch-Dest: document
+2024-07-17 22:36:15.114824 INFO: oop!unknow header: Sec-Fetch-Dest: document
+2024-07-17 22:36:15.114828 INFO: Referer: http://localhost:9006/0
+2024-07-17 22:36:15.114832 INFO: oop!unknow header: Referer: http://localhost:9006/0
+2024-07-17 22:36:15.114837 INFO: Accept-Encoding: gzip, deflate, br, zstd
+2024-07-17 22:36:15.114841 INFO: oop!unknow header: Accept-Encoding: gzip, deflate, br, zstd
+2024-07-17 22:36:15.114846 INFO: Accept-Language: en-US,en;q=0.9,zh-CN;q=0.8,zh;q=0.7
+2024-07-17 22:36:15.114851 INFO: oop!unknow header: Accept-Language: en-US,en;q=0.9,zh-CN;q=0.8,zh;q=0.7
+2024-07-17 22:36:15.114860 INFO: 
+2024-07-17 22:36:15.114867 INFO: user=swj&password=1024
+2024-07-17 22:36:15.114877 INFO: m_url:/3CGISQL.cgi /3CGISQL.cgi
+
+2024-07-17 22:36:15.114882 INFO: i am here ---------
+
+
+
+2024-07-17 22:36:15.127419 INFO: eventNum: 1
+2024-07-17 22:36:15.127463 INFO: fd: 13, events: 1
+
+2024-07-17 22:36:15.127469 INFO: HandleListenEvent 13
+2024-07-17 22:36:15.127498 INFO: HttpConn 17 init success
+2024-07-17 22:36:15.127506 INFO: addTimer id:17 expireTime:1721227475
+2024-07-17 22:36:15.127519 INFO: Client[17] in!
+2024-07-17 22:36:15.127524 INFO: HandleListenEvent 13
+2024-07-17 22:36:15.127534 ERROR: Accept failure -1
+2024-07-17 22:36:15.290791 INFO: i am here 88888888
+
+
+
+2024-07-17 22:36:15.290867 INFO: HttpConn 16 readRet 5
+
+
+
+
+2024-07-17 22:36:15.290875 INFO: fAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+
+2024-07-17 22:36:15.290881 INFO: fAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA111
+
+2024-07-17 22:36:15.290885 INFO: fAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA2222
+
+2024-07-17 22:36:15.290891 INFO: request:HTTP/1.1 200 OK
+
+2024-07-17 22:36:15.290895 INFO: fAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA111
+
+2024-07-17 22:36:15.290899 INFO: fAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA2222
+
+2024-07-17 22:36:15.290905 INFO: request:HTTP/1.1 200 OK
+Content-Length:725
+
+2024-07-17 22:36:15.290912 INFO: fAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA111
+
+2024-07-17 22:36:15.290918 INFO: fAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA2222
+
+2024-07-17 22:36:15.290924 INFO: request:HTTP/1.1 200 OK
+Content-Length:725
+Connection:keep-alive
+
+2024-07-17 22:36:15.290931 INFO: fAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA111
+
+2024-07-17 22:36:15.290937 INFO: fAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA2222
+
+2024-07-17 22:36:15.290943 INFO: request:HTTP/1.1 200 OK
+Content-Length:725
+Connection:keep-alive
+
+
+2024-07-17 22:36:15.290958 INFO: fAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABBBBBBBBBBBBB
+
+2024-07-17 22:36:15.290964 INFO: HttpConn 16 writeRet 1????
+
+
+
+
+2024-07-17 22:36:15.290973 INFO: Process success 16??????
+
+
+2024-07-17 22:36:15.291001 INFO: Thread 140483802846784 is running task
+
+2024-07-17 22:36:15.291015 INFO: eventNum: 1
+2024-07-17 22:36:15.291021 INFO: fd: 16, events: 4
+
+2024-07-17 22:36:15.291026 INFO: Write event?????????
+
+
+
+2024-07-17 22:36:15.291046 INFO: OnWriteXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+2024-07-17 22:36:15.291471 INFO: Thread 140483811239488 is running task
+
+2024-07-17 22:36:20.452072 INFO: eventNum: 1
+2024-07-17 22:36:20.452116 INFO: fd: 13, events: 1
+
+2024-07-17 22:36:20.452123 INFO: HandleListenEvent 13
+2024-07-17 22:36:20.452143 INFO: HttpConn 18 init success
+2024-07-17 22:36:20.452150 INFO: addTimer id:18 expireTime:1721227480
+2024-07-17 22:36:20.452166 INFO: Client[18] in!
+2024-07-17 22:36:20.452171 INFO: HandleListenEvent 13
+2024-07-17 22:36:20.452179 ERROR: Accept failure -1
+2024-07-17 22:36:20.452185 INFO: eventNum: 1
+2024-07-17 22:36:20.452190 INFO: fd: 18, events: 1
+
+2024-07-17 22:36:20.452194 INFO: READ event????????? 18
+
+
+
+2024-07-17 22:36:20.452291 INFO: OnRead
+2024-07-17 22:36:20.452301 INFO: HttpConn 18 read success
+2024-07-17 22:36:20.452311 INFO: POST /2CGISQL.cgi HTTP/1.1
+2024-07-17 22:36:20.452318 INFO: Host: localhost:9006
+2024-07-17 22:36:20.452322 INFO: Connection: keep-alive
+2024-07-17 22:36:20.452327 INFO: Content-Length: 24
+2024-07-17 22:36:20.452332 INFO: Cache-Control: max-age=0
+2024-07-17 22:36:20.452336 INFO: oop!unknow header: Cache-Control: max-age=0
+2024-07-17 22:36:20.452341 INFO: sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126"
+2024-07-17 22:36:20.452347 INFO: oop!unknow header: sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126"
+2024-07-17 22:36:20.452354 INFO: sec-ch-ua-mobile: ?0
+2024-07-17 22:36:20.452360 INFO: oop!unknow header: sec-ch-ua-mobile: ?0
+2024-07-17 22:36:20.452366 INFO: sec-ch-ua-platform: "macOS"
+2024-07-17 22:36:20.452373 INFO: oop!unknow header: sec-ch-ua-platform: "macOS"
+2024-07-17 22:36:20.452378 INFO: Upgrade-Insecure-Requests: 1
+2024-07-17 22:36:20.452384 INFO: oop!unknow header: Upgrade-Insecure-Requests: 1
+2024-07-17 22:36:20.452390 INFO: Origin: http://localhost:9006
+2024-07-17 22:36:20.452396 INFO: oop!unknow header: Origin: http://localhost:9006
+2024-07-17 22:36:20.452402 INFO: Content-Type: application/x-www-form-urlencoded
+2024-07-17 22:36:20.452408 INFO: oop!unknow header: Content-Type: application/x-www-form-urlencoded
+2024-07-17 22:36:20.452415 INFO: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36
+2024-07-17 22:36:20.452421 INFO: oop!unknow header: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36
+2024-07-17 22:36:20.452427 INFO: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2024-07-17 22:36:20.452433 INFO: oop!unknow header: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2024-07-17 22:36:20.452439 INFO: Sec-Fetch-Site: same-origin
+2024-07-17 22:36:20.452445 INFO: oop!unknow header: Sec-Fetch-Site: same-origin
+2024-07-17 22:36:20.452451 INFO: Sec-Fetch-Mode: navigate
+2024-07-17 22:36:20.452457 INFO: oop!unknow header: Sec-Fetch-Mode: navigate
+2024-07-17 22:36:20.452463 INFO: Sec-Fetch-User: ?1
+2024-07-17 22:36:20.452469 INFO: oop!unknow header: Sec-Fetch-User: ?1
+2024-07-17 22:36:20.452475 INFO: Sec-Fetch-Dest: document
+2024-07-17 22:36:20.452480 INFO: oop!unknow header: Sec-Fetch-Dest: document
+2024-07-17 22:36:20.452486 INFO: Referer: http://localhost:9006/3CGISQL.cgi
+2024-07-17 22:36:20.452492 INFO: oop!unknow header: Referer: http://localhost:9006/3CGISQL.cgi
+2024-07-17 22:36:20.452499 INFO: Accept-Encoding: gzip, deflate, br, zstd
+2024-07-17 22:36:20.452513 INFO: oop!unknow header: Accept-Encoding: gzip, deflate, br, zstd
+2024-07-17 22:36:20.452518 INFO: Accept-Language: en-US,en;q=0.9,zh-CN;q=0.8,zh;q=0.7
+2024-07-17 22:36:20.452522 INFO: oop!unknow header: Accept-Language: en-US,en;q=0.9,zh-CN;q=0.8,zh;q=0.7
+2024-07-17 22:36:20.452527 INFO: 
+2024-07-17 22:36:20.452531 INFO: user=swj&password=321312
+2024-07-17 22:36:20.452539 INFO: m_url:/2CGISQL.cgi /2CGISQL.cgi
+
+2024-07-17 22:36:20.452544 INFO: i am here ---------
+
+
+
+2024-07-17 22:36:20.452551 INFO: i am here 88888888
+
+
+
+2024-07-17 22:36:20.452569 INFO: HttpConn 18 readRet 5
+
+
+
+
+2024-07-17 22:36:20.452574 INFO: fAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+
+2024-07-17 22:36:20.452579 INFO: fAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA111
+
+2024-07-17 22:36:20.452585 INFO: fAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA2222
+
+2024-07-17 22:36:20.452591 INFO: request:HTTP/1.1 200 OK
+
+2024-07-17 22:36:20.452599 INFO: fAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA111
+
+2024-07-17 22:36:20.452605 INFO: fAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA2222
+
+2024-07-17 22:36:20.452611 INFO: request:HTTP/1.1 200 OK
+Content-Length:821
+
+2024-07-17 22:36:20.452617 INFO: fAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA111
+
+2024-07-17 22:36:20.452622 INFO: fAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA2222
+
+2024-07-17 22:36:20.452629 INFO: request:HTTP/1.1 200 OK
+Content-Length:821
+Connection:keep-alive
+
+2024-07-17 22:36:20.452636 INFO: fAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA111
+
+2024-07-17 22:36:20.452642 INFO: fAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA2222
+
+2024-07-17 22:36:20.452648 INFO: request:HTTP/1.1 200 OK
+Content-Length:821
+Connection:keep-alive
+
+
+2024-07-17 22:36:20.452654 INFO: fAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABBBBBBBBBBBBB
+
+2024-07-17 22:36:20.452661 INFO: HttpConn 18 writeRet 1????
+
+
+
+
+2024-07-17 22:36:20.452680 INFO: Process success 18??????
+
+
+2024-07-17 22:36:20.452697 INFO: Thread 140483819632192 is running task
+
+2024-07-17 22:36:20.452709 INFO: eventNum: 1
+2024-07-17 22:36:20.452716 INFO: fd: 18, events: 4
+
+2024-07-17 22:36:20.452720 INFO: Write event?????????
+
+
+
+2024-07-17 22:36:20.452736 INFO: OnWriteXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+2024-07-17 22:36:20.453218 INFO: Thread 140483786061376 is running task
+
+2024-07-17 22:36:20.467021 INFO: eventNum: 1
+2024-07-17 22:36:20.467076 INFO: fd: 13, events: 1
+
+2024-07-17 22:36:20.467088 INFO: HandleListenEvent 13
+2024-07-17 22:36:20.467116 INFO: HttpConn 27 init success
+2024-07-17 22:36:20.467128 INFO: addTimer id:27 expireTime:1721227480
+2024-07-17 22:36:20.467148 INFO: Client[27] in!
+2024-07-17 22:36:20.467155 INFO: HandleListenEvent 13
+2024-07-17 22:36:20.467168 ERROR: Accept failure -1
+2024-07-17 22:36:24.824537 INFO: eventNum: 1
+2024-07-17 22:36:24.824582 INFO: fd: 13, events: 1
+
+2024-07-17 22:36:24.824589 INFO: HandleListenEvent 13
+2024-07-17 22:36:24.824610 INFO: HttpConn 28 init success
+2024-07-17 22:36:24.824617 INFO: addTimer id:28 expireTime:1721227484
+2024-07-17 22:36:24.824631 INFO: Client[28] in!
+2024-07-17 22:36:24.824636 INFO: HandleListenEvent 13
+2024-07-17 22:36:24.824644 ERROR: Accept failure -1
+2024-07-17 22:36:24.824650 INFO: eventNum: 1
+2024-07-17 22:36:24.824655 INFO: fd: 28, events: 1
+
+2024-07-17 22:36:24.824659 INFO: READ event????????? 28
+
+
+
+2024-07-17 22:36:24.824685 INFO: OnRead
+2024-07-17 22:36:24.824718 INFO: HttpConn 28 read success
+2024-07-17 22:36:24.824730 INFO: POST /2CGISQL.cgi HTTP/1.1
+2024-07-17 22:36:24.824737 INFO: Host: localhost:9006
+2024-07-17 22:36:24.824742 INFO: Connection: keep-alive
+2024-07-17 22:36:24.824747 INFO: Content-Length: 22
+2024-07-17 22:36:24.824752 INFO: Cache-Control: max-age=0
+2024-07-17 22:36:24.824757 INFO: oop!unknow header: Cache-Control: max-age=0
+2024-07-17 22:36:24.824762 INFO: sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126"
+2024-07-17 22:36:24.824766 INFO: oop!unknow header: sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126"
+2024-07-17 22:36:24.824778 INFO: sec-ch-ua-mobile: ?0
+2024-07-17 22:36:24.824783 INFO: oop!unknow header: sec-ch-ua-mobile: ?0
+2024-07-17 22:36:24.824796 INFO: sec-ch-ua-platform: "macOS"
+2024-07-17 22:36:24.824805 INFO: oop!unknow header: sec-ch-ua-platform: "macOS"
+2024-07-17 22:36:24.824813 INFO: Upgrade-Insecure-Requests: 1
+2024-07-17 22:36:24.824819 INFO: oop!unknow header: Upgrade-Insecure-Requests: 1
+2024-07-17 22:36:24.824835 INFO: Origin: http://localhost:9006
+2024-07-17 22:36:24.824841 INFO: oop!unknow header: Origin: http://localhost:9006
+2024-07-17 22:36:24.824847 INFO: Content-Type: application/x-www-form-urlencoded
+2024-07-17 22:36:24.824851 INFO: oop!unknow header: Content-Type: application/x-www-form-urlencoded
+2024-07-17 22:36:24.824856 INFO: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36
+2024-07-17 22:36:24.824861 INFO: oop!unknow header: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36
+2024-07-17 22:36:24.824866 INFO: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2024-07-17 22:36:24.824870 INFO: oop!unknow header: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2024-07-17 22:36:24.824875 INFO: Sec-Fetch-Site: same-origin
+2024-07-17 22:36:24.824879 INFO: oop!unknow header: Sec-Fetch-Site: same-origin
+2024-07-17 22:36:24.824884 INFO: Sec-Fetch-Mode: navigate
+2024-07-17 22:36:24.824888 INFO: oop!unknow header: Sec-Fetch-Mode: navigate
+2024-07-17 22:36:24.824892 INFO: Sec-Fetch-User: ?1
+2024-07-17 22:36:24.824897 INFO: oop!unknow header: Sec-Fetch-User: ?1
+2024-07-17 22:36:24.824901 INFO: Sec-Fetch-Dest: document
+2024-07-17 22:36:24.824905 INFO: oop!unknow header: Sec-Fetch-Dest: document
+2024-07-17 22:36:24.824910 INFO: Referer: http://localhost:9006/2CGISQL.cgi
+2024-07-17 22:36:24.824914 INFO: oop!unknow header: Referer: http://localhost:9006/2CGISQL.cgi
+2024-07-17 22:36:24.824919 INFO: Accept-Encoding: gzip, deflate, br, zstd
+2024-07-17 22:36:24.824923 INFO: oop!unknow header: Accept-Encoding: gzip, deflate, br, zstd
+2024-07-17 22:36:24.824928 INFO: Accept-Language: en-US,en;q=0.9,zh-CN;q=0.8,zh;q=0.7
+2024-07-17 22:36:24.824932 INFO: oop!unknow header: Accept-Language: en-US,en;q=0.9,zh-CN;q=0.8,zh;q=0.7
+2024-07-17 22:36:24.824937 INFO: 
+2024-07-17 22:36:24.824941 INFO: user=swj&password=1024
+2024-07-17 22:36:24.824949 INFO: m_url:/2CGISQL.cgi /2CGISQL.cgi
+
+2024-07-17 22:36:24.824954 INFO: i am here ---------
+
+
+
+2024-07-17 22:36:24.824962 INFO: i am here 88888888
+
+
+
+2024-07-17 22:36:24.824982 INFO: HttpConn 28 readRet 5
+
+
+
+
+2024-07-17 22:36:24.824987 INFO: fAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+
+2024-07-17 22:36:24.824992 INFO: fAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA111
+
+2024-07-17 22:36:24.824996 INFO: fAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA2222
+
+2024-07-17 22:36:24.825001 INFO: request:HTTP/1.1 200 OK
+
+2024-07-17 22:36:24.825005 INFO: fAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA111
+
+2024-07-17 22:36:24.825009 INFO: fAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA2222
+
+2024-07-17 22:36:24.825014 INFO: request:HTTP/1.1 200 OK
+Content-Length:723
+
+2024-07-17 22:36:24.825018 INFO: fAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA111
+
+2024-07-17 22:36:24.825022 INFO: fAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA2222
+
+2024-07-17 22:36:24.825027 INFO: request:HTTP/1.1 200 OK
+Content-Length:723
+Connection:keep-alive
+
+2024-07-17 22:36:24.825031 INFO: fAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA111
+
+2024-07-17 22:36:24.825035 INFO: fAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA2222
+
+2024-07-17 22:36:24.825039 INFO: request:HTTP/1.1 200 OK
+Content-Length:723
+Connection:keep-alive
+
+
+2024-07-17 22:36:24.825044 INFO: fAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABBBBBBBBBBBBB
+
+2024-07-17 22:36:24.825052 INFO: HttpConn 28 writeRet 1????
+
+
+
+
+2024-07-17 22:36:24.825057 INFO: Process success 28??????
+
+
+2024-07-17 22:36:24.825076 INFO: Thread 140483794454080 is running task
+
+2024-07-17 22:36:24.825192 INFO: eventNum: 1
+2024-07-17 22:36:24.825211 INFO: fd: 28, events: 4
+
+2024-07-17 22:36:24.825218 INFO: Write event?????????
+
+
+
+2024-07-17 22:36:24.825240 INFO: OnWriteXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+2024-07-17 22:36:24.825781 INFO: Thread 140483777668672 is running task
+
+2024-07-17 22:36:24.837731 INFO: eventNum: 1
+2024-07-17 22:36:24.837781 INFO: fd: 13, events: 1
+
+2024-07-17 22:36:24.837788 INFO: HandleListenEvent 13
+2024-07-17 22:36:24.837810 INFO: HttpConn 29 init success
+2024-07-17 22:36:24.837818 INFO: addTimer id:29 expireTime:1721227484
+2024-07-17 22:36:24.837831 INFO: Client[29] in!
+2024-07-17 22:36:24.837836 INFO: HandleListenEvent 13
+2024-07-17 22:36:24.837845 ERROR: Accept failure -1
+2024-07-17 22:36:26.206905 INFO: eventNum: 1
+2024-07-17 22:36:26.206967 INFO: fd: 13, events: 1
+
+2024-07-17 22:36:26.206977 INFO: HandleListenEvent 13
+2024-07-17 22:36:26.207006 INFO: HttpConn 30 init success
+2024-07-17 22:36:26.207015 INFO: addTimer id:30 expireTime:1721227486
+2024-07-17 22:36:26.207031 INFO: Client[30] in!
+2024-07-17 22:36:26.207036 INFO: HandleListenEvent 13
+2024-07-17 22:36:26.207047 ERROR: Accept failure -1
+2024-07-17 22:36:26.226752 INFO: eventNum: 1
+2024-07-17 22:36:26.226807 INFO: fd: 13, events: 1
+
+2024-07-17 22:36:26.226818 INFO: HandleListenEvent 13
+2024-07-17 22:36:26.226845 INFO: HttpConn 31 init success
+2024-07-17 22:36:26.226854 INFO: addTimer id:31 expireTime:1721227486
+2024-07-17 22:36:26.226868 INFO: Client[31] in!
+2024-07-17 22:36:26.226873 INFO: HandleListenEvent 13
+2024-07-17 22:36:26.226883 ERROR: Accept failure -1
+2024-07-17 22:36:26.226889 INFO: eventNum: 1
+2024-07-17 22:36:26.226894 INFO: fd: 31, events: 1
+
+2024-07-17 22:36:26.226898 INFO: READ event????????? 31
+
+
+
+2024-07-17 22:36:26.226925 INFO: OnRead
+2024-07-17 22:36:26.226931 INFO: HttpConn 31 read success
+2024-07-17 22:36:26.226943 INFO: POST /5 HTTP/1.1
+2024-07-17 22:36:26.226952 INFO: Host: localhost:9006
+2024-07-17 22:36:26.226960 INFO: Connection: keep-alive
+2024-07-17 22:36:26.226966 INFO: Content-Length: 0
+2024-07-17 22:36:26.226973 INFO: Cache-Control: max-age=0
+2024-07-17 22:36:26.226980 INFO: oop!unknow header: Cache-Control: max-age=0
+2024-07-17 22:36:26.226987 INFO: sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126"
+2024-07-17 22:36:26.226994 INFO: oop!unknow header: sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126"
+2024-07-17 22:36:26.227001 INFO: sec-ch-ua-mobile: ?0
+2024-07-17 22:36:26.227007 INFO: oop!unknow header: sec-ch-ua-mobile: ?0
+2024-07-17 22:36:26.227014 INFO: sec-ch-ua-platform: "macOS"
+2024-07-17 22:36:26.227021 INFO: oop!unknow header: sec-ch-ua-platform: "macOS"
+2024-07-17 22:36:26.227026 INFO: Upgrade-Insecure-Requests: 1
+2024-07-17 22:36:26.227031 INFO: oop!unknow header: Upgrade-Insecure-Requests: 1
+2024-07-17 22:36:26.227035 INFO: Origin: http://localhost:9006
+2024-07-17 22:36:26.227039 INFO: oop!unknow header: Origin: http://localhost:9006
+2024-07-17 22:36:26.227044 INFO: Content-Type: application/x-www-form-urlencoded
+2024-07-17 22:36:26.227048 INFO: oop!unknow header: Content-Type: application/x-www-form-urlencoded
+2024-07-17 22:36:26.227053 INFO: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36
+2024-07-17 22:36:26.227058 INFO: oop!unknow header: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36
+2024-07-17 22:36:26.227063 INFO: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2024-07-17 22:36:26.227068 INFO: oop!unknow header: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2024-07-17 22:36:26.227081 INFO: Sec-Fetch-Site: same-origin
+2024-07-17 22:36:26.227086 INFO: oop!unknow header: Sec-Fetch-Site: same-origin
+2024-07-17 22:36:26.227090 INFO: Sec-Fetch-Mode: navigate
+2024-07-17 22:36:26.227094 INFO: oop!unknow header: Sec-Fetch-Mode: navigate
+2024-07-17 22:36:26.227099 INFO: Sec-Fetch-User: ?1
+2024-07-17 22:36:26.227103 INFO: oop!unknow header: Sec-Fetch-User: ?1
+2024-07-17 22:36:26.227108 INFO: Sec-Fetch-Dest: document
+2024-07-17 22:36:26.227112 INFO: oop!unknow header: Sec-Fetch-Dest: document
+2024-07-17 22:36:26.227117 INFO: Referer: http://localhost:9006/2CGISQL.cgi
+2024-07-17 22:36:26.227121 INFO: oop!unknow header: Referer: http://localhost:9006/2CGISQL.cgi
+2024-07-17 22:36:26.227125 INFO: Accept-Encoding: gzip, deflate, br, zstd
+2024-07-17 22:36:26.227130 INFO: oop!unknow header: Accept-Encoding: gzip, deflate, br, zstd
+2024-07-17 22:36:26.227134 INFO: Accept-Language: en-US,en;q=0.9,zh-CN;q=0.8,zh;q=0.7
+2024-07-17 22:36:26.227139 INFO: oop!unknow header: Accept-Language: en-US,en;q=0.9,zh-CN;q=0.8,zh;q=0.7
+2024-07-17 22:36:26.227148 INFO: 
+2024-07-17 22:36:26.227159 INFO: m_url:/5 /5
+
+2024-07-17 22:36:26.227166 INFO: i am here ---------
+
+
+
+2024-07-17 22:36:26.227189 INFO: HttpConn 31 readRet 5
+
+
+
+
+2024-07-17 22:36:26.227196 INFO: fAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+
+2024-07-17 22:36:26.227204 INFO: fAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA111
+
+2024-07-17 22:36:26.227211 INFO: fAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA2222
+
+2024-07-17 22:36:26.227218 INFO: request:HTTP/1.1 200 OK
+
+2024-07-17 22:36:26.227224 INFO: fAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA111
+
+2024-07-17 22:36:26.227231 INFO: fAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA2222
+
+2024-07-17 22:36:26.227237 INFO: request:HTTP/1.1 200 OK
+Content-Length:360
+
+2024-07-17 22:36:26.227241 INFO: fAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA111
+
+2024-07-17 22:36:26.227245 INFO: fAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA2222
+
+2024-07-17 22:36:26.227273 INFO: request:HTTP/1.1 200 OK
+Content-Length:360
+Connection:keep-alive
+
+2024-07-17 22:36:26.227278 INFO: fAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA111
+
+2024-07-17 22:36:26.227282 INFO: fAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA2222
+
+2024-07-17 22:36:26.227287 INFO: request:HTTP/1.1 200 OK
+Content-Length:360
+Connection:keep-alive
+
+
+2024-07-17 22:36:26.227291 INFO: fAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABBBBBBBBBBBBB
+
+2024-07-17 22:36:26.227295 INFO: HttpConn 31 writeRet 1????
+
+
+
+
+2024-07-17 22:36:26.227300 INFO: Process success 31??????
+
+
+2024-07-17 22:36:26.227322 INFO: Thread 140483769275968 is running task
+
+2024-07-17 22:36:26.227350 INFO: eventNum: 1
+2024-07-17 22:36:26.227358 INFO: fd: 31, events: 4
+
+2024-07-17 22:36:26.227363 INFO: Write event?????????
+
+
+
+2024-07-17 22:36:26.227389 INFO: OnWriteXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+2024-07-17 22:36:26.227865 INFO: Thread 140483760883264 is running task
+
+2024-07-17 22:36:26.284638 INFO: eventNum: 1
+2024-07-17 22:36:26.284704 INFO: fd: 31, events: 1
+
+2024-07-17 22:36:26.284716 INFO: READ event????????? 31
+
+
+
+2024-07-17 22:36:26.284744 INFO: OnRead
+2024-07-17 22:36:26.284755 INFO: HttpConn 31 read success
+2024-07-17 22:36:26.284770 INFO: GET /xxx.jpg HTTP/1.1
+2024-07-17 22:36:26.284778 INFO: Host: localhost:9006
+2024-07-17 22:36:26.284786 INFO: Connection: keep-alive
+2024-07-17 22:36:26.284793 INFO: sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126"
+2024-07-17 22:36:26.284800 INFO: oop!unknow header: sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126"
+2024-07-17 22:36:26.284804 INFO: sec-ch-ua-mobile: ?0
+2024-07-17 22:36:26.284809 INFO: oop!unknow header: sec-ch-ua-mobile: ?0
+2024-07-17 22:36:26.284814 INFO: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36
+2024-07-17 22:36:26.284819 INFO: oop!unknow header: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36
+2024-07-17 22:36:26.284833 INFO: sec-ch-ua-platform: "macOS"
+2024-07-17 22:36:26.284837 INFO: oop!unknow header: sec-ch-ua-platform: "macOS"
+2024-07-17 22:36:26.284842 INFO: Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+2024-07-17 22:36:26.284846 INFO: oop!unknow header: Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+2024-07-17 22:36:26.284851 INFO: Sec-Fetch-Site: same-origin
+2024-07-17 22:36:26.284855 INFO: oop!unknow header: Sec-Fetch-Site: same-origin
+2024-07-17 22:36:26.284859 INFO: Sec-Fetch-Mode: no-cors
+2024-07-17 22:36:26.284863 INFO: oop!unknow header: Sec-Fetch-Mode: no-cors
+2024-07-17 22:36:26.284868 INFO: Sec-Fetch-Dest: image
+2024-07-17 22:36:26.284872 INFO: oop!unknow header: Sec-Fetch-Dest: image
+2024-07-17 22:36:26.284877 INFO: Referer: http://localhost:9006/5
+2024-07-17 22:36:26.284881 INFO: oop!unknow header: Referer: http://localhost:9006/5
+2024-07-17 22:36:26.284886 INFO: Accept-Encoding: gzip, deflate, br, zstd
+2024-07-17 22:36:26.284890 INFO: oop!unknow header: Accept-Encoding: gzip, deflate, br, zstd
+2024-07-17 22:36:26.284895 INFO: Accept-Language: en-US,en;q=0.9,zh-CN;q=0.8,zh;q=0.7
+2024-07-17 22:36:26.284899 INFO: oop!unknow header: Accept-Language: en-US,en;q=0.9,zh-CN;q=0.8,zh;q=0.7
+2024-07-17 22:36:26.284904 INFO: 
+2024-07-17 22:36:26.284911 INFO: m_url:/xxx.jpg /xxx.jpg
+
+2024-07-17 22:36:26.284916 INFO: i am here ---------
+
+
+
+2024-07-17 22:36:26.284921 INFO: i am here 88888888
+
+
+
+2024-07-17 22:36:26.284946 INFO: HttpConn 31 readRet 5
+
+
+
+
+2024-07-17 22:36:26.284951 INFO: fAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+
+2024-07-17 22:36:26.284956 INFO: fAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA111
+
+2024-07-17 22:36:26.284960 INFO: fAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA2222
+
+2024-07-17 22:36:26.284966 INFO: request:HTTP/1.1 200 OK
+
+2024-07-17 22:36:26.284972 INFO: fAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA111
+
+2024-07-17 22:36:26.284978 INFO: fAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA2222
+
+2024-07-17 22:36:26.284984 INFO: request:HTTP/1.1 200 OK
+Content-Length:6007312
+
+2024-07-17 22:36:26.284991 INFO: fAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA111
+
+2024-07-17 22:36:26.284998 INFO: fAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA2222
+
+2024-07-17 22:36:26.285007 INFO: request:HTTP/1.1 200 OK
+Content-Length:6007312
+Connection:keep-alive
+
+2024-07-17 22:36:26.285013 INFO: fAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA111
+
+2024-07-17 22:36:26.285020 INFO: fAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA2222
+
+2024-07-17 22:36:26.285026 INFO: request:HTTP/1.1 200 OK
+Content-Length:6007312
+Connection:keep-alive
+
+
+2024-07-17 22:36:26.285031 INFO: fAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABBBBBBBBBBBBB
+
+2024-07-17 22:36:26.285035 INFO: HttpConn 31 writeRet 1????
+
+
+
+
+2024-07-17 22:36:26.285040 INFO: Process success 31??????
+
+
+2024-07-17 22:36:26.285062 INFO: Thread 140483802846784 is running task
+
+2024-07-17 22:36:26.285074 INFO: eventNum: 1
+2024-07-17 22:36:26.285080 INFO: fd: 31, events: 4
+
+2024-07-17 22:36:26.285087 INFO: Write event?????????
+
+
+
+2024-07-17 22:36:26.285107 INFO: OnWriteXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+2024-07-17 22:36:26.331649 INFO: Thread 140483811239488 is running task
+
+2024-07-17 22:36:29.203189 INFO: eventNum: 1
+2024-07-17 22:36:29.203286 INFO: fd: 30, events: 1
+
+2024-07-17 22:36:29.203300 INFO: READ event????????? 30
+
+
+
+2024-07-17 22:36:29.203323 INFO: OnRead
+2024-07-17 22:36:29.203331 INFO: HttpConn 30 read success
+2024-07-17 22:36:29.203341 INFO: POST /6 HTTP/1.1
+2024-07-17 22:36:29.203348 INFO: Host: localhost:9006
+2024-07-17 22:36:29.203353 INFO: Connection: keep-alive
+2024-07-17 22:36:29.203358 INFO: Content-Length: 0
+2024-07-17 22:36:29.203363 INFO: Cache-Control: max-age=0
+2024-07-17 22:36:29.203367 INFO: oop!unknow header: Cache-Control: max-age=0
+2024-07-17 22:36:29.203373 INFO: sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126"
+2024-07-17 22:36:29.203377 INFO: oop!unknow header: sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126"
+2024-07-17 22:36:29.203391 INFO: sec-ch-ua-mobile: ?0
+2024-07-17 22:36:29.203396 INFO: oop!unknow header: sec-ch-ua-mobile: ?0
+2024-07-17 22:36:29.203400 INFO: sec-ch-ua-platform: "macOS"
+2024-07-17 22:36:29.203405 INFO: oop!unknow header: sec-ch-ua-platform: "macOS"
+2024-07-17 22:36:29.203409 INFO: Upgrade-Insecure-Requests: 1
+2024-07-17 22:36:29.203413 INFO: oop!unknow header: Upgrade-Insecure-Requests: 1
+2024-07-17 22:36:29.203418 INFO: Origin: http://localhost:9006
+2024-07-17 22:36:29.203422 INFO: oop!unknow header: Origin: http://localhost:9006
+2024-07-17 22:36:29.203427 INFO: Content-Type: application/x-www-form-urlencoded
+2024-07-17 22:36:29.203431 INFO: oop!unknow header: Content-Type: application/x-www-form-urlencoded
+2024-07-17 22:36:29.203436 INFO: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36
+2024-07-17 22:36:29.203441 INFO: oop!unknow header: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36
+2024-07-17 22:36:29.203446 INFO: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2024-07-17 22:36:29.203450 INFO: oop!unknow header: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2024-07-17 22:36:29.203454 INFO: Sec-Fetch-Site: same-origin
+2024-07-17 22:36:29.203458 INFO: oop!unknow header: Sec-Fetch-Site: same-origin
+2024-07-17 22:36:29.203463 INFO: Sec-Fetch-Mode: navigate
+2024-07-17 22:36:29.203467 INFO: oop!unknow header: Sec-Fetch-Mode: navigate
+2024-07-17 22:36:29.203472 INFO: Sec-Fetch-User: ?1
+2024-07-17 22:36:29.203476 INFO: oop!unknow header: Sec-Fetch-User: ?1
+2024-07-17 22:36:29.203480 INFO: Sec-Fetch-Dest: document
+2024-07-17 22:36:29.203484 INFO: oop!unknow header: Sec-Fetch-Dest: document
+2024-07-17 22:36:29.203489 INFO: Referer: http://localhost:9006/2CGISQL.cgi
+2024-07-17 22:36:29.203494 INFO: oop!unknow header: Referer: http://localhost:9006/2CGISQL.cgi
+2024-07-17 22:36:29.203498 INFO: Accept-Encoding: gzip, deflate, br, zstd
+2024-07-17 22:36:29.203503 INFO: oop!unknow header: Accept-Encoding: gzip, deflate, br, zstd
+2024-07-17 22:36:29.203507 INFO: Accept-Language: en-US,en;q=0.9,zh-CN;q=0.8,zh;q=0.7
+2024-07-17 22:36:29.203512 INFO: oop!unknow header: Accept-Language: en-US,en;q=0.9,zh-CN;q=0.8,zh;q=0.7
+2024-07-17 22:36:29.203516 INFO: 
+2024-07-17 22:36:29.203524 INFO: m_url:/6 /6
+
+2024-07-17 22:36:29.203529 INFO: i am here ---------
+
+
+
+2024-07-17 22:36:29.203552 INFO: HttpConn 30 readRet 5
+
+
+
+
+2024-07-17 22:36:29.203557 INFO: fAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+
+2024-07-17 22:36:29.203562 INFO: fAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA111
+
+2024-07-17 22:36:29.203566 INFO: fAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA2222
+
+2024-07-17 22:36:29.203571 INFO: request:HTTP/1.1 200 OK
+
+2024-07-17 22:36:29.203575 INFO: fAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA111
+
+2024-07-17 22:36:29.203579 INFO: fAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA2222
+
+2024-07-17 22:36:29.203584 INFO: request:HTTP/1.1 200 OK
+Content-Length:381
+
+2024-07-17 22:36:29.203588 INFO: fAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA111
+
+2024-07-17 22:36:29.203592 INFO: fAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA2222
+
+2024-07-17 22:36:29.203597 INFO: request:HTTP/1.1 200 OK
+Content-Length:381
+Connection:keep-alive
+
+2024-07-17 22:36:29.203601 INFO: fAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA111
+
+2024-07-17 22:36:29.203605 INFO: fAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA2222
+
+2024-07-17 22:36:29.203609 INFO: request:HTTP/1.1 200 OK
+Content-Length:381
+Connection:keep-alive
+
+
+2024-07-17 22:36:29.203614 INFO: fAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABBBBBBBBBBBBB
+
+2024-07-17 22:36:29.203618 INFO: HttpConn 30 writeRet 1????
+
+
+
+
+2024-07-17 22:36:29.203629 INFO: Process success 30??????
+
+
+2024-07-17 22:36:29.203649 INFO: Thread 140483819632192 is running task
+
+2024-07-17 22:36:29.203660 INFO: eventNum: 1
+2024-07-17 22:36:29.203666 INFO: fd: 30, events: 4
+
+2024-07-17 22:36:29.203672 INFO: Write event?????????
+
+
+
+2024-07-17 22:36:29.203691 INFO: OnWriteXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+2024-07-17 22:36:29.204189 INFO: Thread 140483786061376 is running task
+
+2024-07-17 22:36:38.063630 INFO: eventNum: 1
+2024-07-17 22:36:38.063677 INFO: fd: 13, events: 1
+
+2024-07-17 22:36:38.063684 INFO: HandleListenEvent 13
+2024-07-17 22:36:38.063699 INFO: HttpConn 32 init success
+2024-07-17 22:36:38.063706 INFO: addTimer id:32 expireTime:1721227498
+2024-07-17 22:36:38.063725 INFO: Client[32] in!
+2024-07-17 22:36:38.063731 INFO: HandleListenEvent 13
+2024-07-17 22:36:38.063739 INFO: HttpConn 33 init success
+2024-07-17 22:36:38.063744 INFO: addTimer id:33 expireTime:1721227498
+2024-07-17 22:36:38.063752 INFO: Client[33] in!
+2024-07-17 22:36:38.063756 INFO: HandleListenEvent 13
+2024-07-17 22:36:38.063765 ERROR: Accept failure -1
+2024-07-17 22:36:38.064701 INFO: eventNum: 1
+2024-07-17 22:36:38.064728 INFO: fd: 13, events: 1
+
+2024-07-17 22:36:38.064733 INFO: HandleListenEvent 13
+2024-07-17 22:36:38.064750 INFO: HttpConn 34 init success
+2024-07-17 22:36:38.064756 INFO: addTimer id:34 expireTime:1721227498
+2024-07-17 22:36:38.064768 INFO: Client[34] in!
+2024-07-17 22:36:38.064772 INFO: HandleListenEvent 13
+2024-07-17 22:36:38.064781 ERROR: Accept failure -1
+2024-07-17 22:36:38.065172 INFO: eventNum: 1
+2024-07-17 22:36:38.065192 INFO: fd: 34, events: 1
+
+2024-07-17 22:36:38.065198 INFO: READ event????????? 34
+
+
+
+2024-07-17 22:36:38.065214 INFO: OnRead
+2024-07-17 22:36:38.065223 INFO: HttpConn 34 read success
+2024-07-17 22:36:38.065237 INFO: POST /7 HTTP/1.1
+2024-07-17 22:36:38.065246 INFO: Host: localhost:9006
+2024-07-17 22:36:38.065276 INFO: Connection: keep-alive
+2024-07-17 22:36:38.065283 INFO: Content-Length: 0
+2024-07-17 22:36:38.065289 INFO: Cache-Control: max-age=0
+2024-07-17 22:36:38.065296 INFO: oop!unknow header: Cache-Control: max-age=0
+2024-07-17 22:36:38.065303 INFO: sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126"
+2024-07-17 22:36:38.065308 INFO: oop!unknow header: sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126"
+2024-07-17 22:36:38.065313 INFO: sec-ch-ua-mobile: ?0
+2024-07-17 22:36:38.065317 INFO: oop!unknow header: sec-ch-ua-mobile: ?0
+2024-07-17 22:36:38.065322 INFO: sec-ch-ua-platform: "macOS"
+2024-07-17 22:36:38.065326 INFO: oop!unknow header: sec-ch-ua-platform: "macOS"
+2024-07-17 22:36:38.065330 INFO: Upgrade-Insecure-Requests: 1
+2024-07-17 22:36:38.065335 INFO: oop!unknow header: Upgrade-Insecure-Requests: 1
+2024-07-17 22:36:38.065339 INFO: Origin: http://localhost:9006
+2024-07-17 22:36:38.065344 INFO: oop!unknow header: Origin: http://localhost:9006
+2024-07-17 22:36:38.065348 INFO: Content-Type: application/x-www-form-urlencoded
+2024-07-17 22:36:38.065353 INFO: oop!unknow header: Content-Type: application/x-www-form-urlencoded
+2024-07-17 22:36:38.065360 INFO: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36
+2024-07-17 22:36:38.065367 INFO: oop!unknow header: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36
+2024-07-17 22:36:38.065374 INFO: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2024-07-17 22:36:38.065381 INFO: oop!unknow header: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2024-07-17 22:36:38.065387 INFO: Sec-Fetch-Site: same-origin
+2024-07-17 22:36:38.065393 INFO: oop!unknow header: Sec-Fetch-Site: same-origin
+2024-07-17 22:36:38.065400 INFO: Sec-Fetch-Mode: navigate
+2024-07-17 22:36:38.065407 INFO: oop!unknow header: Sec-Fetch-Mode: navigate
+2024-07-17 22:36:38.065425 INFO: Sec-Fetch-User: ?1
+2024-07-17 22:36:38.065432 INFO: oop!unknow header: Sec-Fetch-User: ?1
+2024-07-17 22:36:38.065439 INFO: Sec-Fetch-Dest: document
+2024-07-17 22:36:38.065446 INFO: oop!unknow header: Sec-Fetch-Dest: document
+2024-07-17 22:36:38.065452 INFO: Referer: http://localhost:9006/2CGISQL.cgi
+2024-07-17 22:36:38.065457 INFO: oop!unknow header: Referer: http://localhost:9006/2CGISQL.cgi
+2024-07-17 22:36:38.065461 INFO: Accept-Encoding: gzip, deflate, br, zstd
+2024-07-17 22:36:38.065466 INFO: oop!unknow header: Accept-Encoding: gzip, deflate, br, zstd
+2024-07-17 22:36:38.065470 INFO: Accept-Language: en-US,en;q=0.9,zh-CN;q=0.8,zh;q=0.7
+2024-07-17 22:36:38.065474 INFO: oop!unknow header: Accept-Language: en-US,en;q=0.9,zh-CN;q=0.8,zh;q=0.7
+2024-07-17 22:36:38.065479 INFO: 
+2024-07-17 22:36:38.065486 INFO: m_url:/7 /7
+
+2024-07-17 22:36:38.065491 INFO: i am here ---------
+
+
+
+2024-07-17 22:36:38.065511 INFO: HttpConn 34 readRet 5
+
+
+
+
+2024-07-17 22:36:38.065516 INFO: fAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+
+2024-07-17 22:36:38.065521 INFO: fAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA111
+
+2024-07-17 22:36:38.065525 INFO: fAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA2222
+
+2024-07-17 22:36:38.065530 INFO: request:HTTP/1.1 200 OK
+
+2024-07-17 22:36:38.065535 INFO: fAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA111
+
+2024-07-17 22:36:38.065539 INFO: fAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA2222
+
+2024-07-17 22:36:38.065543 INFO: request:HTTP/1.1 200 OK
+Content-Length:392
+
+2024-07-17 22:36:38.065548 INFO: fAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA111
+
+2024-07-17 22:36:38.065552 INFO: fAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA2222
+
+2024-07-17 22:36:38.065556 INFO: request:HTTP/1.1 200 OK
+Content-Length:392
+Connection:keep-alive
+
+2024-07-17 22:36:38.065560 INFO: fAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA111
+
+2024-07-17 22:36:38.065564 INFO: fAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA2222
+
+2024-07-17 22:36:38.065569 INFO: request:HTTP/1.1 200 OK
+Content-Length:392
+Connection:keep-alive
+
+
+2024-07-17 22:36:38.065573 INFO: fAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABBBBBBBBBBBBB
+
+2024-07-17 22:36:38.065577 INFO: HttpConn 34 writeRet 1????
+
+
+
+
+2024-07-17 22:36:38.065582 INFO: Process success 34??????
+
+
+2024-07-17 22:36:38.065600 INFO: Thread 140483794454080 is running task
+
+2024-07-17 22:36:38.065659 INFO: eventNum: 1
+2024-07-17 22:36:38.065690 INFO: fd: 34, events: 4
+
+2024-07-17 22:36:38.065697 INFO: Write event?????????
+
+
+
+2024-07-17 22:36:38.065714 INFO: OnWriteXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+2024-07-17 22:36:38.066181 INFO: Thread 140483777668672 is running task
+
+2024-07-17 22:36:38.122409 INFO: eventNum: 1
+2024-07-17 22:36:38.122465 INFO: fd: 34, events: 1
+
+2024-07-17 22:36:38.122473 INFO: READ event????????? 34
+
+
+
+2024-07-17 22:36:38.122508 INFO: OnRead
+2024-07-17 22:36:38.122519 INFO: HttpConn 34 read success
+2024-07-17 22:36:38.122533 INFO: GET /test1.jpg HTTP/1.1
+2024-07-17 22:36:38.122540 INFO: Host: localhost:9006
+2024-07-17 22:36:38.122545 INFO: Connection: keep-alive
+2024-07-17 22:36:38.122550 INFO: sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126"
+2024-07-17 22:36:38.122555 INFO: oop!unknow header: sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126"
+2024-07-17 22:36:38.122560 INFO: sec-ch-ua-mobile: ?0
+2024-07-17 22:36:38.122565 INFO: oop!unknow header: sec-ch-ua-mobile: ?0
+2024-07-17 22:36:38.122570 INFO: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36
+2024-07-17 22:36:38.122575 INFO: oop!unknow header: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36
+2024-07-17 22:36:38.122579 INFO: sec-ch-ua-platform: "macOS"
+2024-07-17 22:36:38.122584 INFO: oop!unknow header: sec-ch-ua-platform: "macOS"
+2024-07-17 22:36:38.122588 INFO: Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+2024-07-17 22:36:38.122604 INFO: oop!unknow header: Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+2024-07-17 22:36:38.122609 INFO: Sec-Fetch-Site: same-origin
+2024-07-17 22:36:38.122613 INFO: oop!unknow header: Sec-Fetch-Site: same-origin
+2024-07-17 22:36:38.122617 INFO: Sec-Fetch-Mode: no-cors
+2024-07-17 22:36:38.122622 INFO: oop!unknow header: Sec-Fetch-Mode: no-cors
+2024-07-17 22:36:38.122627 INFO: Sec-Fetch-Dest: image
+2024-07-17 22:36:38.122631 INFO: oop!unknow header: Sec-Fetch-Dest: image
+2024-07-17 22:36:38.122635 INFO: Referer: http://localhost:9006/7
+2024-07-17 22:36:38.122639 INFO: oop!unknow header: Referer: http://localhost:9006/7
+2024-07-17 22:36:38.122644 INFO: Accept-Encoding: gzip, deflate, br, zstd
+2024-07-17 22:36:38.122648 INFO: oop!unknow header: Accept-Encoding: gzip, deflate, br, zstd
+2024-07-17 22:36:38.122653 INFO: Accept-Language: en-US,en;q=0.9,zh-CN;q=0.8,zh;q=0.7
+2024-07-17 22:36:38.122657 INFO: oop!unknow header: Accept-Language: en-US,en;q=0.9,zh-CN;q=0.8,zh;q=0.7
+2024-07-17 22:36:38.122661 INFO: 
+2024-07-17 22:36:38.122668 INFO: m_url:/test1.jpg /test1.jpg
+
+2024-07-17 22:36:38.122673 INFO: i am here ---------
+
+
+
+2024-07-17 22:36:38.122678 INFO: i am here 88888888
+
+
+
+2024-07-17 22:36:38.122693 INFO: HttpConn 34 readRet 3
+
+
+
+
+2024-07-17 22:36:38.122698 INFO: HttpConn 34 writeRet 0????
+
+
+
+
+2024-07-17 22:36:38.122703 INFO: close fd 34
+2024-07-17 22:36:38.122740 INFO: Process success -1??????
+
+
+2024-07-17 22:36:38.122760 INFO: Thread 140483769275968 is running task
+
+2024-07-17 22:36:38.156414 INFO: eventNum: 1
+2024-07-17 22:36:38.156466 INFO: fd: 33, events: 1
+
+2024-07-17 22:36:38.156474 INFO: READ event????????? 33
+
+
+
+2024-07-17 22:36:38.156616 INFO: OnRead
+2024-07-17 22:36:38.156627 INFO: HttpConn 33 read success
+2024-07-17 22:36:38.156638 INFO: GET /test1.jpg HTTP/1.1
+2024-07-17 22:36:38.156644 INFO: Host: localhost:9006
+2024-07-17 22:36:38.156649 INFO: Connection: keep-alive
+2024-07-17 22:36:38.156653 INFO: sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126"
+2024-07-17 22:36:38.156658 INFO: oop!unknow header: sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126"
+2024-07-17 22:36:38.156670 INFO: sec-ch-ua-mobile: ?0
+2024-07-17 22:36:38.156675 INFO: oop!unknow header: sec-ch-ua-mobile: ?0
+2024-07-17 22:36:38.156680 INFO: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36
+2024-07-17 22:36:38.156685 INFO: oop!unknow header: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36
+2024-07-17 22:36:38.156689 INFO: sec-ch-ua-platform: "macOS"
+2024-07-17 22:36:38.156693 INFO: oop!unknow header: sec-ch-ua-platform: "macOS"
+2024-07-17 22:36:38.156698 INFO: Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+2024-07-17 22:36:38.156702 INFO: oop!unknow header: Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+2024-07-17 22:36:38.156707 INFO: Sec-Fetch-Site: same-origin
+2024-07-17 22:36:38.156711 INFO: oop!unknow header: Sec-Fetch-Site: same-origin
+2024-07-17 22:36:38.156715 INFO: Sec-Fetch-Mode: no-cors
+2024-07-17 22:36:38.156720 INFO: oop!unknow header: Sec-Fetch-Mode: no-cors
+2024-07-17 22:36:38.156724 INFO: Sec-Fetch-Dest: image
+2024-07-17 22:36:38.156728 INFO: oop!unknow header: Sec-Fetch-Dest: image
+2024-07-17 22:36:38.156733 INFO: Referer: http://localhost:9006/7
+2024-07-17 22:36:38.156737 INFO: oop!unknow header: Referer: http://localhost:9006/7
+2024-07-17 22:36:38.156742 INFO: Accept-Encoding: gzip, deflate, br, zstd
+2024-07-17 22:36:38.156746 INFO: oop!unknow header: Accept-Encoding: gzip, deflate, br, zstd
+2024-07-17 22:36:38.156751 INFO: Accept-Language: en-US,en;q=0.9,zh-CN;q=0.8,zh;q=0.7
+2024-07-17 22:36:38.156755 INFO: oop!unknow header: Accept-Language: en-US,en;q=0.9,zh-CN;q=0.8,zh;q=0.7
+2024-07-17 22:36:38.156759 INFO: 
+2024-07-17 22:36:38.156766 INFO: m_url:/test1.jpg /test1.jpg
+
+2024-07-17 22:36:38.156771 INFO: i am here ---------
+
+
+
+2024-07-17 22:36:38.156787 INFO: i am here 88888888
+
+
+
+2024-07-17 22:36:38.156794 INFO: HttpConn 33 readRet 3
+
+
+
+
+2024-07-17 22:36:38.156799 INFO: HttpConn 33 writeRet 0????
+
+
+
+
+2024-07-17 22:36:38.156804 INFO: close fd 33
+2024-07-17 22:36:38.156832 INFO: Process success -1??????
+
+
+2024-07-17 22:36:38.156849 INFO: Thread 140483760883264 is running task
+
+2024-07-17 22:36:38.261026 INFO: eventNum: 1
+2024-07-17 22:36:38.261084 INFO: fd: 13, events: 1
+
+2024-07-17 22:36:38.261095 INFO: HandleListenEvent 13
+2024-07-17 22:36:38.261122 INFO: HttpConn 33 init success
+2024-07-17 22:36:38.261132 INFO: addTimer id:33 expireTime:1721227498
+2024-07-17 22:36:38.261147 INFO: Client[33] in!
+2024-07-17 22:36:38.261152 INFO: HandleListenEvent 13
+2024-07-17 22:36:38.261162 ERROR: Accept failure -1
+2024-07-17 22:36:38.261168 INFO: eventNum: 1
+2024-07-17 22:36:38.261173 INFO: fd: 33, events: 1
+
+2024-07-17 22:36:38.261177 INFO: READ event????????? 33
+
+
+
+2024-07-17 22:36:38.261196 INFO: OnRead
+2024-07-17 22:36:38.261203 INFO: HttpConn 33 read success
+2024-07-17 22:36:38.261214 INFO: GET /test1.jpg HTTP/1.1
+2024-07-17 22:36:38.261220 INFO: Host: localhost:9006
+2024-07-17 22:36:38.261225 INFO: Connection: keep-alive
+2024-07-17 22:36:38.261230 INFO: sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126"
+2024-07-17 22:36:38.261235 INFO: oop!unknow header: sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126"
+2024-07-17 22:36:38.261240 INFO: sec-ch-ua-mobile: ?0
+2024-07-17 22:36:38.261245 INFO: oop!unknow header: sec-ch-ua-mobile: ?0
+2024-07-17 22:36:38.261250 INFO: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36
+2024-07-17 22:36:38.261278 INFO: oop!unknow header: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36
+2024-07-17 22:36:38.261283 INFO: sec-ch-ua-platform: "macOS"
+2024-07-17 22:36:38.261288 INFO: oop!unknow header: sec-ch-ua-platform: "macOS"
+2024-07-17 22:36:38.261292 INFO: Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+2024-07-17 22:36:38.261297 INFO: oop!unknow header: Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+2024-07-17 22:36:38.261302 INFO: Sec-Fetch-Site: same-origin
+2024-07-17 22:36:38.261306 INFO: oop!unknow header: Sec-Fetch-Site: same-origin
+2024-07-17 22:36:38.261311 INFO: Sec-Fetch-Mode: no-cors
+2024-07-17 22:36:38.261315 INFO: oop!unknow header: Sec-Fetch-Mode: no-cors
+2024-07-17 22:36:38.261319 INFO: Sec-Fetch-Dest: image
+2024-07-17 22:36:38.261323 INFO: oop!unknow header: Sec-Fetch-Dest: image
+2024-07-17 22:36:38.261328 INFO: Referer: http://localhost:9006/7
+2024-07-17 22:36:38.261333 INFO: oop!unknow header: Referer: http://localhost:9006/7
+2024-07-17 22:36:38.261337 INFO: Accept-Encoding: gzip, deflate, br, zstd
+2024-07-17 22:36:38.261341 INFO: oop!unknow header: Accept-Encoding: gzip, deflate, br, zstd
+2024-07-17 22:36:38.261346 INFO: Accept-Language: en-US,en;q=0.9,zh-CN;q=0.8,zh;q=0.7
+2024-07-17 22:36:38.261350 INFO: oop!unknow header: Accept-Language: en-US,en;q=0.9,zh-CN;q=0.8,zh;q=0.7
+2024-07-17 22:36:38.261355 INFO: 
+2024-07-17 22:36:38.261362 INFO: m_url:/test1.jpg /test1.jpg
+
+2024-07-17 22:36:38.261367 INFO: i am here ---------
+
+
+
+2024-07-17 22:36:38.261371 INFO: i am here 88888888
+
+
+
+2024-07-17 22:36:38.261378 INFO: HttpConn 33 readRet 3
+
+
+
+
+2024-07-17 22:36:38.261392 INFO: HttpConn 33 writeRet 0????
+
+
+
+
+2024-07-17 22:36:38.261399 INFO: close fd 33
+2024-07-17 22:36:38.261428 INFO: Process success -1??????
+
+
+2024-07-17 22:36:38.261448 INFO: Thread 140483802846784 is running task
+
+2024-07-17 22:36:39.660821 INFO: eventNum: 1
+2024-07-17 22:36:39.660864 INFO: fd: 13, events: 1
+
+2024-07-17 22:36:39.660870 INFO: HandleListenEvent 13
+2024-07-17 22:36:39.660890 INFO: HttpConn 33 init success
+2024-07-17 22:36:39.660897 INFO: addTimer id:33 expireTime:1721227499
+2024-07-17 22:36:39.660911 INFO: Client[33] in!
+2024-07-17 22:36:39.660915 INFO: HandleListenEvent 13
+2024-07-17 22:36:39.660932 ERROR: Accept failure -1
+2024-07-17 22:36:39.673581 INFO: eventNum: 1
+2024-07-17 22:36:39.673623 INFO: fd: 13, events: 1
+
+2024-07-17 22:36:39.673629 INFO: HandleListenEvent 13
+2024-07-17 22:36:39.673657 INFO: HttpConn 34 init success
+2024-07-17 22:36:39.673669 INFO: addTimer id:34 expireTime:1721227499
+2024-07-17 22:36:39.673686 INFO: Client[34] in!
+2024-07-17 22:36:39.673694 INFO: HandleListenEvent 13
+2024-07-17 22:36:39.673706 ERROR: Accept failure -1
+2024-07-17 22:36:40.619483 INFO: eventNum: 1
+2024-07-17 22:36:40.619543 INFO: fd: 33, events: 1
+
+2024-07-17 22:36:40.619554 INFO: READ event????????? 33
+
+
+
+2024-07-17 22:36:40.619602 INFO: OnRead
+2024-07-17 22:36:40.619614 INFO: HttpConn 33 read success
+2024-07-17 22:36:40.619628 INFO: POST /6 HTTP/1.1
+2024-07-17 22:36:40.619636 INFO: Host: localhost:9006
+2024-07-17 22:36:40.619642 INFO: Connection: keep-alive
+2024-07-17 22:36:40.619646 INFO: Content-Length: 0
+2024-07-17 22:36:40.619651 INFO: Cache-Control: max-age=0
+2024-07-17 22:36:40.619656 INFO: oop!unknow header: Cache-Control: max-age=0
+2024-07-17 22:36:40.619661 INFO: sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126"
+2024-07-17 22:36:40.619666 INFO: oop!unknow header: sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126"
+2024-07-17 22:36:40.619681 INFO: sec-ch-ua-mobile: ?0
+2024-07-17 22:36:40.619686 INFO: oop!unknow header: sec-ch-ua-mobile: ?0
+2024-07-17 22:36:40.619691 INFO: sec-ch-ua-platform: "macOS"
+2024-07-17 22:36:40.619695 INFO: oop!unknow header: sec-ch-ua-platform: "macOS"
+2024-07-17 22:36:40.619699 INFO: Upgrade-Insecure-Requests: 1
+2024-07-17 22:36:40.619705 INFO: oop!unknow header: Upgrade-Insecure-Requests: 1
+2024-07-17 22:36:40.619712 INFO: Origin: http://localhost:9006
+2024-07-17 22:36:40.619718 INFO: oop!unknow header: Origin: http://localhost:9006
+2024-07-17 22:36:40.619725 INFO: Content-Type: application/x-www-form-urlencoded
+2024-07-17 22:36:40.619730 INFO: oop!unknow header: Content-Type: application/x-www-form-urlencoded
+2024-07-17 22:36:40.619737 INFO: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36
+2024-07-17 22:36:40.619745 INFO: oop!unknow header: User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36
+2024-07-17 22:36:40.619750 INFO: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2024-07-17 22:36:40.619755 INFO: oop!unknow header: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2024-07-17 22:36:40.619759 INFO: Sec-Fetch-Site: same-origin
+2024-07-17 22:36:40.619763 INFO: oop!unknow header: Sec-Fetch-Site: same-origin
+2024-07-17 22:36:40.619768 INFO: Sec-Fetch-Mode: navigate
+2024-07-17 22:36:40.619772 INFO: oop!unknow header: Sec-Fetch-Mode: navigate
+2024-07-17 22:36:40.619777 INFO: Sec-Fetch-User: ?1
+2024-07-17 22:36:40.619781 INFO: oop!unknow header: Sec-Fetch-User: ?1
+2024-07-17 22:36:40.619786 INFO: Sec-Fetch-Dest: document
+2024-07-17 22:36:40.619790 INFO: oop!unknow header: Sec-Fetch-Dest: document
+2024-07-17 22:36:40.619794 INFO: Referer: http://localhost:9006/2CGISQL.cgi
+2024-07-17 22:36:40.619799 INFO: oop!unknow header: Referer: http://localhost:9006/2CGISQL.cgi
+2024-07-17 22:36:40.619804 INFO: Accept-Encoding: gzip, deflate, br, zstd
+2024-07-17 22:36:40.619808 INFO: oop!unknow header: Accept-Encoding: gzip, deflate, br, zstd
+2024-07-17 22:36:40.619813 INFO: Accept-Language: en-US,en;q=0.9,zh-CN;q=0.8,zh;q=0.7
+2024-07-17 22:36:40.619817 INFO: oop!unknow header: Accept-Language: en-US,en;q=0.9,zh-CN;q=0.8,zh;q=0.7
+2024-07-17 22:36:40.619821 INFO: 
+2024-07-17 22:36:40.619829 INFO: m_url:/6 /6
+
+2024-07-17 22:36:40.619833 INFO: i am here ---------
+
+
+
+2024-07-17 22:36:40.619857 INFO: HttpConn 33 readRet 5
+
+
+
+
+2024-07-17 22:36:40.619863 INFO: fAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+
+2024-07-17 22:36:40.619876 INFO: fAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA111
+
+2024-07-17 22:36:40.619881 INFO: fAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA2222
+
+2024-07-17 22:36:40.619886 INFO: request:HTTP/1.1 200 OK
+
+2024-07-17 22:36:40.619890 INFO: fAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA111
+
+2024-07-17 22:36:40.619895 INFO: fAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA2222
+
+2024-07-17 22:36:40.619899 INFO: request:HTTP/1.1 200 OK
+Content-Length:381
+
+2024-07-17 22:36:40.619903 INFO: fAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA111
+

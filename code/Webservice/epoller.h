@@ -18,6 +18,7 @@ class Epoller {
 
   int GetEventFd(size_t i) const;
   uint32_t GetEvents(size_t i) const;
+  int GetEpollFd() const;
 
  private:
   int epollFd;

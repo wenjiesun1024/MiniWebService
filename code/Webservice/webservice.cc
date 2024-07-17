@@ -130,6 +130,9 @@ void WebService::Start() {
     for (int i = 0; i < eventNum; ++i) {
       int fd = epoller->GetEventFd(i);
       uint32_t events = epoller->GetEvents(i);
+
+      LOG_INFO("fd: %d, events: %d\n", fd, events)
+
       if (fd == listenFd) {
         HandleListenEvent(fd);
       } else if (events & (EPOLLRDHUP | EPOLLHUP | EPOLLERR)) {  // close
@@ -178,7 +181,7 @@ void WebService::HandleWriteEvent(HttpConn *client) {
 
 void WebService::AddClient(int connFd, const sockaddr_in &clientAddr) {
   clientAddrMap[connFd] = new HttpConn();
-  clientAddrMap[connFd]->Init(connFd, clientAddr);
+  clientAddrMap[connFd]->Init(connFd, epoller->GetEpollFd(), clientAddr);
   if (TimeoutMS > 0) {
     time_t cur = time(nullptr);
     timerHeap.addTimer(TimerNode{
@@ -205,7 +208,6 @@ void WebService::ExtendTimer(HttpConn *client) {
 }
 
 void WebService::OnRead(HttpConn *client) {
-  LOG_INFO("OnRead");
   if (client->Read() <= 0) {
     // TODO: handle read failure
   }
@@ -213,7 +215,6 @@ void WebService::OnRead(HttpConn *client) {
 }
 
 void WebService::OnWrite(HttpConn *client) {
-  LOG_INFO("OnWrite");
   int writeErrno = 0;
   bool ret = client->Write(writeErrno);
 
@@ -235,10 +236,8 @@ void WebService::OnWrite(HttpConn *client) {
 }
 
 void WebService::OnProcess(HttpConn *client) {
-  // TODO: implement this function
   if (client->Process()) {
-    LOG_INFO("Process success??????\n\n");
-    epoller->ModFd(client->GetFd(), connEvent | EPOLLOUT);  // TODO: why?
+    epoller->ModFd(client->GetFd(), connEvent | EPOLLOUT); 
   } else {
     epoller->ModFd(client->GetFd(), connEvent | EPOLLIN);
   }

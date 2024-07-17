@@ -35,6 +35,7 @@ int Epoller::wait(int timeout) {
 }
 
 int Epoller::GetEventFd(size_t i) const { return events[i].data.fd; }
+int Epoller::GetEpollFd() const { return epollFd; }
 
 uint32_t Epoller::GetEvents(size_t i) const { return events[i].events; }
 

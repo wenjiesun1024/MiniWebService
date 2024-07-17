@@ -62,7 +62,7 @@ class HttpConn {
   HttpConn() = default;
   ~HttpConn() = default;
 
-  void Init(int sockfd, const sockaddr_in& addr);
+  void Init(int sockfd, int epollfd, const sockaddr_in& addr);
   void Reset();
   // void InitmysqlResult();
 
@@ -72,7 +72,7 @@ class HttpConn {
   void Close();
   bool Process();
 
-  int GetFd() const { return epollFd; }
+  int GetFd() const { return sockfd; }
 
   int getPort() const { return ntohs(address.sin_port); }
   const char* getIP() const { return inet_ntoa(address.sin_addr); }

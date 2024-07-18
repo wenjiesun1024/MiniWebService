@@ -89,7 +89,7 @@ class HttpConn {
   HttpCode parseHeaders(char* text);
   HttpCode parseContent(char* text);
   LineStatus parseLine();
-  char* getLine() { return readBuf + startLine; };
+  char* getLine() { return readBuf.data() + startLine; };
   HttpCode doRequest();
 
   bool ProcessWrite(HttpCode);
@@ -116,10 +116,10 @@ class HttpConn {
   static const int READ_BUFFER_SIZE = 2048;
   static const int WRITE_BUFFER_SIZE = 1024;
 
-  vector<char> readBuf(READ_BUFFER_SIZE);
+  std::array<char, READ_BUFFER_SIZE> readBuf;
   long readIdx;  // the end of readBuf
 
-  vector<char> writeBuf(WRITE_BUFFER_SIZE);
+  std::array<char, WRITE_BUFFER_SIZE> writeBuf;
   int writeIdx;
 
   int startLine;
@@ -144,7 +144,7 @@ class HttpConn {
 
   int ivCount;
   int cgi;  // 是否启用的POST
-  char realFile[FILENAME_LEN];
+  std::array<char, FILENAME_LEN> realFile;
 
   std::mutex mx;
   MYSQL* mysql;

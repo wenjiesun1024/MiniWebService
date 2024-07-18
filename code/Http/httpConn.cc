@@ -43,7 +43,8 @@ bool HttpConn::Read() {
     // read data from sockfd
     LOG_INFO("HttpConn %d read success", sockfd);
 
-    bytes_read = recv(sockfd, readBuf + readIdx, READ_BUFFER_SIZE - readIdx, 0);
+    bytes_read =
+        recv(sockfd, readBuf.data() + readIdx, READ_BUFFER_SIZE - readIdx, 0);
     if (bytes_read == -1) {
       if (errno == EAGAIN || errno == EWOULDBLOCK) break;
       return false;
@@ -76,14 +77,13 @@ bool HttpConn::Process() {
 HttpCode HttpConn::ProcessRead() {
   LineStatus line_status = LineStatus::LINE_OK;
   HttpCode ret = HttpCode::NO_REQUEST;
-  char *text = nullptr;
 
   while ((checkState == CheckState::CHECK_STATE_CONTENT &&
           line_status == LineStatus::LINE_OK) ||
          ((line_status = parseLine()) == LineStatus::LINE_OK)) {
-    text = getLine();
+    auto text = getLine();
 
-    LOG_INFO("%s", text);
+    LOG_INFO("Line: %s", text);
 
     startLine = checkedIdx;
 
@@ -118,9 +118,8 @@ HttpCode HttpConn::ProcessRead() {
 // parse the request line, get the method, url, and version
 HttpCode HttpConn::parseRequestLine(char *text) {
   url = const_cast<char *>(std::strpbrk(text, " \t"));
-  if (!url) {
-    return HttpCode::BAD_REQUEST;
-  }
+
+  if (!url) return HttpCode::BAD_REQUEST;
   *url++ = '\0';
 
   const char *methodStr = text;
@@ -128,7 +127,7 @@ HttpCode HttpConn::parseRequestLine(char *text) {
     method = HttpMethod::GET;
   else if (strcasecmp(methodStr, "POST") == 0) {
     method = HttpMethod::POST;
-    cgi = 1;  // TODO: what is cgi?
+    cgi = 1;
   } else {
     return HttpCode::BAD_REQUEST;
   }
@@ -153,7 +152,8 @@ HttpCode HttpConn::parseRequestLine(char *text) {
   }
 
   if (!url || url[0] != '/') return HttpCode::BAD_REQUEST;
-  // 当url为/时，显示判断界面
+
+  // url = "/", we will show the judge.html
   if (strlen(url) == 1) strcat(url, "judge.html");
 
   checkState = CheckState::CHECK_STATE_HEADER;
@@ -183,7 +183,7 @@ HttpCode HttpConn::parseHeaders(char *text) {
     text += strspn(text, " \t");
     host = text;
   } else {
-    LOG_INFO("oop!unknow header: %s", text);
+    LOG_ERROR("Unknow header: %s", text);
   }
   return HttpCode::NO_REQUEST;
 }
@@ -192,7 +192,7 @@ HttpCode HttpConn::parseHeaders(char *text) {
 HttpCode HttpConn::parseContent(char *text) {
   if (readIdx >= (contentLength + checkedIdx)) {
     text[contentLength] = '\0';
-    // POST请求中最后为输入的用户名和密码
+    // Username & Password
     content = text;
     return HttpCode::GET_REQUEST;
   }
@@ -228,27 +228,26 @@ HttpCode HttpConn::doRequest() {
   char serverPath[200];
   getcwd(serverPath, 200);
   char resource[10] = "/resource";
+
   char *docResource = (char *)malloc(strlen(serverPath) + strlen(resource) + 1);
   strcpy(docResource, serverPath);
   strcat(docResource, resource);
 
-  strcpy(realFile, docResource);
+  strcpy(realFile.data(), docResource);
   int len = strlen(docResource);
   const char *p = strrchr(url, '/');
 
-  // 处理cgi
+  // cgi == 1
   if (cgi == 1 && (*(p + 1) == '2' || *(p + 1) == '3')) {
-    // 根据标志判断是登录检测还是注册检测
     char flag = url[1];
 
     char *urlReal = (char *)malloc(sizeof(char) * 200);
     strcpy(urlReal, "/");
     strcat(urlReal, url + 2);
-    strncpy(realFile + len, urlReal, FILENAME_LEN - len - 1);
+    strncpy(realFile.data() + len, urlReal, FILENAME_LEN - len - 1);
     free(urlReal);
 
-    // 将用户名和密码提取出来
-    //  user=123&passwd=123
+    // get password and username from content
     char name[100], password[100];
     int i;
     for (i = 5; content[i] != '&'; ++i) name[i - 5] = content[i];
@@ -259,8 +258,8 @@ HttpCode HttpConn::doRequest() {
     password[j] = '\0';
 
     if (*(p + 1) == '3') {
-      // 如果是注册，先检测数据库中是否有重名的
-      // 没有重名的，进行增加数据
+      // if it is a register request
+      // check if the username and password are valid
       char *sql_insert = (char *)malloc(sizeof(char) * 200);
       strcpy(sql_insert, "INSERT INTO user(username, passwd) VALUES(");
       strcat(sql_insert, "'");
@@ -282,8 +281,8 @@ HttpCode HttpConn::doRequest() {
       } else
         strcpy(url, "/registerError.html");
     }
-    // 如果是登录，直接判断
-    // 若浏览器端输入的用户名和密码在表中可以查找到，返回1，否则返回0
+
+    // if it is a login request, check if the username and password are valid
     else if (*(p + 1) == '2') {
       if (users.find(name) != users.end() && users[name] == password)
         strcpy(url, "/welcome.html");
@@ -295,43 +294,37 @@ HttpCode HttpConn::doRequest() {
   if (*(p + 1) == '0') {
     char *m_url_real = (char *)malloc(sizeof(char) * 200);
     strcpy(m_url_real, "/register.html");
-    strncpy(realFile + len, m_url_real, strlen(m_url_real));
+    strncpy(realFile.data() + len, m_url_real, strlen(m_url_real));
 
     free(m_url_real);
   } else if (*(p + 1) == '1') {
     char *m_url_real = (char *)malloc(sizeof(char) * 200);
     strcpy(m_url_real, "/log.html");
-    strncpy(realFile + len, m_url_real, strlen(m_url_real));
+    strncpy(realFile.data() + len, m_url_real, strlen(m_url_real));
 
     free(m_url_real);
   } else if (*(p + 1) == '5') {
     char *m_url_real = (char *)malloc(sizeof(char) * 200);
     strcpy(m_url_real, "/picture.html");
-    strncpy(realFile + len, m_url_real, strlen(m_url_real));
+    strncpy(realFile.data() + len, m_url_real, strlen(m_url_real));
 
     free(m_url_real);
   } else if (*(p + 1) == '6') {
     char *m_url_real = (char *)malloc(sizeof(char) * 200);
     strcpy(m_url_real, "/video.html");
-    strncpy(realFile + len, m_url_real, strlen(m_url_real));
-
-    free(m_url_real);
-  } else if (*(p + 1) == '7') {
-    char *m_url_real = (char *)malloc(sizeof(char) * 200);
-    strcpy(m_url_real, "/fans.html");
-    strncpy(realFile + len, m_url_real, strlen(m_url_real));
+    strncpy(realFile.data() + len, m_url_real, strlen(m_url_real));
 
     free(m_url_real);
   } else {
-    strncpy(realFile + len, url, FILENAME_LEN - len - 1);
+    strncpy(realFile.data() + len, url, FILENAME_LEN - len - 1);
   }
-  if (stat(realFile, &fileStat) < 0) return HttpCode::NO_RESOURCE;
+  if (stat(realFile.data(), &fileStat) < 0) return HttpCode::NO_RESOURCE;
 
   if (!(fileStat.st_mode & S_IROTH)) return HttpCode::FORBIDDEN_REQUEST;
 
   if (S_ISDIR(fileStat.st_mode)) return HttpCode::BAD_REQUEST;
 
-  int fd = open(realFile, O_RDONLY);
+  int fd = open(realFile.data(), O_RDONLY);
   fileAddress =
       (char *)mmap(0, fileStat.st_size, PROT_READ, MAP_PRIVATE, fd, 0);
   close(fd);
@@ -346,15 +339,13 @@ void HttpConn::unmap() {
 }
 
 bool HttpConn::Write(int &writeErrno) {
-  int temp = 0;
-
   if (bytesToSend == 0) {
     Reset();
     return true;
   }
 
   while (1) {
-    temp = writev(sockfd, iv, ivCount);
+    int temp = writev(sockfd, iv, ivCount);
 
     if (temp < 0) {
       if (errno == EAGAIN) {
@@ -373,7 +364,7 @@ bool HttpConn::Write(int &writeErrno) {
       iv[1].iov_base = fileAddress + (bytesHaveSend - writeIdx);
       iv[1].iov_len = bytesToSend;
     } else {
-      iv[0].iov_base = writeBuf + bytesHaveSend;
+      iv[0].iov_base = writeBuf.data() + bytesHaveSend;
       iv[0].iov_len = iv[0].iov_len - bytesHaveSend;
     }
 
@@ -392,8 +383,8 @@ bool HttpConn::addResponse(const char *format, ...) {
   if (writeIdx >= WRITE_BUFFER_SIZE) return false;
   va_list arg_list;
   va_start(arg_list, format);
-  int len = vsnprintf(writeBuf + writeIdx, WRITE_BUFFER_SIZE - 1 - writeIdx,
-                      format, arg_list);
+  int len = vsnprintf(writeBuf.data() + writeIdx,
+                      WRITE_BUFFER_SIZE - 1 - writeIdx, format, arg_list);
   if (len >= (WRITE_BUFFER_SIZE - 1 - writeIdx)) {
     va_end(arg_list);
     return false;
@@ -456,7 +447,7 @@ bool HttpConn::ProcessWrite(HttpCode ret) {
       addStatusLine(200, ok_200_title);
       if (fileStat.st_size != 0) {
         addHeaders(fileStat.st_size);
-        iv[0].iov_base = writeBuf;
+        iv[0].iov_base = writeBuf.data();
         iv[0].iov_len = writeIdx;
         iv[1].iov_base = fileAddress;
         iv[1].iov_len = fileStat.st_size;
@@ -473,7 +464,7 @@ bool HttpConn::ProcessWrite(HttpCode ret) {
     default:
       return false;
   }
-  iv[0].iov_base = writeBuf;
+  iv[0].iov_base = writeBuf.data();
   iv[0].iov_len = writeIdx;
   ivCount = 1;
   bytesToSend = writeIdx;
@@ -511,7 +502,6 @@ void HttpConn::CloseConn(bool realClose) {
 
 void HttpConn::Reset() {
   url = nullptr;
-  // realFile = nullptr;
   cgi = 0;
   contentLength = 0;
   bytesHaveSend = 0;

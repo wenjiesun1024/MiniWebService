@@ -40,7 +40,7 @@ bool HttpConn::Read() {
   int bytes_read = 0;
 
   do {
-    // TODO: read data from sockfd
+    // read data from sockfd
     LOG_INFO("HttpConn %d read success", sockfd);
 
     bytes_read = recv(sockfd, readBuf + readIdx, READ_BUFFER_SIZE - readIdx, 0);
@@ -153,7 +153,7 @@ HttpCode HttpConn::parseRequestLine(char *text) {
   }
 
   if (!url || url[0] != '/') return HttpCode::BAD_REQUEST;
-  //当url为/时，显示判断界面
+  // 当url为/时，显示判断界面
   if (strlen(url) == 1) strcat(url, "judge.html");
 
   checkState = CheckState::CHECK_STATE_HEADER;
@@ -201,9 +201,8 @@ HttpCode HttpConn::parseContent(char *text) {
 
 // get the line from the read buffer
 LineStatus HttpConn::parseLine() {
-  char temp;
   for (; checkedIdx < readIdx; ++checkedIdx) {
-    temp = readBuf[checkedIdx];
+    char temp = readBuf[checkedIdx];
     if (temp == '\r') {
       if ((checkedIdx + 1) == readIdx)
         return LineStatus::LINE_OPEN;
@@ -237,9 +236,9 @@ HttpCode HttpConn::doRequest() {
   int len = strlen(docResource);
   const char *p = strrchr(url, '/');
 
-  //处理cgi
+  // 处理cgi
   if (cgi == 1 && (*(p + 1) == '2' || *(p + 1) == '3')) {
-    //根据标志判断是登录检测还是注册检测
+    // 根据标志判断是登录检测还是注册检测
     char flag = url[1];
 
     char *urlReal = (char *)malloc(sizeof(char) * 200);
@@ -248,8 +247,8 @@ HttpCode HttpConn::doRequest() {
     strncpy(realFile + len, urlReal, FILENAME_LEN - len - 1);
     free(urlReal);
 
-    //将用户名和密码提取出来
-    // user=123&passwd=123
+    // 将用户名和密码提取出来
+    //  user=123&passwd=123
     char name[100], password[100];
     int i;
     for (i = 5; content[i] != '&'; ++i) name[i - 5] = content[i];
@@ -260,8 +259,8 @@ HttpCode HttpConn::doRequest() {
     password[j] = '\0';
 
     if (*(p + 1) == '3') {
-      //如果是注册，先检测数据库中是否有重名的
-      //没有重名的，进行增加数据
+      // 如果是注册，先检测数据库中是否有重名的
+      // 没有重名的，进行增加数据
       char *sql_insert = (char *)malloc(sizeof(char) * 200);
       strcpy(sql_insert, "INSERT INTO user(username, passwd) VALUES(");
       strcat(sql_insert, "'");
@@ -283,8 +282,8 @@ HttpCode HttpConn::doRequest() {
       } else
         strcpy(url, "/registerError.html");
     }
-    //如果是登录，直接判断
-    //若浏览器端输入的用户名和密码在表中可以查找到，返回1，否则返回0
+    // 如果是登录，直接判断
+    // 若浏览器端输入的用户名和密码在表中可以查找到，返回1，否则返回0
     else if (*(p + 1) == '2') {
       if (users.find(name) != users.end() && users[name] == password)
         strcpy(url, "/welcome.html");

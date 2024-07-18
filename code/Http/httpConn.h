@@ -116,9 +116,10 @@ class HttpConn {
   static const int READ_BUFFER_SIZE = 2048;
   static const int WRITE_BUFFER_SIZE = 1024;
 
-  char readBuf[READ_BUFFER_SIZE];
+  vector<char> readBuf(READ_BUFFER_SIZE);
   long readIdx;  // the end of readBuf
-  char writeBuf[WRITE_BUFFER_SIZE];
+
+  vector<char> writeBuf(WRITE_BUFFER_SIZE);
   int writeIdx;
 
   int startLine;
@@ -142,7 +143,7 @@ class HttpConn {
   struct iovec iv[2];
 
   int ivCount;
-  int cgi;  //是否启用的POST
+  int cgi;  // 是否启用的POST
   char realFile[FILENAME_LEN];
 
   std::mutex mx;

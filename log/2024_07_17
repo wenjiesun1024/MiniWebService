@@ -1,8 +1,0 @@
-2024-07-17 23:46:35.022647 INFO: Log init success
-2024-07-17 23:46:35.029560 INFO: SqlConnectionPool init success
-2024-07-17 23:46:35.029589 INFO: Event mode init success
-2024-07-17 23:46:35.029803 INFO: ThreadPool init success
-2024-07-17 23:46:35.029826 ERROR: Bind socket failure
-2024-07-17 23:46:35.029831 ERROR: Listen failure
-2024-07-17 23:46:35.029836 INFO: WebService init success
-2024-07-17 23:46:35.029840 INFO: WebService start

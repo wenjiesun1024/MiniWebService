@@ -1,22 +1,49 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <title>awsl</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A short video</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        video {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
 </head>
 
-<body><br />
-    <br />
-    <div align="center">
-        <font size="5"> <strong>A short video</strong></font>
-    </div>
-    <br />
-
-    <br />
-    <br />
-    <div align="center"><video width="906" height="506" controls>
-            <source src="xxx.mp4" type="video/mp4">
-        </video></div>
+<body>
+    <header>
+        <h1>A short video</h1>
+    </header>
+    <main>
+        <div>
+            <video width="906" height="506" controls>
+                <source src="xxx.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </main>
+</body>
 
 </html>

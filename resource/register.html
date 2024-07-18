@@ -1,26 +1,78 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign up</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .register {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .register input {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .register button {
+            padding: 10px 20px;
+            font-size: 1em;
+            color: #fff;
+            background-color: #007bff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .register button:hover {
+            background-color: #0056b3;
+        }
+    </style>
 </head>
 
 <body>
-    <br />
-    <br />
-    <div align="center">
-        <font size="5"> <strong>Register</strong></font>
-    </div>
-    <br />
-    <div class="login">
-        <form action="3CGISQL.cgi" method="post">
-            <div align="center"><input type="text" name="user" placeholder="Username" required="required"></div><br />
-            <div align="center"><input type="password" name="password" placeholder="Password" required="required"></div>
-            <br />
-            <div align="center"><button type="submit">Submit</button></div>
-        </form>
-    </div>
+    <header>
+        <h1>Register</h1>
+    </header>
+    <main>
+        <div class="register">
+            <form action="3CGISQL.cgi" method="post">
+                <input type="text" name="user" placeholder="Username" required>
+                <input type="password" name="password" placeholder="Password" required>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </main>
 </body>
 
 </html>

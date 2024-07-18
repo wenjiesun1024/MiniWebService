@@ -1,20 +1,52 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <title>awsl</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A simple Picture</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .image-container {
+            max-width: 80%;
+            /* 限制图片容器的最大宽度 */
+            margin: 0 auto;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
 </head>
 
-<body><br />
-    <br />
-    <div align="center">
-        <font size="5"> <strong>A simple Picture</strong></font>
-    </div>
-    <br />
-    <!--<div  align="center">a w s l</div>-->
-    <br />
-    <br />
-    <div align="center"><img src="./xxx.jpg" title="awsl" /></div>
+<body>
+    <header>
+        <h1>A simple Picture</h1>
+    </header>
+    <main>
+        <div class="image-container">
+            <img src="./xxx.jpg" alt="A simple picture" title="awsl">
+        </div>
+    </main>
+</body>
 
 </html>

@@ -1,27 +1,68 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WebServer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .button-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 1em;
+            color: #fff;
+            background-color: #007bff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            width: 150px;
+            /* 统一按钮宽度 */
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
 </head>
 
 <body>
-    <br />
-    <br />
-    <div align="center">
-        <font size="5"> <strong>Webcome to Mini Web Service</strong></font>
-    </div>
-    <br />
-    <br />
-    <form action="0" method="post">
-        <div align="center"><button type="submit"> Register </button></div>
-    </form>
-    <br />
-    <form action="1" method="post">
-        <div align="center"><button type="submit"> Login </button></div>
-    </form>
-    </div>
+    <header>
+        <h1>Welcome to Mini Web Service</h1>
+    </header>
+    <main>
+        <div class="button-container">
+            <form action="0" method="post">
+                <button type="submit">Register</button>
+            </form>
+            <form action="1" method="post">
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </main>
 </body>
 
 </html>
